@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Matheus Henrique || https://mhborges.com.br">
+    <meta name="description" content="Matheus Henrique Programador, sempre trabalhando para construir os melhores projetos com a melhor qualidade">
+    <meta name="keywords" content="mhborges, programador, Curitiba, html, css, bootstrap, programador de sites, loja online, matheus henrique">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matheus Henrique - Programador</title>
+    <link rel="icon" href="Imgs/icon.png"/>
+    
+    <!-- font google-->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <!-- font awesome para icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- JQUERY linkagem -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--Carrosel-->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/svg-inject.min.js"></script>
+</head>
+
+<body>
+<!-- Botão de rolagem-->
+<a id="btn_UP"><img src="Imgs/Up.png"></a>
+
+<!-- Menu-->
+<header class="head">
+    <nav class="navbar col-lg-10">
+        <div class="nav-logo">
+            <a href="#banner"><img src="Imgs/MH_logo_flat1.svg" class="logo" onload="SVGInject(this)" /></a>
+            <a href="#banner"><img src="Imgs/MH_logo_flat2.svg" class="logo2" onload="SVGInject(this)" /></a>
+        </div>
+
+        <div class="nav-menu">
+          <ul class="navbar">
+            <li class="nav-item active">
+              <a class="BTmenu" href="#SobreMim">Sobre Mim</a>
+            </li>
+            <li class="nav-item">
+              <a class="BTmenu" href="#Projetos">Meus projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="BTmenu" href="#Blog">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="BTmenu" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menuHidden"><i class="fa fa-bars" aria-hidden="true"></i> </div>
+    </nav>
+</header>
+
+<!-- BANNER -->
+<section id="banner" class="banner">
+    <div class="container col-sm-10">
+        <div class="row">
+            <div class="blockBanner">
+                <h3>Olá, eu sou</h3>
+                <h1>matheus henrique</h1>
+                <h2>Freelancer, Web designer e</br>
+                    Desenvolvedor front-end</h2>
+            </div>
+        </div>
+    </div>  
+</section>
+
+<!-- SOBRE -->
+
+<section id="SobreMim" >
+    <div class="container col-lg-10 col-md-12">
+        <div class="row ">
+            <div class="FotoSobre col-lg-4 col-md-12 ">
+                <img loading="lazy" src="Imgs/Eu.jpg"/>
+            </div>
+            <div class="textSobre col-lg-8 col-md-12">
+                <h2>Matheus Henrique</h2>
+                <div class="textblock">
+                    <p id="zero">
+                        <span>Sou</span> um programador júnior, produzindo alguns projetos
+                        desde 2018, sempre buscando novas experiências e sempre
+                        tentando tirar o melhor aprendizado possível de cada uma
+                        delas.
+                    </p>
+                
+                    <p>
+                        <span>Um</span> grande apaixonado por jogos e novas tecnologias. Desde
+                        muito novo sou apaixonado por jogos, por todas suas
+                        dinâmicas e possibilidades de criação. Me inseri no meio
+                        tecnológico pois é um universo gigantesco, com milhões de
+                        possibilidades que amo explorar todos os dias.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row blockinfo">
+            <div class="Infos col-sm-4">
+                <div class="cont_info">
+                    <span>Nome :</span> Matheus Henrique Borges da Silva</br>
+                    <span>Idade :</span> 21 Anos</br>
+                    <span>Email :</span> matheush.borges@hotmail.com</br>
+                    <span>Local :</span> Curitiba/PR</br>
+                    <span>Telefone :</span> (41) 99843 - 1084
+                </div>
+            </div>
+            <div class="Skills col-lg-8 carousel slide" id="Carousel_Skills" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="skill_Carousel col-lg-11">
+                            <div class="Skillcard">
+                                <svg class="radial-progress" id="radial_tamanho" data-percentage="85" viewBox="0 0 80 80">
+                                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                    <circle class="complete" cx="40" cy="40" r="35" ></circle>
+                                </svg>
+                                <text class="textPorcent" id="text_taman" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
+                                <img src="Imgs/css.png" loading="lazy" class="IMG_Perct" id="img_Porc_T">
+                            </div>
+                            <div class="Skillcard">
+                                <svg class="radial-progress" data-percentage="90" viewBox="0 0 80 80">
+                                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                    <circle class="complete" cx="40" cy="40" r="35" ></circle>
+                                </svg>
+                                <text class="textPorcent" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+                                <img src="Imgs/html.png" loading="lazy" class="IMG_Perct">
+                            </div>
+                            <div class="Skillcard">
+                                <svg class="radial-progress" id="radial_tamanho" data-percentage="70" viewBox="0 0 80 80">
+                                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                    <circle class="complete" cx="40" cy="40" r="35" ></circle>
+                                </svg>
+                                <text class="textPorcent" id="text_taman" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">70%</text>
+                                <img src="Imgs/js.png" loading="lazy" class="IMG_Perct" id="img_Porc_T">
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="carousel-item">
+                        <div class="skill_Carousel col-lg-11">
+                            <div class="col-lg-6 skill_Inline">
+                                <h3>Linguagens</h3>
+                                <div class="progress">
+                                    <span>HTML</span>
+                                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <span id="skill_two">CSS</span>
+                                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <span id="skill_three">BOOTSTRAP</span>
+                                    <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <span id="skill_four">PHP</span>
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <span id="skill_five">JAVASCRIPT</span>
+                                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 skill_Inline">
+                                <h3>softwares</h3>
+                                <div class="progress">
+                                    <span>figma</span>
+                                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <span id="skill_two">Photoshop</span>
+                                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h4>idiomas</h4>
+                                <div class="progress">
+                                    <span id="skill_four">Português</span>
+                                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <span id="skill_five">Inglês</span>
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-next" href="#Carousel_Skills" data-slide="next">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>                
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJETOS -->
+
+<section id="Projetos" >
+    <div class="container col-sm-10">
+        <div class="row mt-3">
+            <div class="col-sm-12 title" id="color">
+                <h2>Meus Projetos</h2>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-12 imgsProjeto">
+                <a class="js-tilt" href="#"><img src="Imgs/projeto/image1.jpg" loading="lazy" class="imgsPr" /></a>
+                <a class="js-tilt" href="#"><img src="Imgs/projeto/image2.jpg" loading="lazy" class="imgsPr" /></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 imgsProjeto" id="Boxing"><a class="js-tilt" href="portfolio.html"><img src="Imgs/projeto/image3.jpg" loading="lazy" id="img_princ" class="imgsPr"/></a></div>
+        </div>
+        <div class="row boxBT">
+            <div class="col-sm-12 botão">
+                <a href="projetos.html"><button> Veja Mais</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOG -->
+
+<section id="Blog" >
+    <div class="container col-sm-10">
+        <div class="row ">
+            <div class="col-sm-12 title">
+                <h2>Blog</h2>
+            </div>
+        </div>
+      
+        <div class="row cardsBox ">
+            <div class="col-lg-3 cardBlog">
+            <img class="cardIMG" loading="lazy" src="Imgs/img_card1.jpg">
+            <h3>top 10 bibliotecas de bancos de imagens gratuitos</h3>
+            <article>
+                Lorem ipsum dolor sit amet, consectetur adipisc
+                elit. Euismod nibh laoreet amet vulputate amet 
+                feugiat accumsan morbi faucibus. A pharetra, cra
+                seget purus leo pellentesque purus purus. Est se
+                daenean lectus sed fringilla purus.
+            </article>
+            <a href="#"><button>ler mais</button></a>
+            </div>
+
+            <div class="col-lg-3 cardBlog">
+            <img class="cardIMG" loading="lazy" src="Imgs/img_card2.jpg">
+            <h3>Boas praticas para</br> programadores iniciantes</h3>
+            <article>
+                Lorem ipsum dolor sit amet, consectetur adipisc
+                elit. Euismod nibh laoreet amet vulputate amet 
+                feugiat accumsan morbi faucibus. A pharetra, cra
+                seget purus leo pellentesque purus purus. Est se
+                daenean lectus sed fringilla purus.
+            </article>
+            <a href="#"><button>ler mais</button></a>
+            </div>
+
+            <div class="col-lg-3 cardBlog">
+            <img class="cardIMG" loading="lazy" src="Imgs/img_card3.jpg">
+            <h3><span>DIARIO DO PROGRAMADOR</span></br>
+                novas aplicações e tecnologias Descobertas essa semana.</h3>
+            <article>
+                Lorem ipsum dolor sit amet, consectetur adipisc
+                elit. Euismod nibh laoreet amet vulputate amet 
+                feugiat accumsan morbi faucibus. A pharetra, cra
+                seget purus leo pellentesque purus purus. Est se
+                daenean lectus sed fringilla purus.
+            </article>
+            <a href="#"><button>ler mais</button></a>
+            </div>
+        </div>
+
+        <div class="row cardsBoxCP collapse" id="CollapseBlog">
+            <div class="col-lg-3 cardBlogCP">
+                <a href="">
+                    <img class="cardIMG" loading="lazy" src="Imgs/img_card3.jpg">
+                    <h3><span>DIARIO DO PROGRAMADOR</span></br>
+                        novas aplicações e tecnologias Descobertas essa semana.</h3>
+                </a>
+            </div>
+            <div class="col-lg-3 cardBlogCP">
+                <a href="">
+                    <img class="cardIMG" loading="lazy" src="Imgs/img_card1.jpg">
+                    <h3>top 10 bibliotecas de bancos de imagens gratuitos</h3>
+                </a>
+            </div>
+            <div class="col-lg-3 cardBlogCP">
+                <a href="">
+                    <img class="cardIMG" loading="lazy" src="Imgs/img_card2.jpg">
+                    <h3>Boas praticas para</br> programadores iniciantes</h3>
+                </a>
+            </div>
+            <div class="col-lg-3 cardBlogCP">
+                <a href="">
+                    <img class="cardIMG" loading="lazy" src="Imgs/img_card2.jpg">
+                    <h3>Boas praticas para</br> programadores iniciantes</h3>
+                </a>
+            </div>
+            <div class="col-lg-3 cardBlogCP">
+                <a href="">
+                    <img class="cardIMG" loading="lazy" src="Imgs/img_card3.jpg">
+                    <h3><span>DIARIO DO PROGRAMADOR</span></br>
+                        novas aplicações e tecnologias Descobertas essa semana.</h3>
+                </a>
+            </div>
+            <div class="col-lg-3 cardBlogCP">
+                <a href="">
+                    <img class="cardIMG" loading="lazy" src="Imgs/img_card1.jpg">
+                    <h3>top 10 bibliotecas de bancos de imagens gratuitos</h3>
+                </a>
+            </div>
+
+            <div class="col-sm-12 botão" id="Bt_BlogCP">
+                <a href=""><button>Veja mais</button></a>
+            </div>
+            
+        </div>
+
+      <div class="row">
+          <div class="col-sm-12 botão" id="Bt_Blog">
+              <button data-toggle="collapse" data-target="#CollapseBlog" aria-expanded="false" aria-controls="CollapseBlog"><i class="fas fa-angle-double-down"></i></button>
+          </div>
+      </div>
+
+      
+    </div>
+</section>
+
+<!-- DESIGN -->
+
+<section id="design">
+    <div class="container col-sm-10">
+        <div class="row">
+            <div class="col-sm-12 title">
+                <h2>Designs</h2>
+            </div>
+        </div>
+        <div class="row carousel_design">
+            <div class="Carousel_Block col-sm-10">
+                <div class="box"><a href="#img1"><img src="Imgs/design/img_D1.jpg"></a></div>
+                <div class="box"><a href="#img2"><img src="Imgs/design/img_D2.jpg"></a></div>
+                <div class="box"><a href="#img3"><img src="Imgs/design/img_D3.jpg"></a></div>
+                <div class="box"><a href="#img4"><img src="Imgs/design/img_D4.jpg"></a></div>
+                <div class="box"><a href="#img5"><img src="Imgs/design/img_D5.jpg"></a></div>
+                <div class="box"><a href="#img6"><img src="Imgs/design/img_D6.jpg"></a></div>
+                <div class="box"><a href="#img7"><img src="Imgs/design/img_D7.jpg"></a></div>
+                <div class="box"><a href="#img8"><img src="Imgs/design/img_D8.jpg"></a></div>
+            </div>
+        </div>
+        <div class="organiza-modal">
+            <div class="lbox" id="img1">
+                <div class="box_img">
+                    <a href="#img8" class="bt_modal" id="left"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#design" class="bt_modal" id="close"><i class="fas fa-times"></i></a>
+                    <a href="#img2" class="bt_modal" id="right"><i class="fas fa-chevron-right"></i></a>
+                    <img class="taman" src="Imgs/design/img_B1.jpg"/>
+                    <h2>Banner de apresentação da empresa com a divulgação de seus produtos</h2>
+                </div>
+            </div>
+            <div class="lbox" id="img2">
+                <div class="box_img">
+                    <a href="#img1" class="bt_modal" id="left"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#design" class="bt_modal" id="close"><i class="fas fa-times"></i></a>
+                    <a href="#img3" class="bt_modal" id="right"><i class="fas fa-chevron-right"></i></a>
+                    <img class="taman" src="Imgs/design/img_B2.jpg"/>
+                    <h2>Promoção de combos de produtos</h2>
+                </div>
+            </div>
+            <div class="lbox" id="img3">
+                <div class="box_img">
+                    <a href="#img2" class="bt_modal" id="left"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#design" class="bt_modal" id="close"><i class="fas fa-times"></i></a>
+                    <a href="#img4" class="bt_modal" id="right"><i class="fas fa-chevron-right"></i></a>
+                    <img class="taman" src="Imgs/design/img_B3.jpg"/>
+                    <h2>Imagem promocional de sorteio realizado no instagram</h2>
+                </div>
+            </div>
+            <div class="lbox" id="img4">
+                <div class="box_img">
+                    <a href="#img3" class="bt_modal" id="left"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#design" class="bt_modal" id="close"><i class="fas fa-times"></i></a>
+                    <a href="#img5" class="bt_modal" id="right"><i class="fas fa-chevron-right"></i></a>
+                    <img class="taman" src="Imgs/design/img_B4.jpg"/>
+                    <h2>Divulgação de nova linha de produtos</h2>
+                </div>
+            </div>
+            <div class="lbox" id="img5">
+                <div class="box_img">
+                    <a href="#img4" class="bt_modal" id="left"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#design" class="bt_modal" id="close"><i class="fas fa-times"></i></a>
+                    <a href="#img6" class="bt_modal" id="right"><i class="fas fa-chevron-right"></i></a>
+                    <img class="taman" src="Imgs/design/img_B5.jpg"/>
+                    <h2>Contracapa Ebook </br> "Leveza nas emoções"</h2>
+                </div>
+            </div>
+            <div class="lbox" id="img6">
+                <div class="box_img">
+                    <a href="#img5" class="bt_modal" id="left"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#design" class="bt_modal" id="close"><i class="fas fa-times"></i></a>
+                    <a href="#img7" class="bt_modal" id="right"><i class="fas fa-chevron-right"></i></a>
+                    <img class="taman" src="Imgs/design/img_B6.jpg"/>
+                    <h2>Arte de Divulgação de Ebook </br> "Leveza nas emoções"</h2>
+                </div>
+            </div>
+            <div class="lbox" id="img7">
+                <div class="box_img">
+                    <a href="#img6" class="bt_modal" id="left"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#design" class="bt_modal" id="close"><i class="fas fa-times"></i></a>
+                    <a href="#img8" class="bt_modal" id="right"><i class="fas fa-chevron-right"></i></a>
+                    <img class="taman" src="Imgs/design/img_B7.jpg"/>
+                    <h2>Cartão Digital para divulgação de trabalho.</h2>
+                </div>
+            </div>
+            <div class="lbox" id="img8">
+                <div class="box_img">
+                    <a href="#img7" class="bt_modal" id="left"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#design" class="bt_modal" id="close"><i class="fas fa-times"></i></a>
+                    <a href="#img1" class="bt_modal" id="right"><i class="fas fa-chevron-right"></i></a>
+                    <img class="taman" src="Imgs/design/img_B8.jpg"/>
+                    <h2>Logo Digital para microempresa para vendas de roupas e acessórios.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTATO -->
+
+<section id="contato">
+    <div class="container col-sm-10">
+        <div class="row imagens_CT">
+            <img src="Imgs/CT1.png" data-speed="1" class="layer">
+            <img src="Imgs/CT2.png" data-speed="3" class="layer">
+            <img src="Imgs/CT3.png" data-speed="2" class="layer">
+            <img src="Imgs/CT4.png" data-speed="-1" class="layer">
+            <img src="Imgs/CT5.png" data-speed="-0.5" class="layer">
+            <img src="Imgs/CT6.png" data-speed="2" class="layer">
+            <img src="Imgs/CT7.png" data-speed="-1" class="layer">
+            <img src="Imgs/CT8.png" data-speed="1" class="layer">
+            <img src="Imgs/CT9.png" data-speed="-1" class="layer">
+            <img src="Imgs/CT10.png" data-speed="1.2" class="layer">
+            <img src="Imgs/CT11.png" data-speed="1" class="layer">
+            <img src="Imgs/CT12.png" data-speed="-0.9" class="layer">
+        </div>
+        <div class="row">
+            <div class="col-sm-12 title" id="CT">
+                <h2>PRECISANDO DE ALGUM TRABALHO??</br>ME MANDE UMA MENSAGEM</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 botão" id="Bt_Contato">
+                <a href="https://wa.me/5541998431084"><button>Enviar Mensagem</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- RODAPÉ -->
+
+<footer class="rodape">
+    <div class="container col-sm-10">
+        <ul class="mt-2">
+            <li><a target="_blanket" href="https://www.linkedin.com/in/matheus-henrique-b-a20235126/"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a target="_blanket" href="https://www.instagram.com/emptymind_/"><i class="fab fa-instagram"></i></i></a></li>
+            <li><a href="index.html"><img src="Imgs/MH_logo_flat1.svg"></a></li>
+            <li><a target="_blanket" href="https://https://github.com/MH-Borges"><i class="fab fa-github"></i></a></li>
+            <li><a target="_blanket" href="https://www.facebook.com/profile.php?id=100004063667799"><i class="fab fa-facebook-f"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

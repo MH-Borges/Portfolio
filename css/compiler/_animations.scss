@@ -1,0 +1,15 @@
+/***Botão Up***/
+#btn_UP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+    text-decoration: none;
+    z-index:998;
+  }
+  #btn_UP img{
+    width: 4vw;
+  }
+  /***Botão Up***/

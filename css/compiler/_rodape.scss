@@ -1,0 +1,58 @@
+.rodape{
+    height: 18vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid $White-dark;
+    ul{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        li{
+            list-style: none;
+            position: relative;
+            padding: 5px 20px;
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                
+                .fab{
+                    font-size: 4em;
+                    color: #9c9c9c;
+                }
+                .fa-linkedin-in{
+                    transition: 0.2s ease-in-out;
+                    &:hover{
+                        color: #2867B2; 
+                        
+                    }
+                }
+                .fa-instagram{
+                    transition: 0.2s ease-in-out;
+                    &:hover{
+                        background: -webkit-linear-gradient(#fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+                .fa-github{
+                    transition: 0.2s ease-in-out;
+                    &:hover{
+                        color: #0f0f0f;
+                    }
+                }
+                .fa-facebook-f{
+                    transition: 0.2s ease-in-out;
+                    &:hover{
+                        color: 	#3b5998; 
+                    }
+                }
+            }
+            img{
+                width: 12vw;
+            }
+        }
+    }
+}

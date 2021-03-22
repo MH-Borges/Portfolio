@@ -1,0 +1,34 @@
+#Projetos{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 50px 0px;
+    background: radial-gradient(67.46% 67.08% at 50% 44.44%, #FFF7F7 0%, #DBD5D5 100%);
+}
+.imgsProjeto{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+.imgsPr{
+    width: 30vw;
+    height: auto;
+    margin:0 5vw;
+    border-radius: 25px;
+    box-shadow: 0px 75px 72px rgba(35, 35, 35, 0.22), 0px 35.454px 40.1971px rgba(35, 35, 35, 0.145149), 0px 18.275px 30.3005px rgba(35, 35, 35, 0.107877), 0px 9.26277px 23.8332px rgba(35, 35, 35, 0.0791732), 0px 4.17755px 17.4243px rgba(35, 35, 35, 0.0538441), 0px 1.35846px 9.72034px rgba(35, 35, 35, 0.0288772);
+}
+#Boxing{
+    width: 30vw;
+    left: 26vw;
+    position: absolute;
+    top: 20vw;
+}
+#img_princ{
+    width: 33vw;
+}
+.boxBT{
+    margin-top: 35vh;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,259 @@
+#SobreMim{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding-top: 35px;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        background: $Black-dark;
+        height: 35vh;
+        bottom: 0;
+    }
+    
+}
+.FotoSobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    height: 70vh;
+
+    img{
+        width: 23vw;
+        border-radius: 50px;
+        margin: 30px;
+    }
+}
+.textSobre{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 70vh;
+    padding-bottom: 30px;
+    h2{
+        font-family: "Next-Heavy";
+        color: $White;
+        font-size:4.5vw;
+        text-shadow: 5px 5px 4px rgba(15, 15, 15, 0.65);
+        margin-top: 1vw;
+        margin-left: 3vw;
+
+        &::before{
+            content: '';
+            position: absolute;
+            background: $Red-light;
+            width: 1.5vw;
+            height: 10vh;
+            border-radius: 10px;
+            top: 1.5vw;
+            left:1.5vw;
+        }
+    }
+    .textblock{
+        font-family: "Lexend Deca";
+        color: $White;
+        font-size: 1.5vw;
+        max-width: 800px;
+        margin: 1vw 15px 10px 3vw;
+        line-height: 32px;
+        #zero{margin-bottom: 25px;}
+        span{margin-left: 25px;}
+    }
+}
+/*INFOS*/
+.Infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 35vh;
+}
+.cont_info{
+    color: $White;
+    font-family: "Next-Regular";
+    font-size: 1vw;
+    line-height: 5vh;
+    padding: 10px;
+    
+    span{
+        font-size: 1.2vw;
+        color: $Red;
+        font-family: "Next-Heavy";
+        margin-right: 5px;
+    }
+}
+
+/*SKILLS*/
+/*carrosel config*/
+.Skills, .carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh !important;
+}
+.carousel-item{
+    margin-right: -95%;
+}
+.carousel-item.active{
+   display: flex;
+   position: relative;
+   justify-content: center;
+   align-items: center;
+}
+.carousel-control-next{
+    position: absolute !important;
+    width: 4vw;
+    height: 10vh;
+    top: 35%;    
+    i{
+        font-size: 3vw;
+        opacity: 0.5;
+    }
+}
+/*carrosel config*/
+.skill_Carousel{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    height: 35vh;
+}
+.Skillcard{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+#radial_tamanho{
+    max-width: 8.5vw;
+}
+.radial-progress {
+    display: flex;
+    position: relative;
+    max-width: 11vw;
+    margin: 0px 40px;
+    transform: rotate(-90deg);
+    width: 100%;
+    
+    circle{
+        fill: rgba(0,0,0,0);
+        stroke: $Red;
+        stroke-dashoffset: 219.91148575129; 
+        stroke-width: 6;
+    }
+    .incomplete { opacity: 0.25; }
+    .complete { stroke-dasharray: 219.91148575129; } 
+    
+}
+.IMG_Perct{
+    position: absolute;
+    width: 5vw;
+    height: 15.5vh;
+    top: 1.7vw;
+}
+#img_Porc_T{
+    top: 1.3vw;
+    width: 4vw;
+    height: 12vh; 
+}
+.textPorcent{
+    position: relative;
+    font-family: "Next-Heavy";
+    color: $White;
+    font-size: 2.2vw;
+    text-align: center;
+}
+#text_taman{
+    font-size: 2vw;
+}
+/*SKILL INLINE*/
+
+.skill_Inline{
+    position: relative;
+    h3{
+        color: $White;
+        font-family: "Next-Bold";
+        font-size: 1.2vw;
+    }
+    h4{
+        color: $White;
+        font-family: "Next-Bold";
+        font-size: 1.2vw;
+        padding-bottom: 0.5vw;
+    }
+    .progress{
+        margin: 1.8vw 0 10px 0;
+        background-color: $White-dark;
+        border-radius: 2vw;
+        height:0.8vw;
+        span, p{
+            position: absolute;
+            font-family: "Lexend Deca";
+            font-weight: bold;
+            font-size: 1vw;
+            top: 2.6vw;
+            color: $White;
+        }
+        #skill_two{
+            top: 5.1vw;
+        }
+        #skill_three{
+            top: 7.8vw;
+        }
+        #skill_four{
+            top: 10.3vw;
+        }
+        #skill_five{
+            top: 13vw;
+        }
+        .progress-bar{
+            border-top-right-radius: 2vw;
+            border-bottom-right-radius: 2vw;
+            background: linear-gradient(270deg, #C90202 0%, #EA1A1A 49.48%, #FF3D3D 100%);
+        }
+    }
+}
+
+
+
+
+/* Tablet Device = 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .FotoSobre{
+        height: auto;
+        img{
+            width: 50vw;
+            border-radius: 50px;
+            margin: 50px 150px;
+        }
+    }
+    .textSobre{
+        justify-content: center;
+        text-align: center;
+        height: auto;
+        h2{
+            font-size:6vw;
+            margin-top: 0px;
+    
+            &::before{
+                content: '';
+                display:none;  
+            }
+        }
+        .textblock{
+            text-align: left;
+            font-size: 3vw;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            #zero{margin-bottom: 25px;}
+            span{margin-left: 25px;}
+        }
+    }
+}

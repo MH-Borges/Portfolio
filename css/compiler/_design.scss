@@ -1,0 +1,135 @@
+#design{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.carousel_design{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    .Carousel_Block{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        height: 40vh;
+    }
+}
+
+.slick-track{
+  display: flex;
+  align-items: center;
+}
+.slick-slide{
+    width:15vw;
+    margin: 2.5vw;
+    background: $Black-light;
+    transition: 0.5s;
+}
+.slick-current{
+  width: 20vw;
+}
+.box{
+    position:relative;
+  &::before{
+    content:'';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    filter: blur(10px);
+    background: linear-gradient(235deg, #e00b0b,rgb(15, 11, 11),#0be2ff);
+  }
+  &::after{
+    content:'';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -2;
+    background: linear-gradient(235deg, #e00b0b,rgb(15, 11, 11),#0be2ff);
+    }
+    img{
+        padding: 0.6vw;
+        width: 100%;
+        height: 100%;
+    }
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 50px;
+}
+.slick-prev {
+  left: -45px;
+}
+
+.lbox{
+	display:none;
+	visibility: hidden;
+	opacity: 0;
+}
+.lbox:target{
+	z-index:999;
+	display:flex;
+  justify-content: center;
+  align-items: center;
+	opacity: 1;
+	visibility:visible;
+	width: 100vw;
+	height:100vh;
+	top:0;
+	left:0;
+	background:rgba(10,10,10,.7);
+  position:fixed;
+}
+.box_img{
+  width: 32vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  img{
+    max-height: 80vh;
+    padding: 10px;
+    border-radius: 1vw;
+    border: 5px solid $Blue;
+    box-shadow: 0px 5px 20px $Blue;
+  }
+  a{
+	position:absolute;
+  cursor: pointer;
+  font-size: 4vw;
+  color: $Red;
+  text-shadow: 0px 5px 20px $Red;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: $Black-light;
+    &:hover{
+      color: $Red-dark;
+    }
+  }
+  h2{
+    color: $White;
+    font-family: "Lexend Deca";
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.7vw;
+  }
+}
+#left{
+  left: -5vw;
+}
+#right{
+  right: -5vw;
+}
+#close{
+  top: -1.8vw;
+  right: -3.8vw;
+}

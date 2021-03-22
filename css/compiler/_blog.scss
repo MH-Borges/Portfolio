@@ -1,0 +1,162 @@
+#Blog{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 50px 0px;
+    background-color: $Black-light;
+}
+.cardsBox{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    
+}
+.cardBlog{
+    width: 20vw;
+    height: 55vh;
+    padding: 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: $White;
+    flex-direction: column;
+    border-radius: 1.5vw;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.32), 0px 23.3955px 90.0013px rgba(0, 0, 0, 0.261249);
+    transition: 0.3s ease-in-out;
+    &:hover{
+        transform: translateY(-25px);
+    }
+    img{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 50%;    
+        border-radius: 1.5vw;
+
+    }
+    h3{
+        font-family: "Next-Heavy";
+        font-size: 1vw;
+        text-align: center;
+        padding-top: 0.8vw;
+        margin-top: 52%;
+        span{
+            font-family: "Next-Regular";
+            font-size: 0.9vw;
+        }
+    }
+    article{
+        text-align: center;
+        font-family: "Lexend Deca";
+        font-size: 0.7vw;
+        padding: 0.5vw 1.5vw;
+    }
+    button{
+        position: absolute;
+        bottom: 1vw;
+        right: 1.5vw;
+        font-family: "Next-Bold";
+        text-transform: uppercase;
+        font-size: 0.7vw;
+        color: $White;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        background-color: $Red-light;
+        padding: 0.3vw 1.3vw;
+        border-radius: 0.5vw;
+        border: none;
+        transition: 0.2s ease-in;
+        &:hover{
+            background-color: $Black-light;
+        }
+    } 
+}
+#Bt_Blog{
+    margin-top: 2vw;
+    height: 10vh;
+    button{
+        position: absolute;
+        right: 20px;
+        font-size: 2.4vw;
+        padding: 0.6vw 1.5vw;
+    }
+}
+#Bt_Blog.activeBG{
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    width: 100px;
+    button{
+        right: 0px;
+        font-size: 1.8vw;
+        padding: 0.6vw 1.5vw;
+        i{
+            transform:rotate(180deg);
+            text-shadow: 0px -5px 4px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+/* collapsed block*/
+.cardsBoxCP{
+    display: flex;
+        position: relative;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+}
+.cardBlogCP{
+    height: 40vh;
+    margin: 1.5vw 2vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: $White;
+    flex-direction: column;
+    border-radius: 1.5vw;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.32), 0px 23.3955px 90.0013px rgba(0, 0, 0, 0.261249);
+    transition: 0.3s ease-in-out;
+    &:hover{
+        transform: translateY(-10px);
+    }
+    a{
+        text-decoration: none;
+        color: $Black;
+        img{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 70%;    
+            border-radius: 1.5vw;
+            left: 0;
+        }
+        h3{
+            position: absolute;
+            font-family: "Next-Heavy";
+            font-size: 1vw;
+            text-align: center;
+            width: 100%;
+            left: 0;
+            bottom: 8%;
+            span{
+                font-family: "Next-Regular";
+                font-size: 0.9vw;
+            }
+        }
+    }
+}
+#Bt_BlogCP{
+    position: absolute;
+    bottom: -20px;
+    button{
+        left: 0px;
+        position: absolute;
+        font-size: 1.4vw;
+        padding: 0.8vw 1.8vw;
+    }
+}
+/* collapsed block*/

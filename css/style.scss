@@ -1,0 +1,74 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+}
+@import 'compiler/colors-fonts';
+@import 'compiler/animations';
+
+::-webkit-scrollbar {
+    width: 15px;
+    background: $White;
+}
+::-webkit-scrollbar-thumb {
+    background: $Black-light;
+}
+body{
+    width: 100%;
+    background-color: $Black;
+}
+img,svg{
+    display: block;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: $White;
+}
+.title{
+    padding-bottom: 30px;
+    text-align: center;
+    h2{
+        color: $White;
+        font-family: "Next-Heavy";
+        font-size: 2.8vw;
+    }
+}
+#color{
+    h2{
+    color: $Black;
+    }
+}
+.botão{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: "Next-Heavy";
+    button{
+        font-size: 1.6vw;
+        color: $White;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        background-color: $Black-light;
+        padding: 0.8vw 1.8vw;
+        border-radius: 1.2vw;
+        border: none;
+        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.26), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.186902), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.154988), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.13), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.105012), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0730979);
+        transition: 0.2s ease-in;
+        &:hover{
+            background-color: $Red-light;
+            transform: translateY(-10px);
+            box-shadow: 0px 20px 70px rgba(255, 61, 61, 0.3), 0px 38.0104px 69.7686px rgba(255, 61, 61, 0.204932), 0px 25.4156px 37.3016px rgba(255, 61, 61, 0.167579), 0px 17.6705px 20.911px rgba(255, 61, 61, 0.136384), 0px 11.6704px 11.1057px rgba(255, 61, 61, 0.101283), 0px 6.05533px 4.62132px rgba(255, 61, 61, 0.0571425);
+        }
+    }
+}
+@import 'compiler/menu';
+@import 'compiler/banner';
+@import 'compiler/sobreMim';
+@import 'compiler/projetos';
+@import 'compiler/blog';
+@import 'compiler/design';
+@import 'compiler/contato';
+@import 'compiler/rodape';
+@import 'compiler/projetos_PAGE';
+@import 'compiler/portfolio_PAGE';
+
