@@ -93,7 +93,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35vh !important;
+    height: 35vh;
 }
 .carousel-item{
     margin-right: -95%;
@@ -105,7 +105,7 @@
    align-items: center;
 }
 .carousel-control-next{
-    position: absolute !important;
+    position: absolute;
     width: 4vw;
     height: 10vh;
     top: 35%;    
@@ -222,38 +222,108 @@
 
 
 /* Tablet Device = 768px */
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    
-    .FotoSobre{
-        height: auto;
-        img{
-            width: 50vw;
-            border-radius: 50px;
-            margin: 50px 150px;
+@media only screen and (max-width: 991px) { 
+    #SobreMim{
+        padding-top: 0px;
+        &::before{
+            content: '';
+            position: absolute;
+            background: $Black-dark;
+            height: 85vh;
+            bottom: 0;
         }
     }
+    .FotoSobre{
+        padding-bottom: 0px;
+        height: auto;
+        img{width: 75vw;}
+    }
     .textSobre{
-        justify-content: center;
-        text-align: center;
+        text-align: none;
         height: auto;
         h2{
-            font-size:6vw;
-            margin-top: 0px;
-    
-            &::before{
-                content: '';
-                display:none;  
-            }
+            text-align: center;
+            font-size: 8.5vw;
+            margin-top: 6vw;
+            &::before{display: none;}
         }
         .textblock{
             text-align: left;
-            font-size: 3vw;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
+            font-size: 4.6vw;
+            max-width: auto;
+            margin: 5vw 25px 0px 25px;
+            line-height: auto;
             #zero{margin-bottom: 25px;}
-            span{margin-left: 25px;}
+            span{margin-left: 0px;}
+        }
+    }
+    /*INFOS*/
+    .Infos{
+        height: auto;
+        padding: 20px;
+        padding-top: 0px;
+    }
+    .cont_info{
+        font-size: 3.8vw;
+        line-height: auto;
+        padding: 0px;
+        span{font-size: 4vw;}
+    }
+    /*SKILLS*/
+    
+    /*carrosel config*/
+    .Skills, .carousel{height: auto;}
+    .carousel-item.active{flex-wrap: wrap;}
+    .carousel-inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .carousel-control-next{
+        position: relative;
+        padding: 10px 30px;
+        margin-left: 90%;
+        i{font-size: 12vw;opacity: 0.5;}
+    }
+    /*carrosel config*/
+    .skill_Carousel{flex-direction: column; height: 85vh;}
+    .Skillcard{padding: 5px 0;}
+    #radial_tamanho{max-width: 30vw;}
+    .radial-progress{max-width: 38vw; margin: 0 5px;}
+    .IMG_Perct{
+        position: absolute;
+        width: 15vw;
+        height: 13vh;
+        top: 8.5vw;
+    }
+    #img_Porc_T{
+        top: 7vw;
+        width: 11vw;
+        height: 10vh; 
+    }
+    .textPorcent{font-size: 7vw;}
+    #text_taman{font-size: 6vw;}
+    /*SKILL INLINE*/
+    .skill_Inline{
+        h3, h4{
+            text-align: center;
+            font-size: 7vw;
+            padding: 0;
+        }
+        .progress{
+            margin: 8vw 0 3vw 0;
+            border-radius: 5vw;
+            height:3.5vw;
+            span, p{font-size: 4vw;top: 14vw;}
+            #skill_two{top: 26vw;}
+            #skill_three{top: 37vw;}
+            #skill_four{top: 49vw;}
+            #skill_five{top: 60vw;}
+            .progress-bar{
+                border-top-right-radius: 2vw;
+                border-bottom-right-radius: 2vw;
+                background: linear-gradient(270deg, #C90202 0%, #EA1A1A 49.48%, #FF3D3D 100%);
+            }
         }
     }
 }

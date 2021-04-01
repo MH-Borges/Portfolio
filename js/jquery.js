@@ -5,15 +5,15 @@ $(window).scroll(function(event){
     const efeito = window.pageYOffset;
     const posicao = 180;
     if (efeito > posicao){
-        $(".head").addClass('active');
-        $(".logo").addClass('active');
-        $(".logo2").addClass('active');
-        $(".BTmenu").addClass('active');
+        $(".head").addClass('actived');
+        $(".logo").addClass('actived');
+        $(".logo2").addClass('actived');
+        $(".BTmenu").addClass('actived');
     }else{
-        $(".head").removeClass('active');
-        $(".logo").removeClass('active');
-        $(".logo2").removeClass('active');
-        $(".BTmenu").removeClass('active');
+        $(".head").removeClass('actived');
+        $(".logo").removeClass('actived');
+        $(".logo2").removeClass('actived');
+        $(".BTmenu").removeClass('actived');
     }
 });
 /*Menu effeito*/
@@ -21,8 +21,8 @@ $(window).scroll(function(event){
 /*Menu escondido effeito*/
 $(document).ready(function(){
     $('.menuHidden').click(function(){
-        $('.nav-menu').toggleClass('active')
-        $('.head').toggleClass('active')
+        $('.nav-menu').toggleClass('act')
+        $('.head').toggleClass('act')
     });
 });
 /*Menu escondido effeito*/

@@ -75,7 +75,7 @@
     background: none;
     padding: 10px 0;  
 }
-.head.active{
+.head.actived{
     border-bottom:none;
     box-shadow: 0 0 20px $White;
     background: $Black;
@@ -83,16 +83,17 @@
 }
 .navbar{
     margin: 0 auto;
+    padding: 10px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .nav-logo{
     display: flex;
-    padding: 5px 15px;
-    .logo.active{display: none;}
+    padding: 5px 10px;
+    .logo.actived{display: none;}
     .logo2{display: none;}
-    .logo2.active{display: block;}
+    .logo2.actived{display: block;}
 }
 .nav-menu{
     display: flex;
@@ -114,55 +115,59 @@
         font-size: 1.1em;
         transition: .6s;
         text-decoration: none;}
-      .BTmenu.active{	font-size: 1em;}
+      .BTmenu.actived{	font-size: 1em;}
   }
 }
 .menuHidden{
-  display: none;
+  display: flex;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  color: $White;
 }
 
 
 /* Tablet Device = 768px */
 
 @media only screen and (max-width: 991px) {
-  .head.active{
-    padding: 10px 0px;
+  .head{
+    width: 100%;
+    box-shadow: 0 0 3px $White;
+    position: fixed;
+    z-index: 99;
+    transition: 0.5s ease;
+    background: none;
+    padding: 10px 0;
   }
+  .head.act{
+    background: $Black;
+}
   .nav-logo{
     display: flex;
-    width: 170px;
-    margin-left: 20px;
-
+    width: 140px;
+    padding: 5px;
+    margin-left: 15px;
   }
   .nav-menu{
-    display: absolute;
-    top:0;
-    margin-top: -180px;
-    transition: 0.3s ease-in-out;
-  }
-  .nav-menu.active{
     display: flex;
     position: absolute;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
     width: 100%;
-    left: 0px;
-    top: 258px;
+    top: -160px;
+    transition: 0.3s ease-in-out;
     background-color: $Black;
-    border-bottom-right-radius:25px;
-    border-bottom-left-radius:25px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     li{margin:10px 10px;}
   }
+  .nav-menu.act{
+    top:80px;
+  }
   .menuHidden{
-    display: flex;
-    position: absolute;
-    right: 20px;
-    color: $White;
+    top: -5px;
+    right: 15px;
     font-size: 42px;
-    padding: 15px;
+    padding: 20px;
     transition: .6s;
-
   }
 }
 
@@ -170,8 +175,7 @@
 
 @media only screen and (max-width: 479px) {
   
-  .nav-menu{margin-top: -220px;}
-  .nav-menu.active{top: 300px;}
+  
 }
 
 

@@ -59,8 +59,11 @@
 /* Tablet Device = 768px */
 
 @media only screen and (max-width: 991px) {
-  .container{
-    justify-content: center;
+  .banner{
+    .container{
+      justify-content: center;
+      margin-top: 0px;
+    }
   }
   .blockBanner{
     text-align: center;
