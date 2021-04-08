@@ -387,25 +387,25 @@
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){
     #Blog{
-        padding: 4vw 0px;
+        padding: 8vw 0 12vw 0;
         .container{
             .cardsBox{
                 padding: 1vw 0;
                 .cardBlog{
                     width: 90%;
-                    height: 40vw;
+                    height: 35vw;
                     flex-direction: row;
                     justify-content: flex-start;
                     padding:0;
-                    margin: 3vw 0;
-                    border-radius: 3vw;
+                    margin: 5vw 0;
+                    border-radius: 4vw;
                     &:hover{
                         transform: translateY(0);
                     }
                     img{
                         width: 50%;
                         height: 100%;    
-                        border-radius: 3vw 0 25vw 3vw;
+                        border-radius: 4vw 0 25vw 4vw;
                     }
                     h3{
                         position: absolute;
@@ -418,16 +418,16 @@
                     }
                     article{
                         width: 50%;
-                        margin-top: 5%;
+                        margin-top: 4%;
                         margin-left: 50%;
-                        font-size: 1.9vw;
-                        padding: 1vw 3vw 2vw 3vw;
+                        font-size: 1.8vw;
+                        padding: 1.5vw;
                     }
                     button{
-                        bottom: 2vw;
-                        right: 2vw;
-                        font-size: 2.7vw;
-                        padding: 0.8vw 1.8vw;
+                        bottom: 1.8vw;
+                        right: 1.8vw;
+                        font-size: 2.8vw;
+                        padding: 0.5vw 2vw;
                         border-radius: 1.5vw;
                     } 
                 }
@@ -439,23 +439,24 @@
         margin-top: 2%;
         button{
             top: 0;
-            left: 2vw;
+            left: 73%;
             position: absolute;
-            font-size: 4vw;
-            padding: 1vw 2.5vw;
+            font-size: 4.5vw;
+            padding: 0.5vw 3.5vw;
             border-radius: 2vw;
         }
     }
     #Bt_Blog{
-        width: 50%;
+        width: 30%;
+        right: -20%;
         padding: 2vw 0;
         margin-top: 2%;
         button{
             position: absolute;
             right: 3vw;
-            top: 0%;
-            font-size: 5.5vw;
-            padding:0 2.5vw;
+            top: 7%;
+            font-size: 4.5vw;
+            padding:0 2vw;
             border-radius: 2vw;
         }
     }

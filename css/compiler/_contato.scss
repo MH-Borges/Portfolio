@@ -57,19 +57,19 @@
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){	
     #contato{
-        padding: 4vw 0;
+        padding: 3vw 0 6vw 0;
         .imagens_CT{
             margin-left: 0;
             padding: 16vh 0;
         }
         #CT{
             position: absolute;
-            top: 35%;
+            top: 40%;
             h2{font-size: 4.4vw;}
         }
         #Bt_Contato{
             position: absolute;
-            bottom: 5%;
+            bottom: -3%;
             button{
                 font-size: 3.5vw;
                 padding: 2vw 4vw;

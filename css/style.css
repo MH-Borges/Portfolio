@@ -1013,7 +1013,7 @@ a {
     height: 49%;
   }
   .FotoSobre {
-    padding: 4vw 0;
+    padding: 12vw 0 2vw 0;
   }
   .FotoSobre img {
     width: 65%;
@@ -1058,7 +1058,7 @@ a {
   }
   /*carrosel config*/
   .Skills, .carousel {
-    padding: 3vw 0;
+    padding: 3vw 0 14vw 0;
   }
   .carousel-control-next {
     left: 88%;
@@ -1121,7 +1121,7 @@ a {
   .skill_Carousel .skill_Inline .progress_all span {
     font-size: 3.5vw;
     left: 5vw;
-    top: -1vw;
+    top: -1.2vw;
   }
   .skill_Carousel .skill_Inline .progress_all .progress {
     margin: 3.5vw 4.5vw;
@@ -1234,7 +1234,7 @@ a {
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   #Projetos {
-    padding: 5vw 0px;
+    padding: 8vw 0 12vw 0;
   }
   #Projetos .container .imgsProjeto {
     -webkit-box-orient: vertical;
@@ -1244,18 +1244,19 @@ a {
     margin-top: 1vw;
   }
   #Projetos .container .imgsProjeto .imgsPr {
+    border-radius: 4vw;
     width: 70vw;
-    margin: 3vw 5vw;
+    margin: 4vw 5vw;
   }
   #Projetos .container .Boxing {
     width: 80vw;
   }
   #Projetos .container .Boxing #img_princ {
-    margin-top: 2vw;
+    margin-top: 3vw;
     width: 70vw;
   }
   #Projetos .container .boxBT {
-    margin-top: 5vh;
+    margin-top: 6vw;
   }
 }
 
@@ -1713,14 +1714,14 @@ a {
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   #Blog {
-    padding: 4vw 0px;
+    padding: 8vw 0 12vw 0;
   }
   #Blog .container .cardsBox {
     padding: 1vw 0;
   }
   #Blog .container .cardsBox .cardBlog {
     width: 90%;
-    height: 40vw;
+    height: 35vw;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1729,8 +1730,8 @@ a {
         -ms-flex-pack: start;
             justify-content: flex-start;
     padding: 0;
-    margin: 3vw 0;
-    border-radius: 3vw;
+    margin: 5vw 0;
+    border-radius: 4vw;
   }
   #Blog .container .cardsBox .cardBlog:hover {
     -webkit-transform: translateY(0);
@@ -1739,7 +1740,7 @@ a {
   #Blog .container .cardsBox .cardBlog img {
     width: 50%;
     height: 100%;
-    border-radius: 3vw 0 25vw 3vw;
+    border-radius: 4vw 0 25vw 4vw;
   }
   #Blog .container .cardsBox .cardBlog h3 {
     position: absolute;
@@ -1752,16 +1753,16 @@ a {
   }
   #Blog .container .cardsBox .cardBlog article {
     width: 50%;
-    margin-top: 5%;
+    margin-top: 4%;
     margin-left: 50%;
-    font-size: 1.9vw;
-    padding: 1vw 3vw 2vw 3vw;
+    font-size: 1.8vw;
+    padding: 1.5vw;
   }
   #Blog .container .cardsBox .cardBlog button {
-    bottom: 2vw;
-    right: 2vw;
-    font-size: 2.7vw;
-    padding: 0.8vw 1.8vw;
+    bottom: 1.8vw;
+    right: 1.8vw;
+    font-size: 2.8vw;
+    padding: 0.5vw 2vw;
     border-radius: 1.5vw;
   }
   #Bt_BlogVM {
@@ -1770,23 +1771,24 @@ a {
   }
   #Bt_BlogVM button {
     top: 0;
-    left: 2vw;
+    left: 73%;
     position: absolute;
-    font-size: 4vw;
-    padding: 1vw 2.5vw;
+    font-size: 4.5vw;
+    padding: 0.5vw 3.5vw;
     border-radius: 2vw;
   }
   #Bt_Blog {
-    width: 50%;
+    width: 30%;
+    right: -20%;
     padding: 2vw 0;
     margin-top: 2%;
   }
   #Bt_Blog button {
     position: absolute;
     right: 3vw;
-    top: 0%;
-    font-size: 5.5vw;
-    padding: 0 2.5vw;
+    top: 7%;
+    font-size: 4.5vw;
+    padding: 0 2vw;
     border-radius: 2vw;
   }
   .cardsBoxCP {
@@ -2126,7 +2128,7 @@ a {
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   #design {
-    padding: 5vw 0;
+    padding: 8vw 0 10vw 0;
   }
   .carousel_design {
     padding: 2vw 0;
@@ -2273,7 +2275,7 @@ a {
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   #contato {
-    padding: 4vw 0;
+    padding: 3vw 0 6vw 0;
   }
   #contato .imagens_CT {
     margin-left: 0;
@@ -2281,14 +2283,14 @@ a {
   }
   #contato #CT {
     position: absolute;
-    top: 35%;
+    top: 40%;
   }
   #contato #CT h2 {
     font-size: 4.4vw;
   }
   #contato #Bt_Contato {
     position: absolute;
-    bottom: 5%;
+    bottom: -3%;
   }
   #contato #Bt_Contato button {
     font-size: 3.5vw;

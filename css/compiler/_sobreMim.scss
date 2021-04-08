@@ -290,7 +290,7 @@
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){
     #SobreMim{&::before{height: 49%;}}
-    .FotoSobre{padding: 4vw 0;img{width: 65%;}}
+    .FotoSobre{padding: 12vw 0 2vw 0;img{width: 65%;}}
     .textSobre{
         text-align: center;
         h2{
@@ -322,7 +322,7 @@
         }
     }
     /*carrosel config*/
-    .Skills, .carousel{padding: 3vw 0;}
+    .Skills, .carousel{padding: 3vw 0 14vw 0;}
     .carousel-control-next{
         left: 88%;
         width: auto;
@@ -355,7 +355,7 @@
             h3{padding: 1vw 0;font-size: 6vw;}
             #Idio{padding: 1vw 0;}
             .progress_all{
-                span{font-size:3.5vw;left: 5vw;top: -1vw;}
+                span{font-size:3.5vw;left: 5vw;top: -1.2vw;}
                 .progress{margin:3.5vw 4.5vw;height:2.5vw;}
             }
             

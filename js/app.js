@@ -118,16 +118,21 @@ $('.js-tilt').tilt({
 /*efeito 3D*/
 
 /*parallax contato*/
-document.addEventListener("mousemove" , parallax);
+window.onresize = function() {
+  var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  if (w > 1200) {
+    document.addEventListener("mousemove", parallax);
     function parallax(e){
-        this.querySelectorAll('.layer').forEach(layer => {
-            const speed = layer.getAttribute('data-speed')
-
-            const x = (window.innerWidth - e.pageX*speed)/100
-            const y = (window.innerHeight - e.pageY*speed)/100
-
-            layer.style.transform = `translateX(${x}px) translateY(${y}px)`
-        })
+      this.querySelectorAll('.layer').forEach(layer => {
+          const speed = layer.getAttribute('data-speed')
+    
+          const x = (window.innerWidth - e.pageX*speed)/100
+          const y = (window.innerHeight - e.pageY*speed)/100
+    
+          layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+      })
     }
+  }
+};
 /*contato*/
 
