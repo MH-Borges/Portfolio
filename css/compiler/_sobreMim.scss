@@ -3,63 +3,56 @@
     flex-direction: column;
     position: relative;
     width: 100%;
-    padding-top: 35px;
     &::before{
         content: '';
         position: absolute;
         width: 100%;
         background: $Black-dark;
-        height: 35vh;
+        height: 33%;
         bottom: 0;
     }
-    
 }
 .FotoSobre{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 30px;
-    height: 70vh;
-
+    padding: 5vh 0;
     img{
-        width: 23vw;
+        width: 85%;
         border-radius: 50px;
-        margin: 30px;
     }
 }
 .textSobre{
     display: flex;
     flex-direction: column;
     text-align: left;
-    height: 70vh;
-    padding-bottom: 30px;
     h2{
+        display: flex;
+        position: relative;
+        align-items: center;
         font-family: "Next-Heavy";
         color: $White;
-        font-size:4.5vw;
+        font-size:4.4vw;
         text-shadow: 5px 5px 4px rgba(15, 15, 15, 0.65);
-        margin-top: 1vw;
-        margin-left: 3vw;
-
+        margin: 4vw 0 0 2vw;
         &::before{
             content: '';
             position: absolute;
             background: $Red-light;
-            width: 1.5vw;
-            height: 10vh;
+            width: 1.3vw;
+            height: 90%;
             border-radius: 10px;
-            top: 1.5vw;
-            left:1.5vw;
+            left: -2vw;
         }
     }
     .textblock{
         font-family: "Lexend Deca";
         color: $White;
-        font-size: 1.5vw;
-        max-width: 800px;
-        margin: 1vw 15px 10px 3vw;
-        line-height: 32px;
-        #zero{margin-bottom: 25px;}
+        font-size: 1.4vw;
+        margin:1vw 8vw 0 1vw;
+        padding: 1vw;
+        line-height: 1.7vw;
+        #zero{margin-bottom: 1.5vw;}
         span{margin-left: 25px;}
     }
 }
@@ -70,260 +63,302 @@
     justify-content: center;
     align-items: center;
     text-align: left;
-    height: 35vh;
-}
-.cont_info{
-    color: $White;
-    font-family: "Next-Regular";
-    font-size: 1vw;
-    line-height: 5vh;
-    padding: 10px;
-    
-    span{
-        font-size: 1.2vw;
-        color: $Red;
-        font-family: "Next-Heavy";
-        margin-right: 5px;
+    padding: 6vh 0;
+    .cont_info{
+        color: $White;
+        font-family: "Next-Regular";
+        font-size: 1vw;
+        line-height: 5vh;
+        span{
+            font-size: 1.2vw;
+            color: $Red;
+            font-family: "Next-Heavy";
+            margin-right: 5px;
+        }
     }
 }
-
-/*SKILLS*/
 /*carrosel config*/
 .Skills, .carousel{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    height: 35vh;
 }
-.carousel-item{
-    margin-right: -95%;
-}
-.carousel-item.active{
-   display: flex;
-   position: relative;
-   justify-content: center;
-   align-items: center;
+.carousel-inner{
+    display: flex;
+    position: relative;
+    align-items: center;
 }
 .carousel-control-next{
-    position: absolute;
-    width: 4vw;
-    height: 10vh;
-    top: 35%;    
+    position: relative;
+    left: 94%;
+    width: 4vw;   
     i{
         font-size: 3vw;
         opacity: 0.5;
     }
 }
-/*carrosel config*/
+/*Skills*/
 .skill_Carousel{
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: space-around;
-    height: 35vh;
-}
-.Skillcard{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-}
-#radial_tamanho{
-    max-width: 8.5vw;
-}
-.radial-progress {
-    display: flex;
-    position: relative;
-    max-width: 11vw;
-    margin: 0px 40px;
-    transform: rotate(-90deg);
-    width: 100%;
-    
-    circle{
-        fill: rgba(0,0,0,0);
-        stroke: $Red;
-        stroke-dashoffset: 219.91148575129; 
-        stroke-width: 6;
-    }
-    .incomplete { opacity: 0.25; }
-    .complete { stroke-dasharray: 219.91148575129; } 
-    
-}
-.IMG_Perct{
-    position: absolute;
-    width: 5vw;
-    height: 15.5vh;
-    top: 1.7vw;
-}
-#img_Porc_T{
-    top: 1.3vw;
-    width: 4vw;
-    height: 12vh; 
-}
-.textPorcent{
-    position: relative;
-    font-family: "Next-Heavy";
-    color: $White;
-    font-size: 2.2vw;
-    text-align: center;
-}
-#text_taman{
-    font-size: 2vw;
-}
-/*SKILL INLINE*/
-
-.skill_Inline{
-    position: relative;
-    h3{
-        color: $White;
-        font-family: "Next-Bold";
-        font-size: 1.2vw;
-    }
-    h4{
-        color: $White;
-        font-family: "Next-Bold";
-        font-size: 1.2vw;
-        padding-bottom: 0.5vw;
-    }
-    .progress{
-        margin: 1.8vw 0 10px 0;
-        background-color: $White-dark;
-        border-radius: 2vw;
-        height:0.8vw;
-        span, p{
-            position: absolute;
-            font-family: "Lexend Deca";
-            font-weight: bold;
-            font-size: 1vw;
-            top: 2.6vw;
+    justify-content: center;
+    /*Skill Radial*/
+    .Skillcard{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        .radial-progress {
+            display: flex;
+            position: relative;
+            max-width: 11vw;
+            margin: 0px 3vw;
+            transform: rotate(-90deg);
+            width: 100%;
+            
+            circle{
+                fill: rgba(0,0,0,0);
+                stroke: $Red;
+                stroke-dashoffset: 219.91148575129; 
+                stroke-width: 6;
+            }
+            .incomplete { opacity: 0.25;}
+            .complete { stroke-dasharray: 219.91148575129; } 
+            
+        }
+        #radial_tamanho{
+            max-width: 8.5vw;
+        }
+        .textPorcent{
+            position: relative;
+            font-family: "Next-Heavy";
             color: $White;
+            font-size: 2.2vw;
+            text-align: center;
         }
-        #skill_two{
-            top: 5.1vw;
+        #text_taman{
+            font-size: 2vw;
         }
-        #skill_three{
-            top: 7.8vw;
+        .IMG_Perct{
+            position: absolute;
+            width: 5vw;
+            top: 1.8vw;
         }
-        #skill_four{
-            top: 10.3vw;
+        #img_Porc_T{
+            top: 1.4vw;
+            width: 3.8vw;
         }
-        #skill_five{
-            top: 13vw;
+    }
+    /*SKILL INLINE*/
+    .skill_Inline{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        height: 100%;
+        width: 45%;
+        h3{
+            text-align: center;
+            padding: 0.5vw 0;
+            color: $White;
+            font-family: "Next-Bold";
+            font-size: 1.5vw;
         }
-        .progress-bar{
-            border-top-right-radius: 2vw;
-            border-bottom-right-radius: 2vw;
-            background: linear-gradient(270deg, #C90202 0%, #EA1A1A 49.48%, #FF3D3D 100%);
+        #Idio{
+            padding: 0.3vw 0 0;  
         }
+        .progress_all{
+            position: relative;
+            span{
+                position:absolute;
+                font-family: "Lexend Deca";
+                font-weight: bold;
+                font-size: 1.2vw;
+                color: $White;
+                left: 1vw;
+                top: -0.7vw;
+                z-index: 2;
+            }
+            .progress{
+                display: flex;
+                position: relative;
+                margin: 0.8vw 2vw 1vw 1vw;
+                background-color: $White-dark;
+                border-radius: 2vw;
+                height:0.8vw;
+                .progress-bar{
+                    border-top-right-radius: 2vw;
+                    border-bottom-right-radius: 2vw;
+                    background: linear-gradient(270deg, #C90202 0%, #EA1A1A 49.48%, #FF3D3D 100%);
+                }
+            }
+        }
+        
     }
 }
 
-
-
-
-/* Tablet Device = 768px */
-@media only screen and (max-width: 991px) { 
-    #SobreMim{
-        padding-top: 0px;
-        &::before{
-            content: '';
-            position: absolute;
-            background: $Black-dark;
-            height: 85vh;
-            bottom: 0;
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {     
+    .FotoSobre{padding: 5vh 0;}
+    .textSobre{
+        h2{font-size: 4.5vw;margin: 4vw 0 0 2vw;}
+        .textblock{
+            font-size: 1.5vw;
+            margin:1vw 3vw 0 1vw;
+            line-height: 2.5vh;
+            #zero{margin-bottom: 2vh;}
+            span{margin-left: 25px;}
         }
     }
+    .Infos{padding: 4vh 0;
+        .cont_info{line-height: 3.5vh;}
+    }
+    .skill_Carousel{
+        .Skillcard{
+            .radial-progress{
+                margin: 0 4vw;}}}    
+}
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #SobreMim{&::before{height: 35.5%;}}
     .FotoSobre{
-        padding-bottom: 0px;
-        height: auto;
-        img{width: 75vw;}
+        padding: 3vh 0;
+        img{width: 60%;}
     }
     .textSobre{
-        text-align: none;
-        height: auto;
+        text-align: center;
         h2{
-            text-align: center;
-            font-size: 8.5vw;
-            margin-top: 6vw;
+            font-size:7.5vw;
+            margin: 1.5vh 0 0 0;
+            justify-content: center;
             &::before{display: none;}
         }
         .textblock{
-            text-align: left;
-            font-size: 4.6vw;
-            max-width: auto;
-            margin: 5vw 25px 0px 25px;
-            line-height: auto;
-            #zero{margin-bottom: 25px;}
-            span{margin-left: 0px;}
+            font-size: 2.4vw;
+            margin:2vh 1vw 0 1vw;
+            padding: 1vw 4vw 3vw 4vw;
+            line-height: 2.5vw;
+            #zero{margin-bottom: 2vh;}
+            span{margin-left: 0;}
+        }
+    }
+    .Infos{
+        padding: 3.2vh 0;
+        .cont_info{
+            font-size: 2vw;
+            line-height: 4vh;
+            span{font-size: 2.5vw;}
+        }
+    }
+    .Skills, .carousel{
+        padding: 2vh 0;
+    }
+    .carousel-control-next{
+        width: auto;
+        padding: 1vw;
+        left: 93%;
+        i{font-size: 7vw;}}
+    .skill_Carousel{
+        height: 30vw;
+        /*Skill Radial*/
+        .Skillcard{
+            .radial-progress {
+                max-width: 22vw;
+                margin: 0px 4vw;
+                padding: 1vh 0;
+            }
+            #radial_tamanho{max-width: 16vw;}
+            .textPorcent{font-size: 3vw;}
+            #text_taman{font-size: 2.5vw;}
+            .IMG_Perct{width: 10vw;top: 4.5vh;}
+            #img_Porc_T{top: 3.5vw;width: 7.5vw;}
+        }
+        /*SKILL INLINE*/
+        .skill_Inline{
+            h3{padding: 1vh 0;font-size: 2.8vw;}
+            #Idio{padding: 0vh 0 0;}
+            .progress_all{
+                span{font-size: 1.8vw;}
+                .progress{margin: 1.5vw 2vw 1.5vw 1vw;height: 1.7vw;}
+            }
+            
+        }
+    }
+}
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){
+    #SobreMim{&::before{height: 49%;}}
+    .FotoSobre{padding: 4vw 0;img{width: 65%;}}
+    .textSobre{
+        text-align: center;
+        h2{
+            justify-content: center;
+            font-size:8.5vw;
+            text-shadow: 0 1vw 4px rgba(15, 15, 15, 0.7);
+            margin: 4vw 0 2vw 0;
+            &::before{display: none;}
+        }
+        .textblock{
+            font-size: 4vw;
+            margin: 2vw 3vw;
+            padding: 2vw 6vw;
+            line-height: 4.5vw;
+            #zero{margin-bottom: 5vw;}
+            span{margin-left: 0;}
         }
     }
     /*INFOS*/
     .Infos{
-        height: auto;
-        padding: 20px;
-        padding-top: 0px;
-    }
-    .cont_info{
-        font-size: 3.8vw;
-        line-height: auto;
-        padding: 0px;
-        span{font-size: 4vw;}
-    }
-    /*SKILLS*/
-    
-    /*carrosel config*/
-    .Skills, .carousel{height: auto;}
-    .carousel-item.active{flex-wrap: wrap;}
-    .carousel-inner{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .carousel-control-next{
-        position: relative;
-        padding: 10px 30px;
-        margin-left: 90%;
-        i{font-size: 12vw;opacity: 0.5;}
-    }
-    /*carrosel config*/
-    .skill_Carousel{flex-direction: column; height: 85vh;}
-    .Skillcard{padding: 5px 0;}
-    #radial_tamanho{max-width: 30vw;}
-    .radial-progress{max-width: 38vw; margin: 0 5px;}
-    .IMG_Perct{
-        position: absolute;
-        width: 15vw;
-        height: 13vh;
-        top: 8.5vw;
-    }
-    #img_Porc_T{
-        top: 7vw;
-        width: 11vw;
-        height: 10vh; 
-    }
-    .textPorcent{font-size: 7vw;}
-    #text_taman{font-size: 6vw;}
-    /*SKILL INLINE*/
-    .skill_Inline{
-        h3, h4{
-            text-align: center;
-            font-size: 7vw;
-            padding: 0;
-        }
-        .progress{
-            margin: 8vw 0 3vw 0;
-            border-radius: 5vw;
-            height:3.5vw;
-            span, p{font-size: 4vw;top: 14vw;}
-            #skill_two{top: 26vw;}
-            #skill_three{top: 37vw;}
-            #skill_four{top: 49vw;}
-            #skill_five{top: 60vw;}
-            .progress-bar{
-                border-top-right-radius: 2vw;
-                border-bottom-right-radius: 2vw;
-                background: linear-gradient(270deg, #C90202 0%, #EA1A1A 49.48%, #FF3D3D 100%);
+        padding: 2vh 0;
+        .cont_info{
+            font-size: 3.2vw;
+            line-height: 4vh;
+            span{
+                font-size: 3.5vw;
+                margin-right: 5px;
             }
+        }
+    }
+    /*carrosel config*/
+    .Skills, .carousel{padding: 3vw 0;}
+    .carousel-control-next{
+        left: 88%;
+        width: auto;
+        padding: 2vw;
+        i{font-size: 13vw;opacity: 0.5;}
+    }
+    /*Skills*/
+    .skill_Carousel{
+        flex-direction: column;
+        padding: 1vw 0;
+        height: 130vw;
+        /*Skill Radial*/
+        .Skillcard{
+            padding: 2vw 0;
+            margin: 1vw 0;
+            .radial-progress{
+                max-width: 32vw;
+                margin: 0px 3vw;
+                circle{stroke-width: 7;}
+            }
+            #radial_tamanho{max-width: 28vw;}
+            .textPorcent{font-size: 6vw;}
+            #text_taman{font-size: 4.5vw;}
+            .IMG_Perct{width: 15vw;top: 7vw;}
+            #img_Porc_T{width: 13vw;top: 6vw;}
+        }
+        /*SKILL INLINE*/
+        .skill_Inline{
+            width: 80%;
+            h3{padding: 1vw 0;font-size: 6vw;}
+            #Idio{padding: 1vw 0;}
+            .progress_all{
+                span{font-size:3.5vw;left: 5vw;top: -1vw;}
+                .progress{margin:3.5vw 4.5vw;height:2.5vw;}
+            }
+            
         }
     }
 }

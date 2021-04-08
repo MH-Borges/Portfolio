@@ -2,28 +2,79 @@
     display: flex;
     position: relative;
     width: 100%;
-    height: 75vh;
     background-color: $Black-dark;
-}
-.imagens_CT{
-    img{
-        position: absolute;
-        top: 0;
-        right: 0;
+    .imagens_CT{
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 37vh 0;
+        img{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    #CT{
+        position: absolute;
+        top: 38%;
+        h2{
+        color: $White;
+        font-size: 2.5vw;
+        }
+    }
+    #Bt_Contato{
+        position: absolute;
+        bottom: 15%;
     }
 }
 
-#CT{
-    margin-top: 14vw;
-    h2{
-    color: $White;
-    font-size: 2.5vw;
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #contato{
+        .container{
+            max-width: 100%;
+            .imagens_CT{padding: 25vh 0;}
+            #CT{top: 35%;h2{font-size: 3.2vw;}}
+            #Bt_Contato{bottom: 10%;}
+        }
+    }    
+}
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #contato{
+        padding: 3vw 0;
+        .imagens_CT{padding: 20vw 0;}
+        #CT{position: absolute;top: 35%;h2{font-size: 3.4vw;}}
+        #Bt_Contato{bottom: 0;button{font-size: 2.3vw;padding: 1.5vw 3vw;}}
     }
 }
-
-#Bt_Contato{
-    margin-top: 7vw;
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){	
+    #contato{
+        padding: 4vw 0;
+        .imagens_CT{
+            margin-left: 0;
+            padding: 16vh 0;
+        }
+        #CT{
+            position: absolute;
+            top: 35%;
+            h2{font-size: 4.4vw;}
+        }
+        #Bt_Contato{
+            position: absolute;
+            bottom: 5%;
+            button{
+                font-size: 3.5vw;
+                padding: 2vw 4vw;
+                border-radius: 2.5vw;
+            }
+        }
+    }
 }

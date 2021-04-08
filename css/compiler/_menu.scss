@@ -1,69 +1,68 @@
 
 /*pulse glow*/
 @keyframes BTmenu {
-    to {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-    }
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
-  .BTmenu {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  }
-  .BTmenu:hover, .BTmenu:focus, .BTmenu:active {
-    -webkit-animation-name: BTmenu;
-    animation-name: BTmenu;
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-  }
-  /* Rectangle Out */
-  .BTmenu {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-  }
-  .BTmenu:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: $Red-light;
-    box-shadow: 0px 12px 40px rgba(255, 61, 61, 0.3), 0px 38.0104px 69.7686px rgba(255, 61, 61, 0.204932), 0px 25.4156px 37.3016px rgba(255, 61, 61, 0.167579), 0px 17.6705px 20.911px rgba(255, 61, 61, 0.136384), 0px 11.6704px 11.1057px rgba(255, 61, 61, 0.101283), 0px 6.05533px 4.62132px rgba(255, 61, 61, 0.0571425);
-    transform: scale(0);
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    border-radius: 15px;
-    border: 1px solid $Black-light;
-  }
-  .BTmenu:hover, .BTmenu:focus, .BTmenu:active {
-    color: $White;
-  }
-  .BTmenu:hover:before, .BTmenu:focus:before, .BTmenu:active:before {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
+}
+.BTmenu {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.BTmenu:hover, .BTmenu:focus, .BTmenu:active {
+  -webkit-animation-name: BTmenu;
+  animation-name: BTmenu;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+/* Rectangle Out */
+.BTmenu {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.BTmenu:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $Red-light;
+  box-shadow: 0px 12px 40px rgba(255, 61, 61, 0.3), 0px 38.0104px 69.7686px rgba(255, 61, 61, 0.204932), 0px 25.4156px 37.3016px rgba(255, 61, 61, 0.167579), 0px 17.6705px 20.911px rgba(255, 61, 61, 0.136384), 0px 11.6704px 11.1057px rgba(255, 61, 61, 0.101283), 0px 6.05533px 4.62132px rgba(255, 61, 61, 0.0571425);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  border-radius: 15px;
+}
+.BTmenu:hover, .BTmenu:focus, .BTmenu:active {
+  color: $White;
+}
+.BTmenu:hover:before, .BTmenu:focus:before, .BTmenu:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
 /**EFEITOS**/
 
 .head{
@@ -125,10 +124,7 @@
   right: 0;
   color: $White;
 }
-
-
 /* Tablet Device = 768px */
-
 @media only screen and (max-width: 991px) {
   .head{
     width: 100%;
@@ -141,7 +137,7 @@
   }
   .head.act{
     background: $Black;
-}
+  }
   .nav-logo{
     display: flex;
     width: 140px;
@@ -170,12 +166,31 @@
     transition: .6s;
   }
 }
-
-/* Small Device = 320px */
-
-@media only screen and (max-width: 479px) {
-  
-  
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){
+  .nav-menu{
+    top: -170px;
+    ul{
+      li{
+        margin: 1vw 3vw;
+      }
+      .BTmenu{
+        font-size: 1.2em;
+        .BTmenu.actived{
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+  .nav-menu.act{
+    top:75px;
+  }
+  .menuHidden{
+    top: 0;
+    right: 15px;
+    font-size: 9vw;
+    padding: 20px;
+    transition: .6s;
+  }
 }
-
 

@@ -50,11 +50,10 @@ jQuery(window).scroll(function () {
 /*botão effeito*/
 
 
-/*Botão blog effeito*/
+/*Botão blog effeito
 $(window).scroll(function(event){
-
     const efeito = window.pageYOffset;
-    const posicao = innerHeight*4;
+    const posicao = innerHeight*3.6; /* <---multiplicador com 4 se tiver 9 posts 
     if(efeito > posicao){
         $("#Bt_Blog").addClass('activeBG');
     }else{
