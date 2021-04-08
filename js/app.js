@@ -5,17 +5,13 @@ AOS.init();
 
 /*transparencia menu*/
 const scrollM = document.getElementById('#banner');
-
 function corMenu(){
     document.querySelectorAll('.head').style.backgroundColor = "rgb(0, 0, 0)"; 
 }
-/*transparencia menu*/
 
 /*rolamento menu*/ 
 const menuItems = document.querySelectorAll('.navbar a[href^="#"]');
-
 menuItems.forEach(item => {item.addEventListener('click', scrollToIdOnClick);});
-
 function scrollToIdOnClick(event){
     event.preventDefault();
     const to = getScrollTopByHref(event.currentTarget)- 75;
@@ -23,9 +19,7 @@ function scrollToIdOnClick(event){
 }
 
 function getScrollTopByHref(element){const id = element.getAttribute('href');return document.querySelector(id).offsetTop;}
-
 function scrollToPosition(to){smoothScrollTo(0, to);}
-
 function smoothScrollTo(endX, endY, duration) {
     const startX = window.scrollX || window.pageXOffset;
     const startY = window.scrollY || window.pageYOffset;
@@ -50,36 +44,30 @@ const timer = setInterval(() => {
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
 };
-/*rolamento menu*/
 
 /*efeitos skills*/
-$('svg.radial-progress').each(function( index, value ) { 
+$('svg.radial-progress').each(function( index, value ){ 
     $(this).find($('circle.complete')).removeAttr( 'style' );
+});
+$(window).scroll(function(){
+  $('svg.radial-progress').each(function( index, value ) { 
+    if ( 
+        $(window).scrollTop() > $(this).offset().top - ($(window).height() * 0.75) &&
+        $(window).scrollTop() < $(this).offset().top + $(this).height() - ($(window).height() * 0.25)
+    ) {
+        percent = $(value).data('percentage');
+        radius = $(this).find($('circle.complete')).attr('r');
+        circumference = 2 * Math.PI * radius;
+        strokeDashOffset = circumference - ((percent * circumference) / 100);
+        $(this).find($('circle.complete')).animate({'stroke-dashoffset': strokeDashOffset}, 1250);
+    }
   });
+}).trigger('scroll');
 
-  $(window).scroll(function(){
-    $('svg.radial-progress').each(function( index, value ) { 
-      if ( 
-          $(window).scrollTop() > $(this).offset().top - ($(window).height() * 0.75) &&
-          $(window).scrollTop() < $(this).offset().top + $(this).height() - ($(window).height() * 0.25)
-      ) {
-          percent = $(value).data('percentage');
-          radius = $(this).find($('circle.complete')).attr('r');
-          circumference = 2 * Math.PI * radius;
-          strokeDashOffset = circumference - ((percent * circumference) / 100);
-          $(this).find($('circle.complete')).animate({'stroke-dashoffset': strokeDashOffset}, 1250);
-      }
-    });
-  }).trigger('scroll');
-
-  
-  /*carousel skill*/
-  $('.carousel').carousel({
-    interval: 10000000
-  })
-  /*carousel skill*/
-
-/*efeitos skills*/
+/*carousel skill*/
+$('.carousel').carousel({
+  interval: 10000000
+})
 
 /*carousel design*/
 $('.Carousel_Block').slick({
@@ -109,13 +97,11 @@ $('.Carousel_Block').slick({
     }
   ]
 });
-/*carousel design*/
 
 /*efeito 3D*/
 $('.js-tilt').tilt({
   scale: 1
 });
-/*efeito 3D*/
 
 /*parallax contato*/
 window.onresize = function() {
@@ -134,5 +120,4 @@ window.onresize = function() {
     }
   }
 };
-/*contato*/
 

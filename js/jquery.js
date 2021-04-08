@@ -1,4 +1,3 @@
-
 /*Menu effeito*/
 $(window).scroll(function(event){
 
@@ -16,7 +15,6 @@ $(window).scroll(function(event){
         $(".BTmenu").removeClass('actived');
     }
 });
-/*Menu effeito*/
 
 /*Menu escondido effeito*/
 $(document).ready(function(){
@@ -25,8 +23,6 @@ $(document).ready(function(){
         $('.head').toggleClass('act')
     });
 });
-/*Menu escondido effeito*/
-
 /*botão effeito*/
 jQuery(document).ready(function(){
 
@@ -46,19 +42,3 @@ jQuery(window).scroll(function () {
             }
         });
 });
-
-/*botão effeito*/
-
-
-/*Botão blog effeito
-$(window).scroll(function(event){
-    const efeito = window.pageYOffset;
-    const posicao = innerHeight*3.6; /* <---multiplicador com 4 se tiver 9 posts 
-    if(efeito > posicao){
-        $("#Bt_Blog").addClass('activeBG');
-    }else{
-        $("#Bt_Blog").removeClass('activeBG');
-    }
-});
-/*Botão blog effeito*/
-
