@@ -2216,7 +2216,7 @@ a {
 
 #contato #CT {
   position: absolute;
-  top: 38%;
+  top: 40%;
 }
 
 #contato #CT h2 {
@@ -2226,7 +2226,7 @@ a {
 
 #contato #Bt_Contato {
   position: absolute;
-  bottom: 15%;
+  bottom: 8%;
 }
 
 /* Medium Device = 1200px */
@@ -2461,76 +2461,81 @@ a {
   position: relative;
 }
 
-.BlockProjeto {
+#projetos_page .container {
+  padding: 2vw;
+  margin-top: 110px;
+}
+
+#projetos_page .container .blockBase {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 120px;
-  margin-bottom: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.BlockProjeto .cardPr {
-  margin: 6vh;
-  height: 55vh;
+#projetos_page .container .blockBase .cardPr {
+  width: 30vw;
+  height: 25vw;
+  margin: 3vw 4vw;
   background-color: #F7F0F0;
   -webkit-box-shadow: 0px 50px 100px #0F0F0F;
           box-shadow: 0px 50px 100px #0F0F0F;
-  border-radius: 20px;
-  text-decoration: none !important;
-  color: #323232 !important;
+  border-radius: 1.5vw;
+  text-decoration: none;
+  color: #323232;
 }
 
-.BlockProjeto .cardPr .CardBack {
+#projetos_page .container .blockBase .cardPr .CardBack {
   background-color: #CCC6C6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: 35vh;
-  margin: 2.5vh 0 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 2vh;
+  height: 65%;
 }
 
-.BlockProjeto .cardPr .CardBack img {
+#projetos_page .container .blockBase .cardPr .CardBack img {
+  width: 11vw;
   position: absolute;
-  width: 12vw;
-  height: 22vh;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
 
-.BlockProjeto .cardPr .CardBack img:nth-child(1) {
-  left: 12%;
-  top: 30%;
+#projetos_page .container .blockBase .cardPr .CardBack img:nth-child(1) {
+  left: 8%;
+  top: 28%;
   z-index: 10;
 }
 
-.BlockProjeto .cardPr .CardBack img:nth-child(2) {
+#projetos_page .container .blockBase .cardPr .CardBack img:nth-child(2) {
   z-index: 9;
+  top: 17%;
 }
 
-.BlockProjeto .cardPr .CardBack img:nth-child(3) {
-  right: 12%;
-  top: 5%;
+#projetos_page .container .blockBase .cardPr .CardBack img:nth-child(3) {
+  right: 8%;
+  top: 8%;
 }
 
-.BlockProjeto .cardPr .CardBack img:hover {
+#projetos_page .container .blockBase .cardPr .CardBack img:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
 
-.BlockProjeto .cardPr .titlePG {
+#projetos_page .container .blockBase .cardPr .titlePG {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2542,9 +2547,121 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 17vh;
   font-family: "Next-Bold";
-  font-size: 1.8vw;
+  font-size: 1.7vw;
+  margin: 0 2vw;
+  height: 20%;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #projetos_page .container .blockBase .cardPr {
+    width: 35vw;
+    margin: 4vw;
+  }
+  #projetos_page .container .blockBase .cardPr .CardBack {
+    margin: 1.5vw 1.5vw 0.5vw 1.5vw;
+    height: 65%;
+  }
+  #projetos_page .container .blockBase .cardPr .CardBack img {
+    width: 11vw;
+  }
+  #projetos_page .container .blockBase .cardPr .CardBack img:hover {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  #projetos_page .container .blockBase .cardPr .titlePG {
+    font-size: 2vw;
+    height: 25%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #projetos_page .container {
+    margin-top: 100px;
+  }
+  #projetos_page .container .blockBase .cardPr {
+    width: 40vw;
+    height: 35vw;
+    margin: 4vw 2vw;
+    -webkit-box-shadow: 0px 20px 30px #0F0F0F;
+            box-shadow: 0px 20px 30px #0F0F0F;
+    border-radius: 2vw;
+  }
+  #projetos_page .container .blockBase .cardPr .CardBack {
+    margin: 1.5vw;
+  }
+  #projetos_page .container .blockBase .cardPr .CardBack img {
+    width: 16vw;
+  }
+  #projetos_page .container .blockBase .cardPr .CardBack img:nth-child(1) {
+    left: 5%;
+    top: 30%;
+    z-index: 10;
+  }
+  #projetos_page .container .blockBase .cardPr .CardBack img:nth-child(2) {
+    z-index: 9;
+    top: 17%;
+  }
+  #projetos_page .container .blockBase .cardPr .CardBack img:nth-child(3) {
+    right: 5%;
+    top: 5%;
+  }
+  #projetos_page .container .blockBase .cardPr .CardBack img:hover {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  #projetos_page .container .blockBase .cardPr .titlePG {
+    font-size: 2.5vw;
+    margin: 0 2vw;
+    height: 20%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #projetos_page .container {
+    padding: 2vw;
+    margin-top: 100px;
+  }
+  #projetos_page .container .blockBase {
+    margin: 0;
+  }
+  #projetos_page .container .blockBase .cardPr {
+    width: 90vw;
+    height: 80vw;
+    margin: 6vw;
+    -webkit-box-shadow: 0px 30px 50px #0F0F0F;
+            box-shadow: 0px 30px 50px #0F0F0F;
+    border-radius: 3vw;
+  }
+  #projetos_page .container .blockBase .cardPr .CardBack {
+    height: 60%;
+    margin: 2.5vw;
+  }
+  #projetos_page .container .blockBase .cardPr .CardBack img {
+    width: 33vw;
+  }
+  #projetos_page .container .blockBase .cardPr .CardBack img:nth-child(1) {
+    left: 5%;
+    top: 25%;
+    z-index: 10;
+  }
+  #projetos_page .container .blockBase .cardPr .CardBack img:nth-child(2) {
+    z-index: 9;
+    top: 17%;
+  }
+  #projetos_page .container .blockBase .cardPr .CardBack img:nth-child(3) {
+    right: 5%;
+    top: 10%;
+  }
+  #projetos_page .container .blockBase .cardPr .CardBack img:hover {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  #projetos_page .container .blockBase .cardPr .titlePG {
+    height: 30%;
+    font-size: 6vw;
+    margin: 0 3vw;
+  }
 }
 
 #portfolio_page {
@@ -3017,16 +3134,16 @@ a {
 #portfolio_page .container .grid_port h3::before {
   content: '';
   position: absolute;
-  width: 3vw;
-  height: 0.8vh;
+  width: 3.5vw;
+  height: 0.7vh;
   top: 40%;
-  right: -3.2vw;
+  right: -3.8vw;
   background: #fff7f7;
 }
 
 #portfolio_page .container .grid_port h4 {
   top: 32.6vh;
-  left: 28.3vw;
+  left: 28.9vw;
   font-size: 1.7vw;
 }
 
@@ -3043,7 +3160,7 @@ a {
 
 #portfolio_page .container .grid_port h4:nth-child(16) {
   top: 87vh;
-  left: 32vw;
+  left: 33vw;
   font-size: 2.2vw;
 }
 
@@ -3059,9 +3176,9 @@ a {
 }
 
 #portfolio_page .container .grid_port h5 {
-  bottom: 5.5vh;
+  bottom: 5.4vh;
   font-size: 1.1vw;
-  left: 36.5vw;
+  left: 37.5vw;
 }
 
 #portfolio_page .container .grid_port h5::before {
@@ -3113,6 +3230,9 @@ a {
   color: #d43900;
 }
 
+/* Medium Device = 1200px */
+/* Tablet Device = 768px */
+/* Wide Mobile = 480px */
 @media only screen and (min-width: 1200px) {
   .container {
     position: relative;
