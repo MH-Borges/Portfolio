@@ -1,7 +1,5 @@
-
-/*Efeito de Fade
-AOS.init();
 /*Efeito de Fade*/
+AOS.init();
 
 /*transparencia menu*/
 const scrollM = document.getElementById('#banner');

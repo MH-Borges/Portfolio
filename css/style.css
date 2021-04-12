@@ -1520,7 +1520,7 @@ a {
     padding: 0.5vh 1.5vw;
     border-radius: 0.8vw;
   }
-  #Blog .container .cardsBox #BigCard_Tablet {
+  #Blog .container .cardsBox #BigCard {
     width: 87%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1533,12 +1533,12 @@ a {
     margin: 2vh 2vw 3vh 2vw;
     border-radius: 2vw;
   }
-  #Blog .container .cardsBox #BigCard_Tablet img {
+  #Blog .container .cardsBox #BigCard img {
     width: 45%;
     height: 100%;
     border-radius: 2vw 0 20vw 2vw;
   }
-  #Blog .container .cardsBox #BigCard_Tablet h3 {
+  #Blog .container .cardsBox #BigCard h3 {
     position: absolute;
     width: 50%;
     font-size: 1.8vw;
@@ -1547,13 +1547,13 @@ a {
     top: 5%;
     right: 2vw;
   }
-  #Blog .container .cardsBox #BigCard_Tablet article {
+  #Blog .container .cardsBox #BigCard article {
     width: 50%;
     margin-left: 47.5%;
     font-size: 1.2vw;
     padding: 1vh 2vw;
   }
-  #Blog .container .cardsBox #BigCard_Tablet button {
+  #Blog .container .cardsBox #BigCard button {
     bottom: 2vh;
     right: 2vw;
     font-size: 1.8vw;
@@ -1632,7 +1632,7 @@ a {
     padding: 0.5vw 1.5vw;
     border-radius: 1vw;
   }
-  #Blog .container .cardsBox #BigCard_Tablet {
+  #Blog .container .cardsBox #BigCard {
     width: 87%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1645,12 +1645,12 @@ a {
     margin: 5vw 2vw 3vw 2vw;
     border-radius: 2vw;
   }
-  #Blog .container .cardsBox #BigCard_Tablet img {
+  #Blog .container .cardsBox #BigCard img {
     width: 45%;
     height: 100%;
     border-radius: 2vw 0 20vw 2vw;
   }
-  #Blog .container .cardsBox #BigCard_Tablet h3 {
+  #Blog .container .cardsBox #BigCard h3 {
     position: absolute;
     width: 50%;
     font-size: 2.2vw;
@@ -1659,13 +1659,13 @@ a {
     top: 5%;
     right: 2vw;
   }
-  #Blog .container .cardsBox #BigCard_Tablet article {
+  #Blog .container .cardsBox #BigCard article {
     width: 50%;
     margin-left: 47.5%;
     font-size: 1.5vw;
     padding: 1vh 2vw;
   }
-  #Blog .container .cardsBox #BigCard_Tablet button {
+  #Blog .container .cardsBox #BigCard button {
     bottom: 2vh;
     right: 2vw;
     font-size: 1.8vw;
