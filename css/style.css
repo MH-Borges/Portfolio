@@ -581,6 +581,7 @@ a {
           flex-direction: column;
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 #SobreMim::before {
@@ -708,6 +709,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .carousel-inner {

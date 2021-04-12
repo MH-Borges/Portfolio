@@ -3,6 +3,7 @@
     flex-direction: column;
     position: relative;
     width: 100%;
+    overflow: hidden;
     &::before{
         content: '';
         position: absolute;
@@ -83,6 +84,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .carousel-inner{
     display: flex;
