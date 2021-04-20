@@ -103,7 +103,6 @@ $('.js-tilt').tilt({
 
 /*parallax contato*/
 
-
 if( $(window).width() > 1200){
   document.addEventListener("mousemove", parallax);
   function parallax(e){
