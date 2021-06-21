@@ -28,10 +28,6 @@
 
 /*font-family: "Lexend Deca"*/
 /*bases*/
-/* Medium Device = 1200px */
-/* Tablet Device = 768px */
-/* Wide Mobile = 480px */
-/* Small Device = 320px */
 ::-webkit-scrollbar {
   width: 15px;
   background: #F7F0F0;
