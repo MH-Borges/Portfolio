@@ -47,15 +47,15 @@
 
 @font-face {
   font-family: "Next-Light";
-  src: url(../../fonts/NEXTART_Light.otf);
+  src: url(../fonts/NEXTART_Light.otf);
 }
 @font-face {
   font-family: "Next-Bold";
-  src: url(../../fonts/NEXTART_Bold.otf);
+  src: url(../fonts/NEXTART_Bold.otf);
 }
 @font-face {
   font-family: "Next-Heavy";
-  src: url(../../fonts/NEXTART_Heavy.otf);
+  src: url(../fonts/NEXTART_Heavy.otf);
 }
 body {
   display: flex;
@@ -226,7 +226,7 @@ body #btn_UP img {
 body #Banner {
   width: 100%;
   height: 100vh;
-  background-image: url("../img/banner.jpg");
+  background-image: url("../img/Banner.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
