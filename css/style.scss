@@ -580,6 +580,9 @@ body{
                         &:before{
                             width:120%;
                         }
+                        &:after{
+                            height:120%;
+                        }
                     }
                 }
             }
@@ -773,7 +776,7 @@ body{
                     border-radius: 5vw;
                     width: 65vw;
                     height: 21vh;
-                    margin: 1vh auto;
+                    margin: 2vh auto;
                    
                 }
                 #PrincProj{

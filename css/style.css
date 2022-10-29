@@ -634,6 +634,9 @@ body footer p {
   body .loader .ArcoFora .ArcoMedio .ArcoInter:before {
     width: 120%;
   }
+  body .loader .ArcoFora .ArcoMedio .ArcoInter:after {
+    height: 120%;
+  }
   body .loader .palavra {
     left: -2vw;
     font-size: 5vw;
@@ -812,7 +815,7 @@ body footer p {
     border-radius: 5vw;
     width: 65vw;
     height: 21vh;
-    margin: 1vh auto;
+    margin: 2vh auto;
   }
   body #Projetos .imgProj #PrincProj {
     position: relative;
