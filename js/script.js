@@ -13,6 +13,9 @@ const Mobile = () => {
 	}
 	else{
 		document.querySelector('.links').classList.add('ativo');
+		setTimeout(() => {
+			document.querySelector('.links').classList.remove('ativo');
+		}, 2500);
 	}
 }
 
