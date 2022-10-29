@@ -469,10 +469,10 @@ body #SobreMim {
   flex-direction: row;
   justify-content: center;
   position: relative;
+  align-items: center;
 }
 body #SobreMim .texto {
   width: 50%;
-  margin-top: 24vh;
 }
 body #SobreMim .texto h2 {
   font-family: "Next-Heavy";
@@ -495,17 +495,21 @@ body #SobreMim .perfilFT {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 13vh;
 }
 body #SobreMim .perfilFT img {
   width: 90%;
 }
-body #SobreMim .scroll {
+body #SobreMim .blockScroll {
   height: 12vh;
   width: 100%;
-  margin-top: 10vh;
+  position: absolute;
+  bottom: 0;
 }
-body #SobreMim .scroll .marqueeText {
+body #SobreMim .blockScroll .scroll {
+  width: 100%;
+  height: 12vh;
+}
+body #SobreMim .blockScroll .scroll .marqueeText {
   border-top: 1px solid #D2D2D2;
   border-bottom: 1px solid #D2D2D2;
   height: 100%;
@@ -513,7 +517,7 @@ body #SobreMim .scroll .marqueeText {
   justify-content: center;
   align-items: center;
 }
-body #SobreMim .scroll .marqueeText a {
+body #SobreMim .blockScroll .scroll .marqueeText a {
   height: 100%;
   color: #EEEEEE;
   font-family: "Lexend Deca", sans-serif;
@@ -522,11 +526,11 @@ body #SobreMim .scroll .marqueeText a {
   display: flex;
   align-items: center;
 }
-body #SobreMim .scroll .marqueeText a i {
+body #SobreMim .blockScroll .scroll .marqueeText a i {
   font-size: 2vw;
   margin-left: 1vw;
 }
-body #SobreMim .scroll .marqueeText a .fa-envelope {
+body #SobreMim .blockScroll .scroll .marqueeText a .fa-envelope {
   margin-right: -3vw;
 }
 body #Contato {
@@ -834,14 +838,15 @@ body footer p {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    align-items: stretch;
   }
   body #SobreMim .texto {
     width: 100%;
-    margin-top: 55vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
   }
   body #SobreMim .texto h2 {
     color: #EEEEEE;
@@ -857,30 +862,34 @@ body footer p {
     padding: 0;
   }
   body #SobreMim .perfilFT {
-    top: 5vh;
-    position: absolute;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0;
+    order: -1;
+    margin: 0;
   }
   body #SobreMim .perfilFT img {
     width: 70%;
   }
-  body #SobreMim .scroll {
+  body #SobreMim .blockScroll {
     height: 10vh;
-    margin-top: 4vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
   }
-  body #SobreMim .scroll .marqueeText a {
+  body #SobreMim .blockScroll .scroll {
+    height: 10vh;
+  }
+  body #SobreMim .blockScroll .scroll .marqueeText a {
     font-size: 4.5vw;
     margin: 0 4vw;
   }
-  body #SobreMim .scroll .marqueeText a i {
+  body #SobreMim .blockScroll .scroll .marqueeText a i {
     font-size: 4.5vw;
     margin-left: 2vw;
   }
-  body #SobreMim .scroll .marqueeText a .fa-envelope {
+  body #SobreMim .blockScroll .scroll .marqueeText a .fa-envelope {
     margin-right: 0;
   }
   body #Contato {

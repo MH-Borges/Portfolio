@@ -406,9 +406,9 @@ body{
         flex-direction: row;
         justify-content: center;
         position: relative;
+        align-items: center;
         .texto{
             width: 50%;
-            margin-top: 24vh;
             h2{
                 font-family: 'Next-Heavy';
                 color: $White;
@@ -431,40 +431,45 @@ body{
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 13vh;
             img{
                 width: 90%;
             }
         }
-        .scroll{
+        .blockScroll{
             height: 12vh;
             width: 100%;
-            margin-top: 10vh;
-            .marqueeText{
-                border-top: 1px solid $LightGray;
-                border-bottom: 1px solid $LightGray;
-                height: 100%;
-                display: flex !important;
-                justify-content: center;
-                align-items: center;
-                a{
+            position: absolute;
+            bottom: 0;
+            .scroll{
+                width: 100%;
+                height: 12vh;
+                .marqueeText{
+                    border-top: 1px solid $LightGray;
+                    border-bottom: 1px solid $LightGray;
                     height: 100%;
-                    color: $White;
-                    font-family: 'Lexend Deca', sans-serif;
-                    font-size: 1.5vw;
-                    margin: 0 3vw;
-                    display: flex;
+                    display: flex !important;
+                    justify-content: center;
                     align-items: center;
-                    i{
-                        font-size: 2vw;
-                        margin-left: 1vw;
-                    }
-                    .fa-envelope{
-                        margin-right: -3vw;
+                    a{
+                        height: 100%;
+                        color: $White;
+                        font-family: 'Lexend Deca', sans-serif;
+                        font-size: 1.5vw;
+                        margin: 0 3vw;
+                        display: flex;
+                        align-items: center;
+                        i{
+                            font-size: 2vw;
+                            margin-left: 1vw;
+                        }
+                        .fa-envelope{
+                            margin-right: -3vw;
+                        }
                     }
                 }
             }
         }
+        
     }
     #Contato{
         width: 100%;
@@ -797,13 +802,14 @@ body{
             display: flex;
             flex-wrap: wrap;
             position: relative;
+            align-items: stretch;
             .texto{
                 width: 100%;
-                margin-top: 55vh;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin: 0;
                 h2{
                     color: $White;
                     text-shadow: 2px 5px 5px #000000;
@@ -819,34 +825,40 @@ body{
                 }
             }
             .perfilFT{
-                top: 5vh;
-                position: absolute;
                 width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin-top: 0;
+                order: -1;
+                margin: 0;
                 img{
                     width: 70%;
                 }
             }
-            .scroll{
+            .blockScroll{
                 height: 10vh;
-                margin-top: 4vh;
-                .marqueeText{
-                    a{
-                        font-size: 4.5vw;
-                        margin: 0 4vw;
-                        i{
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                .scroll{
+                    height: 10vh;
+                    .marqueeText{
+                        a{
                             font-size: 4.5vw;
-                            margin-left: 2vw;
-                        }
-                        .fa-envelope{
-                            margin-right: 0;
+                            margin: 0 4vw;
+                            i{
+                                font-size: 4.5vw;
+                                margin-left: 2vw;
+                            }
+                            .fa-envelope{
+                                margin-right: 0;
+                            }
                         }
                     }
                 }
+                
             }
+            
         }
         #Contato{
             height: 33vh;
