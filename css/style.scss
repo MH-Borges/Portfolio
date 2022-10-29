@@ -462,9 +462,6 @@ body{
                             font-size: 2vw;
                             margin-left: 1vw;
                         }
-                        .fa-envelope{
-                            margin-right: -3vw;
-                        }
                     }
                 }
             }
@@ -846,9 +843,12 @@ body{
                 .scroll{
                     height: 10vh;
                     .marqueeText{
+                        svg{
+                            width: 6vw;
+                        }
                         a{
-                            font-size: 4.5vw;
-                            margin: 0 4vw;
+                            font-size: 5vw;
+                            margin: 0 5vw;
                             i{
                                 font-size: 4.5vw;
                                 margin-left: 2vw;

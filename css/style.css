@@ -530,9 +530,6 @@ body #SobreMim .blockScroll .scroll .marqueeText a i {
   font-size: 2vw;
   margin-left: 1vw;
 }
-body #SobreMim .blockScroll .scroll .marqueeText a .fa-envelope {
-  margin-right: -3vw;
-}
 body #Contato {
   width: 100%;
   height: 48vh;
@@ -884,9 +881,12 @@ body footer p {
   body #SobreMim .blockScroll .scroll {
     height: 10vh;
   }
+  body #SobreMim .blockScroll .scroll .marqueeText svg {
+    width: 6vw;
+  }
   body #SobreMim .blockScroll .scroll .marqueeText a {
-    font-size: 4.5vw;
-    margin: 0 4vw;
+    font-size: 5vw;
+    margin: 0 5vw;
   }
   body #SobreMim .blockScroll .scroll .marqueeText a i {
     font-size: 4.5vw;
