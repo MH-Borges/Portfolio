@@ -1,113 +1,544 @@
+
 *, *::after, *::before{
     padding: 0;
     margin: 0;
     box-sizing: border-box !important;
-}
-@import 'compiler/colors-fonts';
-
-::-webkit-scrollbar {
-    width: 15px;
-    background: $White;
-}
-::-webkit-scrollbar-thumb {
-    background: $Black-light;
-}
-body{
-    width: 100%;
-    background-color: $Black;
-}
-img,svg{
-    display: block;
-    width: 100%;
-}
-a{
+    list-style: none;
     text-decoration: none;
-    color: $White;
 }
-.title{
-    padding-bottom: 30px;
-    text-align: center;
-    h2{
-        color: $White;
-        font-family: "Next-Heavy";
-        font-size: 2.8vw;
+@mixin centre($axis: "both") {
+	position: absolute;
+	@if $axis == "y" {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	@if $axis == "x" {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	@if $axis == "both" {
+		top: 50%;
+		left: 50%;
+		transform: translate(-51%, -50%);
+	}
+}
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    animation:         $animations;
+}
+@mixin keyframes($animationName) {
+    @keyframes #{$animationName} {
+        @content;
     }
 }
-#color{
-    h2{
-    color: $Black;
-    }
+@include keyframes(outerRotate1) {
+  0%   {transform:translate(-50%, -50%) rotate(0)}
+  100% {transform:translate(-50%, -50%) rotate(360deg)}
 }
-.botão{
+@include keyframes(outerRotate2) {
+  0%   {transform:translate(-50%, -50%) rotate(0)}
+  100% {transform:translate(-50%, -50%) rotate(-360deg)}
+}
+
+.hide{ display: none; }
+
+@import 'compiler/_colors_fonts';
+
+body{
     display: flex;
-    position: relative;
-    justify-content: center;
-    font-family: "Next-Heavy";
-    button{
-        font-size: 1.6vw;
+    flex-direction: column;
+    background-color: $Black;
+    height: auto;
+    width: 100%;
+    .loader{
+        #ParticulasInside{
+            @include centre();
+            width:50vw;
+            height:75vh;
+        }
+        #ParticulasExter{
+            @include centre();
+            width:100%;
+            height:50%;
+            opacity:0.1;
+        }
+        z-index: 999;
+        position: absolute;
+        width:100%;
+        height:100vh;
+        background:#222;
+        font-family: 'Source Code Pro', monospace;
+        overflow: hidden;
+        text-align: center;
+        .ArcoFora{
+            @include centre();
+            width:38vw;
+            height:71vh;
+            border-radius:50%;
+            border:14px solid #047023;
+            &:before, &:after{
+                @include centre;
+                content:" ";
+                background:#222;
+            }
+            &:after{
+                @include centre;
+                content:" ";
+                background:#222;
+                width:100px;
+                height:200%;
+                @include animation('outerRotate2 25s infinite linear');
+            }
+            &:before{
+                width:110%;
+                height:70px;
+                @include animation('outerRotate1 27s infinite linear');
+            }
+            .ArcoMedio{
+                @include centre();
+                width:29vw;
+                height:55vh;
+                border-radius:50%;
+                border:10px solid #2DBD56;
+                z-index:20;
+                &:after{
+                    content:" ";
+                    background:#222;
+                    width:100px;
+                    height:110%;
+                    z-index:-1;
+                    @include centre;
+                    @include animation('outerRotate1 15s infinite linear');
+                }
+                .ArcoInter{
+                    @include centre();
+                    width:18vw;
+                    height:34vh;
+                    border-radius:50%;
+                    border:5px solid lighten(#2DBD56, 25%);
+                    &:before, &:after{
+                        @include centre;
+                        content:" ";
+                        background:#222;
+                        z-index:-1;
+                    }
+                    &:before{
+                        width:110%;
+                        height:50px;
+                        @include animation('outerRotate2 5s infinite linear');
+                    }
+                    &:after{
+                        width:30px;
+                        height:110%;
+                        @include animation('outerRotate1 8s infinite linear');
+                    }
+                }
+            }
+        }
+        .palavra {
+            margin: auto;
+            position: absolute;
+            right: 0;
+            left: -1.5vw;
+            top: 0;
+            bottom: 0;
+            height: 2.2vw;
+            color: #fff;
+            font-size: 2.2vw;
+            line-height: 2.2vw;
+            text-shadow: 0 0 10px #701010, 0 0 5px #701010;
+            span {
+                display: inline-block;
+                transform: translateX(100%) scale(0.9);
+                transition: transform 500ms;
+            }
+            .done {
+                color: #BC2D2D;
+                transform: translateX(0) scale(1);
+            }
+        }
+        .overlay {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-size: 1000px 2px;
+            background-image: linear-gradient(transparent 0%, rgba(10, 16, 10, 0.5) 50%);
+        }
+        
+    }
+    #btn_UP{
+        position: fixed;
+        right: 1vw;
+        bottom: 2vh;
+        z-index: 99;
+        img{
+            width: 3vw;
+        }
+    }
+    #Banner{
+        width: 100%;
+        height: 100vh;
+        background-image: url('../img/banner.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
         color: $White;
-        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-        background-color: $Black-light;
-        padding: 0.8vw 1.8vw;
-        border-radius: 1.2vw;
-        border: none;
-        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.26), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.186902), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.154988), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.13), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.105012), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0730979);
-        transition: 0.2s ease-in;
-        &:hover{
-            background-color: $Red-light;
-            transform: translateY(-10px);
-            box-shadow: 0px 10px 70px rgba(255, 61, 61, 0.3), 0px 38.0104px 69.7686px rgba(255, 61, 61, 0.204932), 0px 25.4156px 37.3016px rgba(255, 61, 61, 0.167579), 0px 17.6705px 20.911px rgba(255, 61, 61, 0.136384), 0px 11.6704px 11.1057px rgba(255, 61, 61, 0.101283), 0px 6.05533px 4.62132px rgba(255, 61, 61, 0.0571425);
+        header{
+            position: fixed;
+            box-shadow: 0px 15px 5px -15px $LightGray;
+            width: 95%;
+            margin-left: 2.5%;
+            height: 13vh;
+            display: flex;
+            align-items: center;
+            z-index: 99;
+            transition: 0.25s ease-in-out;
+            .logo{
+                transition: 0.3s ease-in-out;
+                margin-left: 2.5vw;
+                svg{
+                    transition: 0.3s ease-in-out;
+                    width: 9vw;
+                }
+            }
+            ul{
+                transition: 0.3s ease-in-out;
+                display: flex;
+                margin-left: auto;
+                margin-right: 2vw;
+                height: 5vh;
+                width: 28vw;
+                justify-content: space-between;
+                li{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 1.5vw;
+                    transition: 0.3s ease-in-out;
+                    a{
+                        font-family: "Next-Heavy";
+                        font-size: 1.25vw;
+                        padding: 1vw;
+                        color: $White;
+                        transition: 0.3s ease-in-out;
+                    }
+                    &:hover{
+                        background-color: $Red;
+                        transition: 0.3s ease-in-out;
+                        a{
+                            transition: 0.3s ease-in-out;
+                            font-size: 1.3vw;
+                            padding: 0.9vw;
+                        }
+                    }
+                }
+            }
+            .mobileMenu{
+                display: none;
+            }
+        }
+        .minus{
+            transition: 0.3s ease-in-out;
+            margin-left: -1.1vw;
+            width: 102%;
+            height: 8vh;
+            background-color: $Black;
+            box-shadow: 0px 15px 10px -15px $LightGray; 
+            .logo2{
+                margin-left: 3vw;
+                transition: 0.3s ease-in-out;
+                svg{
+                    transition: 0.3s ease-in-out;
+                    width: 8vw;
+                }
+            }
+            ul{
+                margin-right: 4vw;
+                transition: 0.3s ease-in-out;
+                height: 4vh;
+                width: 24vw;
+                li{
+                    transition: 0.3s ease-in-out;
+                    a{
+                        transition: 0.3s ease-in-out;
+                        font-size: 1vw;
+                    }
+                    &:hover{
+                        a{
+                            font-size: 1.05vw;
+                        }
+                    }
+                }
+            }
+        }
+        .ContBanner{
+            margin: 23vh 0 0 8vw;
+            border-left: 3px solid $LightGray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 65vh;
+            padding: 3vw;
+        
+            .blinking {
+                user-select: none;
+                animation: blink 1s steps(2, start) infinite;
+            }
+            @keyframes blink {to {visibility: hidden;}}
+            p{
+                font-family: 'Lexend Deca', sans-serif;
+                font-size: 2.2vw;
+                font-weight: 700;
+                text-shadow: 2px 5px 5px #000000;
+            }
+            h1{
+                font-family: "Next-Heavy";
+                padding: 5vh 0;
+                font-size: 3.5vw;
+                text-shadow: 2px 5px 5px #000000;
+            }
+            .SubTitle{
+                font-family: 'Lexend Deca', sans-serif;
+                font-size: 1.5vw;
+                font-weight: 400;
+                width: 21vw;
+                display: flex;
+                align-items: center;
+                margin-left: 4vw;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 3vw;
+                    height: 1.5vh;
+                    left: -4vw;
+                    background: linear-gradient(90deg, #4D0303 0%, #FC0000 100%);
+                    border-radius: 9px;
+                }
+            
+                
+            }
+        }
+    }
+    #Projetos{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: radial-gradient(61.87% 102.59% at 50% 50%, #FFFFFF 0%, #B4B4B4 100%);
+        position: relative;
+        h2{
+            text-align: center;
+            color: $Red;
+            font-family: "Next-Heavy";
+            font-size: 3vw;
+            margin: 7vh 0 5vh;
+        }
+        .imgProj{
+            display: flex;
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            justify-content: space-between;
+            height: 60vh;
+            img{
+                width: 35vw;
+                border-radius: 2vw;
+                height: 35vh;
+                box-shadow: 0px 7px 10px $DarkGray;
+                transform: translateY(-5%);
+                animation: floater 1.9s infinite;
+                transition: ease 0.5s;
+                &:hover{
+                    animation: none !important;
+                }
+            }
+            #PrincProj{
+                position: absolute;
+                z-index: 10;
+                bottom:0;
+                left: 25%;
+                width: 40vw;
+                height: 40vh;
+                animation: floater 2s infinite;
+            }
+            @keyframes floater {
+                0%{transform: translateY(-5%);transition: ease 0.5s;}
+                50%{transform: translateY(5%);transition: ease 0.5s;}
+            }
+        }
+        button{
+            position: absolute;
+            right: 4vw;
+            bottom: 5vh;
+            background: $Black;
+            border: none;
+            font-family: "Next-Bold";
+            color: $White;
+            padding: 1.5vh 1vw;
+            font-size: 1.25vw;
+            border-radius: 1vw;
+            transition: 0.5s ease-in-out;
+            &:hover{
+                transform: translateX(0.5vw);
+                box-shadow: -10px 15px 10px -15px $Black;
+            }
+        }
+    }
+    #SobreMim{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        .texto{
+            width: 50%;
+            margin-top: 24vh;
+            h2{
+                font-family: 'Next-Heavy';
+                color: $White;
+                text-shadow: 2px 5px 5px #000000;
+                font-size: 3.3vw;
+                margin:0 0 8vh 2vw;
+            }
+            p{
+                font-family: 'Lexend Deca', sans-serif;
+                color: $White;
+                font-weight: 600;
+                font-size: 1.25vw;
+                line-height: 2vw;
+                width: 75%;
+                margin-left: 2vw;
+            }
+        }
+        .perfilFT{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 13vh;
+            img{
+                width: 90%;
+            }
+        }
+        .scroll{
+            height: 12vh;
+            width: 100%;
+            margin-top: 10vh;
+            .marqueeText{
+                border-top: 1px solid $LightGray;
+                border-bottom: 1px solid $LightGray;
+                height: 100%;
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+                a{
+                    height: 100%;
+                    color: $White;
+                    font-family: 'Lexend Deca', sans-serif;
+                    font-size: 1.5vw;
+                    margin: 0 3vw;
+                    display: flex;
+                    align-items: center;
+                    i{
+                        font-size: 2vw;
+                        margin-left: 1vw;
+                    }
+                    .fa-envelope{
+                        margin-right: -3vw;
+                    }
+                }
+            }
+        }
+    }
+    #Contato{
+        width: 100%;
+        height: 48vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $White;
+        overflow: hidden;
+        img{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        h2{
+            font-family: "Next-Heavy";
+            font-size: 2vw;
+            text-align: center;
+        }
+        p{
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 400;
+            font-size: 1.3vw;
+            margin: 5vh 0;
+            text-align: center;
+        }
+        a{
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 200;
+            font-size: 1.7vw;
+            padding: 1vh 2vw;
+            border-radius: 2vw;
+            border: 2px solid $LightGray;
+            background: none;
+            color: $White;
+            transition: 0.5s ease-in-out;
+            &:hover{
+                transform: translateY(-1vh);
+                box-shadow: 0px 15px 5px -15px $LightGray;
+            }
+        }
+    }
+    footer{
+        border-top: 1px solid $LightGray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 18vh;
+        .logoFooter{
+            width: 9vw;
+        }
+        p{
+            font-family: "Next-Light";
+            color: #696969;
+            margin-top: 2vh;
+            font-size: 1vw;
         }
     }
 }
-#btn_UP{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 1vh;
-    right: 1vw;
-    text-decoration: none;
-    z-index:998;
-    img{width: 4vw;}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: $White;
+}
+::-webkit-scrollbar-thumb {
+    background: $Black;
 }
 
-@import 'compiler/menu';
-@import 'compiler/banner';
-@import 'compiler/sobreMim';
-@import 'compiler/projetos';
-@import 'compiler/blog';
-@import 'compiler/design';
-@import 'compiler/contato';
-@import 'compiler/rodape';
-@import 'compiler/projetos_PAGE';
-@import 'compiler/portfolio_PAGE';
-
-
-@media only screen and (min-width: 1200px){
-    .container{position:relative; max-width: 85%;}
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {     
-    .container{max-width: 90%;}
-    .title{h2{font-size: 4vw;}}
-    .botão{button{font-size: 2.5vw;padding: 1vw 2.5vw;}}
-    #btn_UP{img{width: 6vw;}} 
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .container{max-width: 90%;}
-    .title{padding-bottom: 3vw;h2{font-size: 4.5vw;}}
-    .botão{button{font-size: 2.8vw; padding: 1.5vw 3.5vw; border-radius: 2vw;}}
-    #btn_UP{img{width: 7vw;}}
-}
-@media only screen and (max-width: 767px){
-    .container{max-width: 100%;}
-    .title{padding-bottom: 1.5vw;h2{font-size: 8vw;}}
-    .botão{button{font-size: 4.5vw; padding: 2vw 4vw; border-radius: 3vw;}}
-    #btn_UP{img{width: 11vw;}}
-}
-    
-
-/*--------------------------------- Responsive Media Quaries -----------------------------*/
 @media only screen and (min-width: 1200px){
 }
 /* Medium Device = 1200px */
@@ -117,8 +548,335 @@ a{
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 }
 /* Wide Mobile = 480px */
-@media only screen and (max-width: 767px){	
+@media only screen and (min-width: 480px)  and (max-width: 767px){	
 }
 /* Small Device = 320px */
 @media only screen and (max-width: 479px){
+
+    body{
+        .loader{
+            .ArcoFora{
+                width:85vw;
+                height:45vh;
+                border-radius:50%;
+                border:14px solid #047023;
+                &:after{
+                    width:100px;
+                }
+                &:before{
+                    width:120%;
+                }
+                .ArcoMedio{
+                    width:65vw;
+                    height:35vh;
+                    &:after{
+                        height:110%;
+                    }
+                    .ArcoInter{
+                        width:40vw;
+                        height:21vh;
+                        &:before{
+                            width:120%;
+                        }
+                    }
+                }
+            }
+            .palavra {
+                left: -2vw;
+                font-size: 5vw;
+            }
+            
+        }
+        #btn_UP{
+            right: 2vw;
+            bottom: 1vh;
+            img{
+                width: 10vw;
+            }
+        }
+        #Banner{
+            header{
+                height: 12vh;
+                .logo{
+                    margin-left: 5vw;
+                    svg{
+                        width: 30vw;
+                    }
+                }
+                ul{
+                    top: -19vh;
+                    margin:0;
+                    height: auto;
+                    width: 100%;
+                    justify-content: space-around;
+                    position: absolute;
+                    flex-direction: column;
+                    li{
+                        margin:1vh 0;
+                        a{
+                            font-family: "Next-Heavy";
+                            font-size: 5vw;
+                            padding:0;
+                            margin: 1vh 0;
+                            color: $White;
+                            transition: 0.3s ease-in-out;
+                        }
+                        &:hover{
+                            a{
+                                font-size: 5vw;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+                .ativo{
+                    top: 12vh;
+                    margin:0;
+                    height: auto;
+                    width: 100%;
+                    justify-content: space-around;
+                    position: absolute;
+                    flex-direction: column;
+                    li{
+                        margin:1vh 0;
+                        a{
+                            font-family: "Next-Heavy";
+                            font-size: 5vw;
+                            padding:0;
+                            margin: 1vh 0;
+                            color: $White;
+                            transition: 0.3s ease-in-out;
+                        }
+                        &:hover{
+                            a{
+                                font-size: 5vw;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+                .mobileMenu{
+                    display: flex;
+                    margin-left: auto;
+                    margin-right: 5vw;
+                    background: none;
+                    border: none;
+                    i{
+                        font-size: 8vw;
+                        color: $White;
+                    }
+                }
+            }
+            .minus{
+                height: 9vh;
+                .logo2{
+                    margin-left: 8vw;
+                    svg{
+                        width: 30vw;
+                    }
+                }
+                ul{
+                    top: -12vh;
+                    margin:0;
+                    height: auto;
+                    width: 100%;
+                    justify-content: space-around;
+                    position: absolute;
+                    flex-direction: column;
+                    background-color: $Black;
+                }
+                .ativo{
+                    top: 8vh;
+                    margin:0;
+                    height: auto;
+                    width: 100%;
+                    justify-content: space-around;
+                    position: absolute;
+                    flex-direction: column;
+                    border-bottom-left-radius: 2vw;
+                    border-bottom-right-radius: 2vw;
+
+                    li{
+                        margin:1vh 0;
+                        a{
+                            font-family: "Next-Heavy";
+                            font-size: 4vw;
+                            padding:0;
+                            margin: 1vh 0;
+                            color: $White;
+                            transition: 0.3s ease-in-out;
+                        }
+                        &:hover{
+                            a{
+                                font-size: 5vw;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+                .mobileMenu{
+                    display: flex;
+                    margin-left: auto;
+                    margin-right: 7vw;
+                    background: none;
+                    border: none;
+                    i{
+                        font-size: 8vw;
+                        color: $White;
+                    }
+                }
+            }
+            .ContBanner{
+                margin: 23vh 0 0 0;
+                justify-content: center;
+                align-items: center;
+                height: 65vh;
+                padding: 0;
+                border: none;
+                p{
+                    font-size: 5vw;
+                }
+                h1{
+                    padding: 5vh 0;
+                    font-size: 7vw;
+                }
+                .SubTitle{
+                    font-size: 4vw;
+                    width: 75%;
+                    margin-left: 0;
+                    text-align: center;
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+        #Projetos{
+            
+            h2{
+                font-size: 8vw;
+                margin: 5vh 0;
+            }
+            .imgProj{
+                display: flex;
+                flex-direction: column;
+                width: 85%;
+                margin: 0 auto;
+                padding: 0;
+                height: 75vh;
+                align-items: center !important;
+                justify-content: center !important;
+                img{
+                    border-radius: 5vw;
+                    width: 65vw;
+                    height: 22vh;
+                    margin: 1vh auto;
+                   
+                }
+                #PrincProj{
+                    position: relative;
+                    bottom:0;
+                    left: 0;
+                    width: 65vw;
+                    height:22vh;
+                    animation: floater 1.9s infinite;
+                }
+                
+            }
+            button{
+                right: 4vw;
+                bottom: 3vh;
+                padding: 1vh 2vw;
+                font-size: 3vw;
+                border-radius: 2vw;
+            }
+        }
+        #SobreMim{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            .texto{
+                width: 100%;
+                margin-top: 55vh;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    color: $White;
+                    text-shadow: 2px 5px 5px #000000;
+                    font-size: 8vw;
+                    margin:0 0 5vh 0;
+                }
+                p{
+                    font-size: 3vw;
+                    line-height: 3.5vw;
+                    width: 75%;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .perfilFT{
+                top: 5vh;
+                position: absolute;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 0;
+                img{
+                    width: 70%;
+                }
+            }
+            .scroll{
+                height: 10vh;
+                margin-top: 4vh;
+                .marqueeText{
+                    a{
+                        font-size: 4.5vw;
+                        margin: 0 4vw;
+                        i{
+                            font-size: 4.5vw;
+                            margin-left: 2vw;
+                        }
+                        .fa-envelope{
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        #Contato{
+            height: 33vh;
+            img{
+                margin-left: -10%;
+                width: 250%;
+            }
+            h2{
+                font-size: 4.5vw;
+            }
+            p{
+                font-size: 3vw;
+                margin: 4vh 0;
+            }
+            a{
+                font-size: 4vw;
+                padding: 1vh 3vw;
+                border-radius: 5vw;
+            }
+        }
+        footer{
+            height: 15vh;
+            .logoFooter{
+                width: 30vw;
+            }
+            p{
+                margin-top: 2vh;
+                font-size: 3vw;
+            }
+        }
+    }
+
 }
