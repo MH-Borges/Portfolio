@@ -19,28 +19,6 @@ const Mobile = () => {
 	}
 }
 
-
-var largura = window.innerWidth;
-var largura2 = document.documentElement.clientWidth;
-var largura3 = document.body.clientWidth;
-
-var altura = window.innerHeight;
-var altura2 = document.documentElement.clientHeight;
-var altura3 = document.body.clientHeight;
-
-
-var txtTeste = document.createElement('span');
-var txtTeste2 = document.createElement('span');
-txtTeste.style.textAlign = 'center'
-txtTeste2.style.textAlign = 'center'
-
-
-txtTeste.innerHTML = largura + ' | ' + largura2 + ' | ' + largura3;
-txtTeste2.innerHTML = altura + ' | ' + altura2 + ' | ' + altura3;
-
-document.body.appendChild(txtTeste);
-document.body.appendChild(txtTeste2);
-
 /*menu efeito*/ 
 window.addEventListener('scroll', function() {
 
