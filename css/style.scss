@@ -190,7 +190,7 @@ body{
     #Banner{
         width: 100%;
         height: 100vh;
-        background-image: url('../img/Banner.jpg');
+        background-image: url('../img/Banner.webp');
         background-size: cover;
         background-position: center;
         display: flex;
@@ -530,6 +530,103 @@ body{
             margin-top: 2vh;
             font-size: 1vw;
         }
+    }
+
+    #BannerP{
+        width: 100%;
+        height: 13vh;
+        display: flex;
+        flex-direction: column;
+        color: $White;
+        header{
+            position: fixed;
+            box-shadow: 0px 15px 5px -15px $LightGray;
+            width: 95%;
+            margin-left: 2.5%;
+            height: 13vh;
+            display: flex;
+            align-items: center;
+            z-index: 99;
+            transition: 0.25s ease-in-out;
+            .logo{
+                transition: 0.3s ease-in-out;
+                margin-left: 2.5vw;
+                svg{
+                    transition: 0.3s ease-in-out;
+                    width: 9vw;
+                }
+            }
+            ul{
+                transition: 0.3s ease-in-out;
+                display: flex;
+                margin-left: auto;
+                margin-right: 2vw;
+                height: 5vh;
+                width: 28vw;
+                justify-content: space-between;
+                li{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 1.5vw;
+                    transition: 0.3s ease-in-out;
+                    a{
+                        font-family: "Next-Heavy";
+                        font-size: 1.25vw;
+                        padding: 1vw;
+                        color: $White;
+                        transition: 0.3s ease-in-out;
+                    }
+                    &:hover{
+                        background-color: $Red;
+                        transition: 0.3s ease-in-out;
+                        a{
+                            transition: 0.3s ease-in-out;
+                            font-size: 1.3vw;
+                            padding: 0.9vw;
+                        }
+                    }
+                }
+            }
+            .mobileMenu{
+                display: none;
+            }
+        }
+        .minus{
+            transition: 0.3s ease-in-out;
+            margin-left: -1.1vw;
+            width: 102%;
+            height: 8vh;
+            background-color: $Black;
+            box-shadow: 0px 15px 10px -15px $LightGray; 
+            .logo2{
+                margin-left: 3vw;
+                transition: 0.3s ease-in-out;
+                svg{
+                    transition: 0.3s ease-in-out;
+                    width: 8vw;
+                }
+            }
+            ul{
+                margin-right: 4vw;
+                transition: 0.3s ease-in-out;
+                height: 4vh;
+                width: 24vw;
+                li{
+                    transition: 0.3s ease-in-out;
+                    a{
+                        transition: 0.3s ease-in-out;
+                        font-size: 1vw;
+                    }
+                    &:hover{
+                        a{
+                            font-size: 1.05vw;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }
 

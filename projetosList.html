@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matheus Henrique || https://mhborges.com.br">
+    <meta name="description" content="Matheus Henrique Programador, sempre trabalhando para construir os melhores projetos com a melhor qualidade">
+    <meta name="keywords" content="mhborges, programador, Curitiba, html, css, bootstrap, programador de sites, loja online, matheus henrique">
+    
+    <title>MH Borges</title>
+    
+    <link rel="icon" href="img/icon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/svg-inject.min.js"></script>
+    <script src="js/infiniteslidev2.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+
+    <script defer src="js/script.js"></script>
+
+</head>
+<body>
+
+    <!-- Botão de rolagem-->
+    <a id="btn_UP"><img src="img/Up.png"></a>
+
+    <div class="loader">
+        <div class="ArcoFora">
+            <div class="ArcoMedio">
+            <span class="ArcoInter"></span>
+            </div>
+        </div>
+        <div id="ParticulasInside"></div>
+        <div id="ParticulasExter"></div>
+    
+        <div class="palavra"> CARREGANDO </div>
+        <div class="overlay"></div>
+    </div>
+
+    <div id="BannerP">
+        <header>
+            <a href="#Banner" class="logo"><img src="img/MH_logo_flat1.svg" onload="SVGInject(this)" /></a>
+            <a href="#Banner" class="logo2 hide"><img src="img/MH_logo_flat2.svg" onload="SVGInject(this)" /></a>
+            <ul class="links">
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#SobreMim">Sobre Mim</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+            <button class="mobileMenu" onclick="Mobile()"><i class="fa-solid fa-bars"></i></button>
+        </header>
+    </div>
+
+
+    
+
+    <footer>
+        <img src="img/MH_logo_flat2.svg" class="logoFooter" onload="SVGInject(this)" />
+        <p>MHBORGES &copy; 2022</p>
+    </footer>
+
+</body>
+</html>
