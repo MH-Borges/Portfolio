@@ -1,5 +1,17 @@
 @import url(https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400);
+@font-face {
+  font-family: "Next-Light";
+  src: url(../fonts/NEXTART_Light.otf);
+}
+@font-face {
+  font-family: "Next-Bold";
+  src: url(../fonts/NEXTART_Bold.otf);
+}
+@font-face {
+  font-family: "Next-Heavy";
+  src: url(../fonts/NEXTART_Heavy.otf);
+}
 *, *::after, *::before {
   padding: 0;
   margin: 0;
@@ -41,22 +53,20 @@
     transform: translate(-50%, -50%) rotate(-360deg);
   }
 }
+@-webkit-keyframes BTmenu {
+  to {
+    transform: scale(1.1);
+  }
+}
+@keyframes BTmenu {
+  to {
+    transform: scale(1.1);
+  }
+}
 .hide {
   display: none;
 }
 
-@font-face {
-  font-family: "Next-Light";
-  src: url(../fonts/NEXTART_Light.otf);
-}
-@font-face {
-  font-family: "Next-Bold";
-  src: url(../fonts/NEXTART_Bold.otf);
-}
-@font-face {
-  font-family: "Next-Heavy";
-  src: url(../fonts/NEXTART_Heavy.otf);
-}
 body {
   display: flex;
   flex-direction: column;
@@ -264,19 +274,48 @@ body header ul li {
 body header ul li a {
   font-family: "Next-Heavy";
   font-size: 1.25vw;
-  padding: 1vw;
+  padding: 0.7vw;
   color: #EEEEEE;
   transition: 0.3s ease-in-out;
 }
-body header ul li:hover {
-  background-color: #BC2D2D;
-  transition: 0.3s ease-in-out;
+body header ul li .BTmenu {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-property: color;
+  transition-duration: 0.3s;
 }
-body header ul li:hover a {
-  transition: 0.3s ease-in-out;
-  font-size: 1.3vw;
-  padding: 0.9vw;
+body header ul li .BTmenu::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: red;
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+  border-radius: 1vw;
+}
+body header ul li .BTmenu:hover {
   color: #EEEEEE;
+  -webkit-animation-name: BTmenu;
+          animation-name: BTmenu;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+body header ul li .BTmenu:hover::before {
+  transform: scale(1);
 }
 body header .mobileMenu {
   display: none;
@@ -309,9 +348,6 @@ body .minus ul li {
 body .minus ul li a {
   transition: 0.3s ease-in-out;
   font-size: 1vw;
-}
-body .minus ul li:hover a {
-  font-size: 1.05vw;
 }
 body #Banner {
   width: 100%;
@@ -634,9 +670,10 @@ body .projetos .carousel h2 {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   font-size: 1.5vw;
-  padding: 1vh 2vw;
+  padding: 1.5vh 2vw;
 }
 
+/*pulse glow*/
 ::-webkit-scrollbar {
   width: 10px;
   background: #EEEEEE;

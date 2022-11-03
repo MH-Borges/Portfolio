@@ -1,3 +1,4 @@
+@import 'compiler/colors_fonts';
 *, *::after, *::before{
     padding: 0;
     margin: 0;
@@ -48,10 +49,9 @@
   0%   {transform:translate(-50%, -50%) rotate(0)}
   100% {transform:translate(-50%, -50%) rotate(-360deg)}
 }
+@keyframes BTmenu { to { transform: scale(1.1); } }
 
 .hide{ display: none; }
-
-@import 'compiler/colors_fonts';
 
 body{
     display: flex;
@@ -225,18 +225,42 @@ body{
                 a{
                     font-family: "Next-Heavy";
                     font-size: 1.25vw;
-                    padding: 1vw;
+                    padding: 0.7vw;
                     color: $White;
                     transition: 0.3s ease-in-out;
                 }
-                &:hover{
-                    background-color: $Red;
-                    transition: 0.3s ease-in-out;
-                    a{
-                        transition: 0.3s ease-in-out;
-                        font-size: 1.3vw;
-                        padding: 0.9vw;
+                .BTmenu{
+                    display: inline-block;
+                    vertical-align: middle;
+                    transform: perspective(1px) translateZ(0);
+                    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                    transition-property: color;
+                    transition-duration: 0.3s;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        z-index: -1;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: red;
+                        transform: scale(0);
+                        transition-property: transform;
+                        transition-duration: 0.4s;
+                        transition-timing-function: ease-out;
+                        border-radius: 1vw;
+                    }
+                    &:hover{
                         color: $White;
+                        animation-name: BTmenu;
+                        animation-duration: 0.5s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        animation-direction: alternate;
+                        &::before{
+                            transform: scale(1);
+                        }
                     }
                 }
             }
@@ -271,11 +295,6 @@ body{
                 a{
                     transition: 0.3s ease-in-out;
                     font-size: 1vw;
-                }
-                &:hover{
-                    a{
-                        font-size: 1.05vw;
-                    }
                 }
             }
         }
@@ -541,6 +560,8 @@ body{
     @import 'compiler/projetos';
 
 }
+
+/*pulse glow*/
 
 
 

@@ -6,7 +6,7 @@ const loader = document.querySelector('.loader');
 window.onscroll = () => { window.scroll(0, 0); };
 document.body.style.overflow = "hidden";
 
-const Projetos = () => { window.location = './projetosList.html'; }
+const Projetos = () => { window.location = './Lista_projetos.html'; }
 const Mobile = () => { 
 	if(document.querySelector('.links').classList.contains("ativo")){
 		document.querySelector('.links').classList.remove('ativo');
