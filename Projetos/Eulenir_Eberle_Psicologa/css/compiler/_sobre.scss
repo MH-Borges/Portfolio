@@ -1,0 +1,180 @@
+#sobre{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vw;
+    .container{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        .sobre_block{
+            width: 58%;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            &::before{
+                position: absolute;
+                content: '';
+                width: 90%;
+                height: 4.5vw;
+                background: $Pink;
+                top: 1vw;
+                left: -20vw;
+                border-radius: 3vw;
+            }
+            h2{
+                font-family: 'Alex_Letter';
+                font-size: 4vw;
+                z-index: 2;
+                color: $Brown;
+                -webkit-text-stroke: 0.5px $Brown;
+                padding-top: 1.3vw;
+            }
+            .Sobre_txt{
+                width: 75%;
+                font-family: 'Raleway';
+                font-weight: 400;
+                font-size: 1.2vw;
+                margin: 3vw 0 0 4vw;
+                p{
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        width: 0.7vw;
+                        height: 0.7vw;
+                        background-color: $Pink;
+                        top: 0.4vw;
+                        left: -1.5vw;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+            .sobreBT{
+                margin: 4vw 7vw 1vw auto;
+            }
+        }
+        img{
+            display: flex;
+            position: relative;
+            margin: 2.5vw 0;
+            width: 23%;
+            border-radius: 2vw;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            width: 23%;
+            height: 26.5vw;
+            top: 1.6vw;
+            right: 7.4vw;
+            z-index: 2;
+            border-radius: 2vw;
+            border: 0.4vw solid $Pink;
+        }
+    }
+}
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #sobre{
+        .container{
+            .sobre_block{
+                &::before{height: 5vw;}
+                h2{font-size: 4.5vw;}
+                .Sobre_txt{
+                    font-size: 1.5vw;
+                    p{
+                        &::before{
+                            width: 1vw;
+                            height: 1vw;
+                            top: 1.5vw;
+                            left: -2vw;
+                        }
+                    }
+                }
+            }
+            img{
+                display: flex;
+                position: relative;
+                margin: 2.5vw 0;
+                height: 28vw;
+                width: 23%;
+                border-radius: 2vw;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+            &::before{
+                height: 27.5vw;
+                right: 8vw;
+            }
+        }
+    }
+}
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){
+    #sobre{
+        padding: 2vw 0 8vw 0;
+        margin: 0;
+        overflow: hidden;
+        .container{
+            .sobre_block{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                &::before{
+                    width:120%;
+                    height: 14vw;
+                    top: 0;
+                    left: -10%;
+                    border-radius: 2vw;
+                }
+                h2{
+                    font-size: 12vw;
+                    -webkit-text-stroke: 0.05vw $Brown;
+                    padding-top: 1vw;
+                }
+                .Sobre_txt{
+                    width: 90%;
+                    font-size: 3vw;
+                    padding:0 3vw;
+                    margin: 85vw 0 0 0;
+                    text-align: center;
+                    p{padding: 0;&::before{display: none;}}
+                }
+                .sobreBT{
+                    justify-content: center;
+                    width: 100%;
+                    margin: 4vw 0 0 0;
+                    a{
+                        padding: 1vw;
+                        button, input{
+                            font-size: 3.7vw;
+                            border-radius: 2vw;
+                            padding: 1vw 3vw;
+                            transition: none;
+                            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+                            &:hover{transform: none;}
+                       }
+                    }
+                }
+            }
+            img{
+                top: 16%;
+                position: absolute;
+                margin: 0;
+                width: 50%;
+                border-radius: 5vw;
+            }
+            &::before{
+                width: 50%;
+                height: 43%;
+                top: 17.5%;
+                right: 22%;
+                border-radius:5vw;
+                border: 1vw solid $Pink;
+            }
+        }
+    }
+}
