@@ -7,19 +7,23 @@
     <meta name="description" content="Matheus Henrique Programador, sempre trabalhando para construir os melhores projetos com a melhor qualidade">
     <meta name="keywords" content="mhborges, programador, Curitiba, html, css, bootstrap, programador de sites, loja online, matheus henrique">
     
-    <title>MH Borges</title>
-    
+    <title>MH Borges - Projetos</title>
     <link rel="icon" href="img/icon.webp"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
-    <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        
     <script src="js/svg-inject.min.js"></script>
     <script src="js/infiniteslidev2.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
-
+    
+    <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
 
 </head>
@@ -41,18 +45,18 @@
         <div class="overlay"></div>
     </div>
 
-    <div id="Banner">
-        <header>
-            <a href="#Banner" class="logo"><img src="img/MH_logo_flat1.svg" onload="SVGInject(this)" /></a>
-            <a href="#Banner" class="logo2 hide"><img src="img/MH_logo_flat2.svg" onload="SVGInject(this)" /></a>
-            <ul class="links">
-                <li><a href="#Projetos">Projetos</a></li>
-                <li><a href="#SobreMim">Sobre Mim</a></li>
-                <li><a href="#Contato">Contato</a></li>
-            </ul>
-            <button class="mobileMenu" onclick="Mobile()"><i class="fa-solid fa-bars"></i></button>
-        </header>
+    <header>
+        <a href="#Banner" class="logo"><img src="img/MH_logo_flat1.svg" onload="SVGInject(this)" /></a>
+        <a href="#Banner" class="logo2 hide"><img src="img/MH_logo_flat2.svg" onload="SVGInject(this)" /></a>
+        <ul class="links">
+            <li><a href="#Projetos">Projetos</a></li>
+            <li><a href="#SobreMim">Sobre Mim</a></li>
+            <li><a href="#Contato">Contato</a></li>
+        </ul>
+        <button class="mobileMenu" onclick="Mobile()"><i class="fa-solid fa-bars"></i></button>
+    </header>
 
+    <div id="Banner">
         <div class="ContBanner">
             <p id="txt1"></p>
             <h1 id="Math"></h1>
@@ -62,9 +66,9 @@
     <div id="Projetos">
         <h2>Projetos</h2>
         <div class="imgProj">
-            <a href=""><img src="img/Pr02.webp"></a>
-            <a href=""><img src="img/Pr03.webp"></a>
-            <a href=""><img src="img/Pr01.webp" id="PrincProj"></a>
+            <a href=""><img src="img/Pr02.webp" alt="Eulenir site"></a>
+            <a href=""><img src="img/Pr03.webp" alt="WebVantagens site"></a>
+            <a href=""><img src="img/Pr01.webp" alt="V1town site" id="PrincProj"></a>
         </div>
         <button onclick="Projetos()">veja mais projetos >></button>
     </div>
@@ -75,7 +79,7 @@
             <p>Desenvolvedor web, criando projetos desde 2018, sempre buscando novas experiências e sempre tentando tirar o melhor aprendizado possível de cada uma delas.</p><br>
             <p>Desde muito novo sou apaixonado por tecnologia, por todas suas dinâmicas e possibilidades de criação, e decidi me inserir nesse meio pois é um universo gigantesco, com milhões de possibilidades que amo explorar todos os dias.</p>
         </div>
-        <a class="perfilFT" href=""><img src="img/MHB.webp" alt=""></a>
+        <a class="perfilFT" href=""><img src="img/MHB.webp" alt="Foto de perfil Matheus"></a>
 
         <div class="blockScroll">
             <div class="scroll">
@@ -138,7 +142,7 @@
     </div>
 
     <div id="Contato">
-        <img src="img/Contato.webp" alt="">
+        <img src="img/Contato.webp" alt="homem escrevendo">
         <h2>
             SEU SITE COM QUALIDADE<br> E EM BOAS MÃOS
         </h2>

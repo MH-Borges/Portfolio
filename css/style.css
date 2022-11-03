@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box !important;
   list-style: none;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 @-webkit-keyframes outerRotate1 {
@@ -223,17 +223,7 @@ body #btn_UP {
 body #btn_UP img {
   width: 3vw;
 }
-body #Banner {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../img/Banner.webp");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  color: #EEEEEE;
-}
-body #Banner header {
+body header {
   position: fixed;
   box-shadow: 0px 15px 5px -15px #D2D2D2;
   width: 95%;
@@ -244,15 +234,18 @@ body #Banner header {
   z-index: 99;
   transition: 0.25s ease-in-out;
 }
-body #Banner header .logo {
+body header .logo {
   transition: 0.3s ease-in-out;
   margin-left: 2.5vw;
 }
-body #Banner header .logo svg {
+body header .logo svg {
   transition: 0.3s ease-in-out;
   width: 9vw;
 }
-body #Banner header ul {
+body header ul {
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  box-sizing: content-box !important;
   transition: 0.3s ease-in-out;
   display: flex;
   margin-left: auto;
@@ -261,33 +254,34 @@ body #Banner header ul {
   width: 28vw;
   justify-content: space-between;
 }
-body #Banner header ul li {
+body header ul li {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 1.5vw;
   transition: 0.3s ease-in-out;
 }
-body #Banner header ul li a {
+body header ul li a {
   font-family: "Next-Heavy";
   font-size: 1.25vw;
   padding: 1vw;
   color: #EEEEEE;
   transition: 0.3s ease-in-out;
 }
-body #Banner header ul li:hover {
+body header ul li:hover {
   background-color: #BC2D2D;
   transition: 0.3s ease-in-out;
 }
-body #Banner header ul li:hover a {
+body header ul li:hover a {
   transition: 0.3s ease-in-out;
   font-size: 1.3vw;
   padding: 0.9vw;
+  color: #EEEEEE;
 }
-body #Banner header .mobileMenu {
+body header .mobileMenu {
   display: none;
 }
-body #Banner .minus {
+body .minus {
   transition: 0.3s ease-in-out;
   margin-left: -1.1vw;
   width: 102%;
@@ -295,29 +289,39 @@ body #Banner .minus {
   background-color: #323232;
   box-shadow: 0px 15px 10px -15px #D2D2D2;
 }
-body #Banner .minus .logo2 {
+body .minus .logo2 {
   margin-left: 3vw;
   transition: 0.3s ease-in-out;
 }
-body #Banner .minus .logo2 svg {
+body .minus .logo2 svg {
   transition: 0.3s ease-in-out;
   width: 8vw;
 }
-body #Banner .minus ul {
+body .minus ul {
   margin-right: 4vw;
   transition: 0.3s ease-in-out;
   height: 4vh;
   width: 24vw;
 }
-body #Banner .minus ul li {
+body .minus ul li {
   transition: 0.3s ease-in-out;
 }
-body #Banner .minus ul li a {
+body .minus ul li a {
   transition: 0.3s ease-in-out;
   font-size: 1vw;
 }
-body #Banner .minus ul li:hover a {
+body .minus ul li:hover a {
   font-size: 1.05vw;
+}
+body #Banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/Banner.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  color: #EEEEEE;
 }
 body #Banner .ContBanner {
   margin: 23vh 0 0 8vw;
@@ -593,98 +597,44 @@ body footer p {
   margin-top: 2vh;
   font-size: 1vw;
 }
-body #BannerP {
+body .projetos {
   width: 100%;
-  height: 13vh;
+  margin-top: 13vh;
   display: flex;
-  flex-direction: column;
-  color: #EEEEEE;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 2vw;
 }
-body #BannerP header {
-  position: fixed;
-  box-shadow: 0px 15px 5px -15px #D2D2D2;
-  width: 95%;
-  margin-left: 2.5%;
-  height: 13vh;
-  display: flex;
+body .projetos .carousel {
+  width: 48%;
+  margin: 3vh 0.9vw;
+}
+body .projetos .carousel .carousel-inner {
+  width: 100%;
+  height: 45vh;
   align-items: center;
-  z-index: 99;
-  transition: 0.25s ease-in-out;
+  border-radius: 2.5vw;
 }
-body #BannerP header .logo {
-  transition: 0.3s ease-in-out;
-  margin-left: 2.5vw;
+body .projetos .carousel .carousel-inner .carousel-item {
+  width: 100%;
+  height: 100%;
 }
-body #BannerP header .logo svg {
-  transition: 0.3s ease-in-out;
-  width: 9vw;
+body .projetos .carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-body #BannerP header ul {
-  transition: 0.3s ease-in-out;
-  display: flex;
-  margin-left: auto;
-  margin-right: 2vw;
-  height: 5vh;
-  width: 28vw;
-  justify-content: space-between;
+body .projetos .carousel button .icon {
+  margin-top: -5vh;
 }
-body #BannerP header ul li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 1.5vw;
-  transition: 0.3s ease-in-out;
-}
-body #BannerP header ul li a {
-  font-family: "Next-Heavy";
-  font-size: 1.25vw;
-  padding: 1vw;
-  color: #EEEEEE;
-  transition: 0.3s ease-in-out;
-}
-body #BannerP header ul li:hover {
-  background-color: #BC2D2D;
-  transition: 0.3s ease-in-out;
-}
-body #BannerP header ul li:hover a {
-  transition: 0.3s ease-in-out;
-  font-size: 1.3vw;
-  padding: 0.9vw;
-}
-body #BannerP header .mobileMenu {
-  display: none;
-}
-body #BannerP .minus {
-  transition: 0.3s ease-in-out;
-  margin-left: -1.1vw;
-  width: 102%;
-  height: 8vh;
-  background-color: #323232;
-  box-shadow: 0px 15px 10px -15px #D2D2D2;
-}
-body #BannerP .minus .logo2 {
-  margin-left: 3vw;
-  transition: 0.3s ease-in-out;
-}
-body #BannerP .minus .logo2 svg {
-  transition: 0.3s ease-in-out;
-  width: 8vw;
-}
-body #BannerP .minus ul {
-  margin-right: 4vw;
-  transition: 0.3s ease-in-out;
-  height: 4vh;
-  width: 24vw;
-}
-body #BannerP .minus ul li {
-  transition: 0.3s ease-in-out;
-}
-body #BannerP .minus ul li a {
-  transition: 0.3s ease-in-out;
-  font-size: 1vw;
-}
-body #BannerP .minus ul li:hover a {
-  font-size: 1.05vw;
+body .projetos .carousel h2 {
+  color: White;
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+  padding: 1vh 2vw;
 }
 
 ::-webkit-scrollbar {

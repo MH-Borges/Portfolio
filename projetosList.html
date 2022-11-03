@@ -7,26 +7,29 @@
     <meta name="description" content="Matheus Henrique Programador, sempre trabalhando para construir os melhores projetos com a melhor qualidade">
     <meta name="keywords" content="mhborges, programador, Curitiba, html, css, bootstrap, programador de sites, loja online, matheus henrique">
     
-    <title>MH Borges</title>
-    
-    <link rel="icon" href="img/icon.png"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
-    <link rel="stylesheet" href="css/style.css">
+    <title>MH Borges - Projetos</title>
+    <link rel="icon" href="img/icon.webp"/>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        
     <script src="js/svg-inject.min.js"></script>
     <script src="js/infiniteslidev2.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
-
+    
+    <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
-
 </head>
 <body>
 
     <!-- Botão de rolagem-->
-    <a id="btn_UP"><img src="img/Up.png"></a>
+    <a id="btn_UP"><img src="img/Up.webp"></a>
 
     <div class="loader">
         <div class="ArcoFora">
@@ -41,26 +44,198 @@
         <div class="overlay"></div>
     </div>
 
-    <div id="BannerP">
-        <header>
-            <a href="#Banner" class="logo"><img src="img/MH_logo_flat1.svg" onload="SVGInject(this)" /></a>
-            <a href="#Banner" class="logo2 hide"><img src="img/MH_logo_flat2.svg" onload="SVGInject(this)" /></a>
-            <ul class="links">
-                <li><a href="#Projetos">Projetos</a></li>
-                <li><a href="#SobreMim">Sobre Mim</a></li>
-                <li><a href="#Contato">Contato</a></li>
-            </ul>
-            <button class="mobileMenu" onclick="Mobile()"><i class="fa-solid fa-bars"></i></button>
-        </header>
+    <header>
+        <a href="index.html" class="logo"><img src="img/MH_logo_flat1.svg" onload="SVGInject(this)" /></a>
+        <a href="index.html" class="logo2 hide"><img src="img/MH_logo_flat2.svg" onload="SVGInject(this)" /></a>
+        <ul class="links">
+            <li><a href="projetosList.html">Projetos</a></li>
+            <li><a href="index.html#SobreMim">Sobre Mim</a></li>
+            <li><a href="index.html#Contato">Contato</a></li>
+        </ul>
+        <button class="mobileMenu" onclick="Mobile()"><i class="fa-solid fa-bars"></i></button>
+    </header>
+   
+
+    <div class="projetos">
+        
+        <a href="" id="V1town" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/projetos/v1town/vtw01.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/v1town/vtw02.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/v1town/vtw03.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/v1town/vtw04.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/v1town/vtw05.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/v1town/vtw06.webp">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#V1town" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#V1town" data-bs-slide="next">
+                <span class="carousel-control-next-icon icon" aria-hidden="true"></span>
+            </button>
+            <h2>V1town • 2022</h2>
+        </a>
+
+        <a href="" id="Portfolio" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/projetos/portfolio/port01.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/portfolio/port02.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/portfolio/port03.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/portfolio/port04.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/portfolio/port05.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/portfolio/port06.webp">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#Portfolio" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Portfolio" data-bs-slide="next">
+                <span class="carousel-control-next-icon icon" aria-hidden="true"></span>
+            </button>
+            <h2>Meu Portfólio • 2022</h2>
+        </a>
+
+        <a href="" id="Games" class="carousel slide" data-bs-ride="carousel"> 
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/projetos/games/htyd.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/games/sonic.webp">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#Games" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Games" data-bs-slide="next">
+                <span class="carousel-control-next-icon icon" aria-hidden="true"></span>
+            </button>
+            <h2>Games • 2022</h2>
+        </a>
+
+        <a href="" id="Eulenir" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/projetos/eulenir/eule01.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/eulenir/eule02.webp">
+                </div> 
+                <div class="carousel-item">
+                    <img src="img/projetos/eulenir/eule03.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/eulenir/eule04.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/eulenir/eule05.webp">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#Eulenir" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Eulenir" data-bs-slide="next">
+                <span class="carousel-control-next-icon icon" aria-hidden="true"></span>
+            </button>
+            <h2>Eulenir Eberle • 2021</h2>
+
+        </a>
+
+        <a href="" id="Vantagens" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/projetos/web/web01.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/web/web02.webp">
+                </div> 
+                <div class="carousel-item">
+                    <img src="img/projetos/web/web03.webp">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#Vantagens" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Vantagens" data-bs-slide="next">
+                <span class="carousel-control-next-icon icon" aria-hidden="true"></span>
+            </button>
+            <h2>Web Vantagens • 2021</h2>
+
+        </a>
+
+        <a href="" id="Univida" class="carousel slide" data-bs-ride="carousel"> 
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/projetos/univida/uni01.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/univida/uni02.webp">
+                </div> 
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#Univida" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Univida" data-bs-slide="next">
+                <span class="carousel-control-next-icon icon" aria-hidden="true"></span>
+            </button>
+            <h2>Univida • 2021</h2>
+
+        </a>
+
+        <a href="" id="Sona" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/projetos/sona/sona01.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/projetos/sona/sona02.webp">
+                </div> 
+                <div class="carousel-item">
+                    <img src="img/projetos/sona/sona03.webp">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#Sona" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Sona" data-bs-slide="next">
+                <span class="carousel-control-next-icon icon" aria-hidden="true"></span>
+            </button>
+            <h2>Projeto Sona • 2020</h2>
+
+        </a>
+         
     </div>
-
-
+    
     
 
     <footer>
         <img src="img/MH_logo_flat2.svg" class="logoFooter" onload="SVGInject(this)" />
         <p>MHBORGES &copy; 2022</p>
     </footer>
+
 
 </body>
 </html>
