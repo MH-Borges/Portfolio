@@ -1,0 +1,934 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{font-family:"LatoBold"; src: url(fonts/Lato/Lato-Bold.ttf);}
+@font-face{font-family:"LatoBlack"; src: url(fonts/Lato/Lato-Black.ttf);}
+@font-face{font-family:"LatoBlackIT"; src:url(fonts/Lato/Lato-BlackItalic.ttf);}
+@font-face{font-family:"RalewayMedium"; src:url(fonts/Raleway/Raleway-Medium.ttf);}
+@font-face{font-family:"RalewaySemiB"; src:url(fonts/Raleway/Raleway-SemiBold.ttf);}
+@font-face{font-family:"RalewayExtraB"; src:url(fonts/Raleway/Raleway-ExtraBold.ttf);}
+@font-face{font-family:"RalewayBlack"; src:url(fonts/Raleway/Raleway-Black.ttf);}
+/****/
+body{
+}
+/** Menu **/
+.menu{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    border-bottom:solid 2px #122494;
+    background: white;
+    transition: .5s;
+}
+.menu.active{
+    box-shadow: 5px 0 20px #9ad7ff;
+    height:130px;
+}
+#logo{
+    display: flex;
+    width: 40vw;
+    align-items: center;
+    padding-left: 200px;
+}
+.menu img{
+    width: 350px;
+    height: 90px;
+}
+.menu nav{
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul{
+    float: right;
+    display: flex;
+    margin-top: 55px;
+    transition: .5s;
+    margin-right: 280px;
+}
+.menu ul.active{
+    margin-top: 45px;
+    margin-right: 260px;
+}
+.menu li{
+    display: inline;
+    padding: 7px;
+}
+.Btmenu{
+    color: #058dc2;
+    text-decoration: none;
+    font-family:"LatoBlack";
+    border-radius: 15px;
+    font-size: 1.4em;
+    transition: .4s;
+    padding: 12px 8px 12px 8px;
+}
+.Btmenu:hover{
+    background: #f7b511;
+    box-shadow: 4px 4px #0c4f7b;
+    color: white;
+}
+#login{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    float: right;
+    background: #f7b511;
+    color: white;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-family:"LatoBlackIT";
+    padding:10px 6px 10px 6px;
+    border-radius: 20px;
+    transition: .4s;
+    right: 200px;
+    top: 15px;
+}
+#cliente{
+    width: 12px;
+    height: 12px;
+}
+#login.active{
+    right: 180px;
+    top: 10px;
+}
+#login:hover{
+    top: 15px;
+    box-shadow: 4px 4px 5px #0c4f7b;
+}
+/** Menu **/
+#fix{
+    padding-top: 130px;
+}
+/** Banner **/
+#banner{
+    background:url(imgs/banner.jpg);
+    display: flex;
+    width: 100%;
+    height: 75vh;
+    padding-top: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #1f5a99;
+    box-shadow: 0px 10px 10px #c6c6c6;
+}
+#Btxt{
+    display: flex;
+    margin-top: -100px;
+    width: 80vw;
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+    font-family: "LatoBlackIT";
+    padding: 10px;
+    justify-content: center;
+}
+/*Parceiros*/
+#parceiros{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+#TitleP{
+    display: flex;
+    position: absolute;
+    width: 60vw;
+    height: 60px;
+    color: #134668;
+    font-size: 3.2em;
+    font-family: "LatoBlackIT";
+    padding: 15px;
+    justify-content: center;
+    margin-top: 40px;
+}
+.cont{
+    position: relative;
+    width: 100%;
+    height: 58vh;
+    margin-top: 130px;
+    justify-content: center;
+    align-items: center;
+}
+.blockLogo{
+    background: #ebebeb;
+    display: flex;
+    position: relative;
+    width: 18vw;
+    height: 20vw;
+    box-shadow: 8px -5px #0c4f7b;
+    margin: 30px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.logos{
+    position: relative;
+    width: 14vw;
+}
+#BLockBT{
+    display: flex;
+    position: relative;
+    width: 95vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
+#BtParc{
+    background: #f7b511;
+    padding:13px 10px 13px 10px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 5px #0c4f7b;
+    font-size: 1.5em;
+    font-family: "LatoBlackIT";
+    color: white;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 230px;
+    transition: 0.4s;
+}
+#BtParc:hover{
+    margin-top: -20px;
+    box-shadow: 8px 8px #0c4f7b;
+}
+/**Flickity Config**/
+.flickity-enabled { position: relative;}  
+.flickity-enabled:focus {outline: none;} 
+.flickity-viewport {overflow: hidden; height: 100%;}
+.flickity-slider {width: auto; height: 100%;} 
+/* draggable */  
+.flickity-enabled.is-draggable { -webkit-tap-highlight-color: transparent;-webkit-user-select: none; -moz-user-select: none;-ms-user-select: none; user-select: none;}
+.flickity-enabled.is-draggable .flickity-viewport {cursor: move; cursor: -webkit-grab; cursor: grab;}  
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {cursor: -webkit-grabbing; cursor: grabbing;}
+/* ---- flickity-button ---- */  
+.flickity-button { position: absolute; background: #025d98; border: none;color: #bfbfbf}  
+.flickity-button:hover {background:#076db1;cursor: pointer;}  
+.flickity-button:focus {outline: none;}
+.flickity-button-icon {fill: currentColor;}
+/* ---- previous/next buttons ---- */  
+.flickity-prev-next-button {padding: 30px; margin-top: 4vw; border-radius: 50%;transform: translateY(-50%);} 
+.flickity-prev-next-button.previous { left: 38vw; } 
+.flickity-prev-next-button.next { right: 38vw; }
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {left: auto;right: 10px;} .flickity-rtl .flickity-prev-next-button.next {right: auto;left: 10px;} .flickity-prev-next-button .flickity-button-icon {position: absolute;left: 15%;top: 10%;width: 70%;height: 80%;}
+/* ---- page dots ---- */
+.flickity-page-dots {position: absolute;width: 100%;bottom: 50px;padding: 0;margin: 0;list-style: none;text-align: center;line-height: 1;}.flickity-page-dots .dot {display: inline-block;width: 10px;height: 10px;margin: 0 8px;background: rgb(31, 31, 31);border-radius: 50%;opacity: 0.25;cursor: pointer;}.flickity-page-dots .dot.is-selected {opacity: 1;}
+/*Parceiros*/
+
+/** Clube **/
+#Clube{
+    background:#0099d5;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: -1vw;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    max-height: 750px;
+}
+.BannerBack{
+    width: 100%;
+}
+#BlockPhone{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+#BlockPhone img{
+    width: 32vw;
+    z-index: 10;
+}
+#BlockTxt{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px 15px 40px;
+}
+#TitleClube{
+    font-family:"LatoBlackIT";
+    font-size: 3.2em;
+    text-align: center;
+    color: white;
+    width: 35vw;
+}
+#BlockInsidetxt{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 35vw;
+    height: 60vh;
+}
+.txtClube{
+ font-family:"RalewaySemiB";
+ font-size: 1.3em;
+ color: white;
+ padding-bottom: 10px;
+ padding: 25px 35px 0px 35px;
+ text-align: left;
+}
+.bold{
+    font-family: "RalewayExtraB";
+    font-size: 1.5em;
+    padding: 20px;
+    padding-left: 25px;
+    color: white;
+}
+#blockBlue{
+    display: flex;
+    flex-direction: column;
+    background: #0864a1;
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+    height: 130px;
+    margin-left: -125px;
+}
+#valor{
+    color: #f7b511;
+    font-size: 2em;
+    font-family: "LatoBlackIT";
+    text-shadow: -5px 5px 3px #084477;
+    margin-left: 5vw;
+}
+#valor em{
+    font-size: 2.7em;
+    margin-left: 15px;
+}
+#dia{
+    color:white;
+    font-size: 1.5em;
+    font-family: "LatoBlackIT";
+    margin-left: 18vw;
+    margin-top: -15px;
+}
+#BtClube{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#BtClube a{
+    background: #f7b511;
+    padding:10px 20px 10px 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 5px #0c4f7b;
+    font-size: 1.5em;
+    font-family: "LatoBlackIT";
+    color: white;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 10px;
+    transition: 0.4s;
+}
+#BtClube a:hover{
+    margin-top: -15px;
+    box-shadow: 8px 8px 3px #0c4f7b;
+}
+/** Clube **/
+
+/** Premios **/
+#Premios{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+}
+#BlockA{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 85vw;
+    height: 75vh;
+}
+#TitlePr{
+    margin-top: 25px;
+    width: 70vw;
+    font-size: 3em;
+    font-family: "LatoBlack";
+    text-align: center;
+    color: #134668;
+    padding: 5px;
+}
+#BlockB{
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 85vw;
+    height: 55vh;
+}
+.cardsP{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    height: 50vh;
+    margin: 1.5vw;
+}
+.cardsP img{
+    margin-top: 30px;
+    width: 15vw;
+}
+.cardsP h2{
+    font-family: "LatoBlack";
+    color: #134668;
+    font-size: 1.9em;
+    margin-top: 15px;
+}
+.cardsP p{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 10px;
+    font-family: "RalewayMedium";
+}
+#BtPremio{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin-top: 20px;
+}
+#BtPremio a{
+    background: #f7b511;
+    padding: 15px 20px 15px 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px #0c4f7b;
+    font-size: 1.8em;
+    font-family: "LatoBlackIT";
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+#BtPremio a:hover{
+    margin-top: -15px;
+    box-shadow: 5px 5px 3px #0c4f7b;
+}
+/** Premios **/
+
+/** Contato **/
+#Contato{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    background:radial-gradient(circle farthest-corner at 50vw 15vw,#3797fa 50%, #1c61d5 100%);
+    box-shadow: 0px 15px #dcdcdc;
+}
+#BlockFon {
+    display: flex;
+    position: relative;
+    width: 15vw;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+#BlockFon img{
+    width: 15vw;
+}
+#TitleCT{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+    height: 60vh;
+    max-width: 850px;
+}
+#TitleCT h2{
+    color: white;
+    font-family: "LatoBlackIT";
+    font-size: 3.5em;
+    margin-left: -80px;
+}
+#TitleCT h3{
+    color: white;
+    font-family: "RalewayMedium";
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-left: 250px;
+}
+#BtCT{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 60vh;
+    max-width: 200px;
+}
+#BtCT a{
+    position: absolute;
+    background: #f7b511;
+    padding: 15px 10px 15px 10px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 5px #0c4f7b;
+    font-size: 1.5em;
+    font-family: "LatoBlackIT";
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+    bottom: 20px;
+}
+#BtCT a:hover{
+    bottom: 30px;
+    box-shadow: 7px 7px 3px #0c4f7b;
+}
+/** Contato **/
+/** rodapé **/
+footer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#line{
+    width: 100%;
+    height: 15px;
+    background: #dcdcdc;
+    margin-top: 80px;
+}
+footer img{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+}
+#BlockRP{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content:space-around;
+    width: 90vw;
+    height: 35vh;
+}
+#BlockRP h3{
+    font-family: "RalewayBlack";
+    color: #0c4469;
+    font-size: 2em;
+    padding: 10px;
+}
+#BlockRP ul{
+    margin-left: 10px;
+}
+#links{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 18vw;
+    height: 300px;
+    margin: 10px;
+}
+#planos{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 18vw;
+    height: 300px;
+    margin: 10px;
+    margin-left: -300px;
+}
+#links li, #planos li{
+    font-family:"RalewayMedium";
+    padding: 8px;
+    font-weight: 300;
+    list-style: none;
+    font-size: 1.2em;
+}
+#links a, #planos a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+#links a:hover, #planos a:hover{
+    text-decoration: none;
+    color:  #f7b511;
+    font-style: italic;
+    font-size: 1.2em;
+}
+#BlockRP img{
+    width: 18vw;
+    height: 28vh;
+}
+#marcas{
+    display: flex;
+    position: relative;
+    background: #0099d5;
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+}
+#marcas h5, #marcas h3{
+    font-family: "RalewayMedium";
+    font-size: 0.8em;
+    color: white;
+    margin-left: 100px;
+}
+#mhborges{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 60px;
+}
+#mhborges img{
+    width: 150px;
+    margin-top: -2px;
+}
+/** rodapé **/
+
+/** SOBRE **/
+#Nos{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#logoSN{
+    margin-top: 50px;
+}
+#logoSN img{
+    width: 30vw;
+    height: 22vh; 
+}
+.BlockSN{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.BlockSN h2{
+    font-family: "RalewayBlack";
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #2f69c0;
+    text-shadow: 2px 2px 4px #05324f;
+}
+.InsideBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #f7b511;
+    border-radius: 35px;
+    width: 65vw;
+    height: 70vh;
+    margin-top: 25px;
+}
+#imgSNq{
+    position: absolute;
+    top: 90px;
+    width: 40vw;
+    height: 70vh;
+}
+.InsideBlock p{
+    font-family: "RalewaySemiB";
+    padding: 15px 50px 15px;
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 1.8em;
+}
+#missao{
+    margin-top: 80px;
+}
+#blockmissao{
+    height: 210px;
+}
+.imgSNm{
+    position: absolute;
+    top: 90px;
+    width: 13vw;
+    height: 22vh;
+    margin-left: -35vw;
+}
+#img2{
+    margin-left: 35vw;
+}
+#blockVS{
+    height: 240px;
+}
+.imgSNv{
+    position: absolute;
+    top: 90px;
+    width: 16vw;
+    height: 25vh;
+    margin-left: -35vw;
+}
+#img3{
+    margin-left: 35vw;
+}
+#BlockVL{
+    height: 590px;
+}
+#imgSNvl{
+    position: absolute;
+    top: 85px;
+    width:35vw;
+    height: 64vh;
+}
+#listVL{
+    margin-right: auto;
+    margin-top: -10px;
+}
+/** SOBRE **/
+/** PARCEIROS PG **/
+#parceirosPG{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#parceirosPG h2{
+    font-family: "RalewayBlack";
+    font-size: 3.4em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2f69c0;
+    margin-top: 70px;
+    text-shadow: 2px 2px 4px #05324f;
+}
+#subTitle{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #f0f0f0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#subTitle p{
+    font-family: "RalewayMedium";
+    padding: 25px;
+    text-align: center;
+    font-size: 1.2em;
+}
+#BlockPc{
+    width: 85vw;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 18vw;
+    height: 45vh;
+    margin: 3vw 5vw 3vw 5vw;
+    border-radius: 35px;
+    background: #ebebeb;
+    box-shadow: 10px 10px 30px -30px #14557f ;
+    transition: 0.5s;
+}
+.card:hover{  
+    box-shadow: 15px 15px 30px -20px #14557f;
+}
+#desconto{
+    position: absolute;
+    background: #dcdcdc;
+    top: 0;
+    width: 100%;
+    border-top-left-radius:35px;
+    border-top-right-radius:35px ;
+}
+#desconto p {
+    font-family: "LatoBlackIT";
+    text-align: center;
+    color: #104eac;
+    font-size: 1.6em;
+    padding: 5px;
+    text-shadow: 0px 3px 10px #2da7f8;
+}
+.card img{
+    width: 15vw;
+}
+#Btparc{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    background: linear-gradient(90deg,#1b63d5 0%,#3798fa 100%);
+    border-bottom-left-radius:35px;
+    border-bottom-right-radius:35px;
+}
+#Btparc a{
+    font-family: "LatoBlack";
+    font-size: 1.6em;
+    color: white;
+    padding: 50px;
+    text-decoration: none;
+}
+/** PARCEIROS PG **/
+
+/** Contato PG **/
+#contatoPG{
+    display: flex;
+    position: relative;
+    height: 80vh;
+}
+#BlockCT{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background:radial-gradient(circle farthest-corner at 50vw 15vw,#3797fa 50%, #1c61d5 100%);
+    box-shadow:0px 15px 0px #c7c7c7;
+}
+#BlockCT h2{ font-family: "LatoBlack";
+    font-size: 3.8em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px #05324f;
+}
+#contatosInfo{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 75vw;
+    height: 80vh;
+}
+#infoNm{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 30px 45px 30px 45px;
+    background: rgb(255, 255, 255, 0.25);
+    left: 100px;
+    top:120px
+}
+#blockWT{
+    display: flex;
+    align-items: center;
+}
+#blockWT img{
+    width: 3vw;
+}
+#infoNm p{
+    font-family: "LatoBold";
+    color: white;
+    font-size: 2em;
+    padding: 15px;
+    text-align: center;
+}
+#infoNm em{
+    font-size: 0.8em;
+}
+.modal{
+display: flex;
+flex-direction: column;
+position: absolute;
+background-color:#ebebeb;
+width:30vw;
+height: 60vh;
+right: 100px;
+top: 60px;
+justify-content: center;
+align-items: center;
+border-radius: 15px;
+box-shadow: 10px 10px 0px #0c4f7b;
+}
+.formBox{
+position: relative;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.BlockBox{
+position: relative;
+margin: 0 0 45px 0;
+}
+.BlockBox.w50{
+width: 80%;
+}
+.BlockBox input, textarea{
+width: 100% !important; 
+resize: none;
+padding: 10px 0;
+font-size: 1.8em;
+color: #04558a;
+border: none;
+background: none;
+outline: none;
+border-bottom: 3px solid;
+}
+.BlockBox textarea{
+min-height: 90px;
+}
+.BlockBox span{
+font-family: "LatoBlack";
+position: absolute;
+left: 0;
+padding: 5px 0;
+font-size: 1.5em;
+color: #1a5d8a;
+transition: 0.5s;
+pointer-events: none;
+}
+.BlockBox input:focus ~ span, textarea:focus ~ span, input:valid ~ span, textarea:valid ~ span{
+transform:translateY(-35px);
+font-size: 1.3em;
+color:#0d3047;
+}
+#enviar {
+position: absolute;
+bottom: -120px;
+width: 150px;
+border-radius: 10px;
+background: #f7b511;    
+box-shadow: 5px 10px 0px #0c4f7b;
+transition: 0.4s;
+}
+#enviar input{
+cursor: pointer;
+border-bottom: none;
+font-size: 2.2em;
+font-family:"LatoBlack";
+padding:10px 20px 10px 20px;
+font-family: "LatoBlackIT";
+text-decoration: none;
+color: white;
+}
+#enviar:hover{
+box-shadow: 7px 12px 5px #0c4f7b;
+}
+/** Contato PG **/
