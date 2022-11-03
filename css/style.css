@@ -73,6 +73,10 @@ body {
   background-color: #323232;
   height: auto;
   width: 100%;
+  /* Medium Device = 1200px */
+  /* Tablet Device = 768px */
+  /* Wide Mobile = 480px */
+  /* Small Device = 320px */
 }
 body .loader {
   z-index: 999;
@@ -672,6 +676,27 @@ body .projetos .carousel h2 {
   font-size: 1.5vw;
   padding: 1.5vh 2vw;
 }
+@media only screen and (max-width: 479px) {
+  body .projetos {
+    margin-top: 12vh;
+    justify-content: center;
+  }
+  body .projetos .carousel {
+    width: 90%;
+    margin: 2vh 0;
+  }
+  body .projetos .carousel .carousel-inner {
+    height: 25vh;
+    border-radius: 5vw;
+  }
+  body .projetos .carousel button .icon {
+    margin-top: -5vh;
+  }
+  body .projetos .carousel h2 {
+    font-size: 3.5vw;
+    padding: 1vh 4vw;
+  }
+}
 
 /*pulse glow*/
 ::-webkit-scrollbar {
@@ -728,16 +753,16 @@ body .projetos .carousel h2 {
   body #btn_UP img {
     width: 10vw;
   }
-  body #Banner header {
+  body header {
     height: 12vh;
   }
-  body #Banner header .logo {
+  body header .logo {
     margin-left: 5vw;
   }
-  body #Banner header .logo svg {
+  body header .logo svg {
     width: 30vw;
   }
-  body #Banner header ul {
+  body header ul {
     top: -25vh;
     margin: 0;
     height: auto;
@@ -746,10 +771,10 @@ body .projetos .carousel h2 {
     position: absolute;
     flex-direction: column;
   }
-  body #Banner header ul li {
+  body header ul li {
     margin: 1vh 0;
   }
-  body #Banner header ul li a {
+  body header ul li a {
     font-family: "Next-Heavy";
     font-size: 5vw;
     padding: 0;
@@ -757,11 +782,11 @@ body .projetos .carousel h2 {
     color: #EEEEEE;
     transition: 0.3s ease-in-out;
   }
-  body #Banner header ul li:hover a {
+  body header ul li:hover a {
     font-size: 5vw;
     padding: 0;
   }
-  body #Banner header .ativo {
+  body header .ativo {
     top: 12vh;
     margin: 0;
     height: auto;
@@ -770,10 +795,10 @@ body .projetos .carousel h2 {
     position: absolute;
     flex-direction: column;
   }
-  body #Banner header .ativo li {
+  body header .ativo li {
     margin: 1vh 0;
   }
-  body #Banner header .ativo li a {
+  body header .ativo li a {
     font-family: "Next-Heavy";
     font-size: 5vw;
     padding: 0;
@@ -781,31 +806,31 @@ body .projetos .carousel h2 {
     color: #EEEEEE;
     transition: 0.3s ease-in-out;
   }
-  body #Banner header .ativo li:hover a {
+  body header .ativo li:hover a {
     font-size: 5vw;
     padding: 0;
   }
-  body #Banner header .mobileMenu {
+  body header .mobileMenu {
     display: flex;
     margin-left: auto;
     margin-right: 5vw;
     background: none;
     border: none;
   }
-  body #Banner header .mobileMenu i {
+  body header .mobileMenu i {
     font-size: 8vw;
     color: #EEEEEE;
   }
-  body #Banner .minus {
+  body .minus {
     height: 9vh;
   }
-  body #Banner .minus .logo2 {
+  body .minus .logo2 {
     margin-left: 8vw;
   }
-  body #Banner .minus .logo2 svg {
+  body .minus .logo2 svg {
     width: 30vw;
   }
-  body #Banner .minus ul {
+  body .minus ul {
     top: -14vh;
     margin: 0;
     height: auto;
@@ -815,7 +840,7 @@ body .projetos .carousel h2 {
     flex-direction: column;
     background-color: #323232;
   }
-  body #Banner .minus .ativo {
+  body .minus .ativo {
     top: 8vh;
     margin: 0;
     height: auto;
@@ -826,10 +851,10 @@ body .projetos .carousel h2 {
     border-bottom-left-radius: 2vw;
     border-bottom-right-radius: 2vw;
   }
-  body #Banner .minus .ativo li {
+  body .minus .ativo li {
     margin: 1vh 0;
   }
-  body #Banner .minus .ativo li a {
+  body .minus .ativo li a {
     font-family: "Next-Heavy";
     font-size: 4vw;
     padding: 0;
@@ -837,18 +862,18 @@ body .projetos .carousel h2 {
     color: #EEEEEE;
     transition: 0.3s ease-in-out;
   }
-  body #Banner .minus .ativo li:hover a {
+  body .minus .ativo li:hover a {
     font-size: 5vw;
     padding: 0;
   }
-  body #Banner .minus .mobileMenu {
+  body .minus .mobileMenu {
     display: flex;
     margin-left: auto;
     margin-right: 7vw;
     background: none;
     border: none;
   }
-  body #Banner .minus .mobileMenu i {
+  body .minus .mobileMenu i {
     font-size: 8vw;
     color: #EEEEEE;
   }

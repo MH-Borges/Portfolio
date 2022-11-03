@@ -38,3 +38,41 @@
         }
     }
 }
+
+@media only screen and (min-width: 1200px){
+}
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Wide Mobile = 480px */
+@media only screen and (min-width: 480px)  and (max-width: 767px){	
+}
+/* Small Device = 320px */
+@media only screen and (max-width: 479px){
+
+    .projetos{
+        margin-top: 12vh;
+        justify-content: center;
+        .carousel{
+            width: 90%;
+            margin: 2vh 0;
+            .carousel-inner{
+                height: 25vh;
+                border-radius: 5vw;
+            }
+            button{
+                .icon{
+                    margin-top: -5vh;
+                }
+            }
+            h2{
+                font-size: 3.5vw;
+                padding: 1vh 4vw;
+            }
+        }
+    }
+
+}

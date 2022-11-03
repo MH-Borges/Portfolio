@@ -631,138 +631,139 @@ body{
                 width: 10vw;
             }
         }
-        #Banner{
-            header{
-                height: 12vh;
-                .logo{
-                    margin-left: 5vw;
-                    svg{
-                        width: 30vw;
-                    }
+        header{
+            height: 12vh;
+            .logo{
+                margin-left: 5vw;
+                svg{
+                    width: 30vw;
                 }
-                ul{
-                    top: -25vh;
-                    margin:0;
-                    height: auto;
-                    width: 100%;
-                    justify-content: space-around;
-                    position: absolute;
-                    flex-direction: column;
-                    li{
-                        margin:1vh 0;
-                        a{
-                            font-family: "Next-Heavy";
-                            font-size: 5vw;
-                            padding:0;
-                            margin: 1vh 0;
-                            color: $White;
-                            transition: 0.3s ease-in-out;
-                        }
-                        &:hover{
-                            a{
-                                font-size: 5vw;
-                                padding: 0;
-                            }
-                        }
-                    }
-                }
-                .ativo{
-                    top: 12vh;
-                    margin:0;
-                    height: auto;
-                    width: 100%;
-                    justify-content: space-around;
-                    position: absolute;
-                    flex-direction: column;
-                    li{
-                        margin:1vh 0;
-                        a{
-                            font-family: "Next-Heavy";
-                            font-size: 5vw;
-                            padding:0;
-                            margin: 1vh 0;
-                            color: $White;
-                            transition: 0.3s ease-in-out;
-                        }
-                        &:hover{
-                            a{
-                                font-size: 5vw;
-                                padding: 0;
-                            }
-                        }
-                    }
-                }
-                .mobileMenu{
-                    display: flex;
-                    margin-left: auto;
-                    margin-right: 5vw;
-                    background: none;
-                    border: none;
-                    i{
-                        font-size: 8vw;
+            }
+            ul{
+                top: -25vh;
+                margin:0;
+                height: auto;
+                width: 100%;
+                justify-content: space-around;
+                position: absolute;
+                flex-direction: column;
+                li{
+                    margin:1vh 0;
+                    a{
+                        font-family: "Next-Heavy";
+                        font-size: 5vw;
+                        padding:0;
+                        margin: 1vh 0;
                         color: $White;
+                        transition: 0.3s ease-in-out;
+                    }
+                    &:hover{
+                        a{
+                            font-size: 5vw;
+                            padding: 0;
+                        }
                     }
                 }
             }
-            .minus{
-                height: 9vh;
-                .logo2{
-                    margin-left: 8vw;
-                    svg{
-                        width: 30vw;
+            .ativo{
+                top: 12vh;
+                margin:0;
+                height: auto;
+                width: 100%;
+                justify-content: space-around;
+                position: absolute;
+                flex-direction: column;
+                li{
+                    margin:1vh 0;
+                    a{
+                        font-family: "Next-Heavy";
+                        font-size: 5vw;
+                        padding:0;
+                        margin: 1vh 0;
+                        color: $White;
+                        transition: 0.3s ease-in-out;
+                    }
+                    &:hover{
+                        a{
+                            font-size: 5vw;
+                            padding: 0;
+                        }
                     }
                 }
-                ul{
-                    top: -14vh;
-                    margin:0;
-                    height: auto;
-                    width: 100%;
-                    justify-content: space-around;
-                    position: absolute;
-                    flex-direction: column;
-                    background-color: $Black;
+            }
+            .mobileMenu{
+                display: flex;
+                margin-left: auto;
+                margin-right: 5vw;
+                background: none;
+                border: none;
+                i{
+                    font-size: 8vw;
+                    color: $White;
                 }
-                .ativo{
-                    top: 8vh;
-                    margin:0;
-                    height: auto;
-                    width: 100%;
-                    justify-content: space-around;
-                    position: absolute;
-                    flex-direction: column;
-                    border-bottom-left-radius: 2vw;
-                    border-bottom-right-radius: 2vw;
+            }
+        }
+        .minus{
+            height: 9vh;
+            .logo2{
+                margin-left: 8vw;
+                svg{
+                    width: 30vw;
+                }
+            }
+            ul{
+                top: -14vh;
+                margin:0;
+                height: auto;
+                width: 100%;
+                justify-content: space-around;
+                position: absolute;
+                flex-direction: column;
+                background-color: $Black;
+            }
+            .ativo{
+                top: 8vh;
+                margin:0;
+                height: auto;
+                width: 100%;
+                justify-content: space-around;
+                position: absolute;
+                flex-direction: column;
+                border-bottom-left-radius: 2vw;
+                border-bottom-right-radius: 2vw;
 
-                    li{
-                        margin:1vh 0;
-                        a{
-                            font-family: "Next-Heavy";
-                            font-size: 4vw;
-                            padding:0;
-                            margin: 1vh 0;
-                            color: $White;
-                            transition: 0.3s ease-in-out;
-                        }
-                        &:hover{
-                            a{
-                                font-size: 5vw;
-                                padding: 0;
-                            }
-                        }
-                    }
-                }
-                .mobileMenu{
-                    display: flex;
-                    margin-left: auto;
-                    margin-right: 7vw;
-                    background: none;
-                    border: none;
-                    i{
-                        font-size: 8vw;
+                li{
+                    margin:1vh 0;
+                    a{
+                        font-family: "Next-Heavy";
+                        font-size: 4vw;
+                        padding:0;
+                        margin: 1vh 0;
                         color: $White;
+                        transition: 0.3s ease-in-out;
+                    }
+                    &:hover{
+                        a{
+                            font-size: 5vw;
+                            padding: 0;
+                        }
                     }
                 }
             }
+            .mobileMenu{
+                display: flex;
+                margin-left: auto;
+                margin-right: 7vw;
+                background: none;
+                border: none;
+                i{
+                    font-size: 8vw;
+                    color: $White;
+                }
+            }
+        }
+        #Banner{
+            
             .ContBanner{
                 margin: 23vh 0 0 0;
                 justify-content: center;
