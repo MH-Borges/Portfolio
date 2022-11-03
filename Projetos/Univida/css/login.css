@@ -1,0 +1,112 @@
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('http://getwallpapers.com/wallpaper/full/e/7/4/90169.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+border-radius: 15px;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #088c81;
+}
+
+.social_icon span:hover{
+color: #3cc7bb;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #088c81;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #088c81;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: #3cc7bb;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+#voltarTela{
+    position: absolute;
+    bottom: -30px;
+    left: 105px;
+}
+#voltarTela a{
+    color: white;
+    font-size: 16px;
+}
+#voltarTela a:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.eye{
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    z-index: 99;
+    background: none;
+    border: none;
+}

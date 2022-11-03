@@ -2,7 +2,6 @@
   font-family: "Alex_Letter";
   src: url(../fonts/Alexander_Lettering.otf);
 }
-
 /*font-family: "Alexander Lettering"*/
 /*Base Colors*/
 /*Base Colors*/
@@ -11,19 +10,15 @@
 *, *::after, *::before {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box !important;
-          box-sizing: border-box !important;
+  box-sizing: border-box !important;
 }
 
 body {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   background: #F9F3F2;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 img, svg {
@@ -37,53 +32,36 @@ img, svg {
 }
 
 .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 0;
   padding: 0;
 }
-
 .title a {
   position: absolute;
   text-decoration: none;
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   top: 3.5vw;
 }
-
 .title a h2 {
   padding: 0 2vw;
   margin: 0;
 }
-
 .title svg {
   width: 23vw;
   height: 6.5vw;
   z-index: -1;
 }
-
 .title svg g path {
   fill: #D0D8CE;
 }
-
 .title h2 {
   position: absolute;
   font-family: "Alex_Letter" !important;
@@ -94,44 +72,30 @@ img, svg {
 }
 
 .botao {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
-
 .botao button, .botao input {
   font-size: 1.1vw;
   font-weight: 700;
   color: #51403F;
   background-color: #DDB8B1;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 1vw;
   padding: 0.5vw 1vw;
   border: none;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-
 .botao button:hover, .botao input:hover {
-  -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
-  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
 }
 
 #btn_UP {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   bottom: 2.5vw;
   right: -0.1vw;
@@ -141,7 +105,6 @@ img, svg {
   border-bottom-left-radius: 1.5vw;
   border: 1px #F9F3F2 solid;
 }
-
 #btn_UP i {
   color: #F9F3F2;
   font-size: 1.8vw;
@@ -165,133 +128,83 @@ img, svg {
 }
 
 .st-btn {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
 }
-
 .st-btn .st-label {
   margin-left: 0.3vw;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
 #st-el-4 .st-btns, #st-el-5 .st-btns, #st-el-6 .st-btns, #st-el-7 .st-btns, #st-el-8 .st-btns, #st-el-9 .st-btns, #st-el-10 .st-btns {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
-
 #st-el-4 .st-disclaimer, #st-el-5 .st-disclaimer, #st-el-6 .st-disclaimer, #st-el-7 .st-disclaimer, #st-el-8 .st-disclaimer, #st-el-9 .st-disclaimer, #st-el-10 .st-disclaimer {
   display: none;
 }
-
 #st-el-4 .st-logo, #st-el-5 .st-logo, #st-el-6 .st-logo, #st-el-7 .st-logo, #st-el-8 .st-logo, #st-el-9 .st-logo, #st-el-10 .st-logo {
   display: none;
 }
 
 .head {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: fixed;
   z-index: 999;
   width: 100%;
 }
-
 .head .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin: 0;
   padding: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
-
 .head .navbar .nav_contato {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 0;
   background: #51403F;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 .head .navbar .nav_contato img {
   position: absolute;
   top: 0;
 }
-
 .head .navbar .nav_contato .cont_contato {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
-
 .head .navbar .nav_contato .cont_contato .nav_email {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #F9F3F2;
   font-size: 1vw;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   padding: 0.25vw 0;
 }
-
 .head .navbar .nav_contato .cont_contato .nav_email i {
   font-size: 1.3vw;
   padding: 0.5vw;
 }
-
 .head .navbar .nav_contato .cont_contato .nav_email a {
   color: #F9F3F2;
   text-decoration: none;
 }
-
 .head .navbar .nav_contato .cont_contato .nav_redes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
 }
-
 .head .navbar .nav_contato .cont_contato .nav_redes .login {
   color: #F9F3F2;
   font-size: 1vw;
@@ -299,96 +212,67 @@ img, svg {
   font-weight: 700;
   padding-right: 0.3vw;
 }
-
 .head .navbar .nav_contato .cont_contato .nav_redes i {
   font-size: 1.25vw;
   color: #F9F3F2;
   padding: 0 0.4vw;
 }
-
 .head .navbar .nav_contato .cont_contato .nav_redes i:hover {
   color: #94A89D;
 }
-
 .head .navbar .nav_contato.actived {
   margin-top: -5vw;
 }
-
 .head .navbar .nav_menu {
   width: 100%;
   background: #F9F3F2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
 }
-
 .head .navbar .nav_menu .cont_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .head .navbar .nav_menu .cont_menu #logo {
   width: 42%;
   margin-left: 1vw;
   padding: 0.5vw;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 .head .navbar .nav_menu .cont_menu #logo.actived {
   margin-left: -1vw;
   width: 35%;
   padding: 0.2vw;
 }
-
 .head .navbar .nav_menu .cont_menu .menu_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   text-decoration: none;
   list-style: none;
   margin: 0 0.8vw 0 auto;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 .head .navbar .nav_menu .cont_menu .menu_box li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin: 0.5vw;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 1.1vw;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
-
 .head .navbar .nav_menu .cont_menu .menu_box li a {
   padding: 0.5vw;
   color: #51403F;
   text-decoration: none;
 }
-
 .head .navbar .nav_menu .cont_menu .menu_box li ::after {
   display: block;
-  content: '';
+  content: "";
   width: 80%;
   height: 0;
   background-color: #51403F;
@@ -396,23 +280,18 @@ img, svg {
   bottom: -1.3vw;
   left: 10%;
   border-radius: 4vw;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-
 .head .navbar .nav_menu .cont_menu .menu_box li:hover a {
   color: #171A18;
 }
-
 .head .navbar .nav_menu .cont_menu .menu_box li:hover ::after {
   height: 0.3vw;
   bottom: -0.4vw;
 }
-
 .head .navbar .nav_menu .cont_menu .menu_box.actived {
   margin-right: -1vw;
 }
-
 .head .navbar .nav_menu .cont_menu .Menu_Mobile {
   position: absolute;
   color: #51403F;
@@ -471,7 +350,6 @@ img, svg {
     top: -8vw;
   }
 }
-
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   .head .navbar .nav_contato img {
@@ -503,23 +381,17 @@ img, svg {
     margin-top: -10vw;
   }
   .head .navbar .nav_menu .cont_menu {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .head .navbar .nav_menu .cont_menu a {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .head .navbar .nav_menu .cont_menu #logo {
     width: 72%;
     margin: 1.5vw 0;
     padding: 0 1vw;
-    -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
   .head .navbar .nav_menu .cont_menu #logo.actived {
@@ -532,10 +404,7 @@ img, svg {
     width: 100%;
     margin: 0vw;
     bottom: 25vw;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-transition: none;
+    justify-content: center;
     transition: none;
     margin: 1.5vw 0;
   }
@@ -565,7 +434,6 @@ img, svg {
     font-size: 7vw;
     right: 1.5vw;
     top: 3vw;
-    -webkit-transition: 0.2s;
     transition: 0.2s;
   }
   .head .navbar .nav_menu .cont_menu .Menu_Mobile.actived {
@@ -573,65 +441,47 @@ img, svg {
     top: 2.5vw;
   }
 }
-
 #banner {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   padding-top: 9.7vw;
   margin-bottom: 5vw;
 }
-
 #banner #ImgBanner {
   width: 55%;
 }
-
 #banner .Block {
   background-color: #94A89D;
   width: 45%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #F9F3F2;
   text-align: center;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
-
 #banner .Block svg {
   position: absolute;
   height: 100%;
   left: -24.3vw;
   width: 60%;
 }
-
 #banner .Block h3 {
   font-size: 3.8vw;
   text-transform: uppercase;
   font-weight: 800;
   margin-right: 6vw;
 }
-
 #banner .Block p {
   width: 60%;
   font-size: 1.4vw;
   line-height: 1.7vw;
   margin: 1vw 6vw 3vw 0;
 }
-
 #banner .Block h1 {
   margin-right: 6vw;
   font-weight: 700;
@@ -641,8 +491,7 @@ img, svg {
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   #banner {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-top: 28vw;
     margin: 0;
     overflow: hidden;
@@ -676,139 +525,96 @@ img, svg {
     font-size: 4vw;
   }
 }
-
 #servicos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   width: 100%;
   height: 44vw;
   margin-bottom: 2vw;
 }
-
 #servicos #img_serv {
   position: absolute;
   top: 3%;
   left: 0;
 }
-
 #servicos .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 #servicos .container p {
   color: #171A18;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 600;
   font-size: 1.35vw;
   margin: 3vw 0 0 0;
 }
-
 #servicos .container .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 90%;
   margin-top: 6.5%;
 }
-
 #servicos .container .cards a {
   width: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   text-decoration: none;
 }
-
 #servicos .container .cards a .Card {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #servicos .container .cards a .Card img {
   width: 60%;
-  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   margin-top: 2vw;
 }
-
 #servicos .container .cards a .Card h3 {
   text-align: center;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 800;
   font-size: 1.3vw;
   color: #51403F;
   margin-top: 4vw;
   padding: 0 1vw;
-  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
-
 #servicos .container .cards a :hover img {
   margin-top: 1.3vw;
 }
-
 #servicos .container .cards a :hover h3 {
   margin-top: 5.5vw;
 }
-
 #servicos .container .cards :nth-child(2) .Card img {
   width: 58%;
 }
-
 #servicos .container .cards :nth-child(2) .Card h3 {
   margin-top: 3.7vw;
 }
-
 #servicos .container .cards :nth-child(2) :hover img {
   margin-top: 1vw;
 }
-
 #servicos .container .cards :nth-child(2) :hover h3 {
   margin-top: 5.5vw;
 }
-
 #servicos .container .cards :nth-child(3) .Card {
   margin-top: -1vw;
 }
-
 #servicos .container .cards :nth-child(3) .Card img {
   width: 57%;
 }
-
 #servicos .container .cards :nth-child(3) .Card h3 {
   margin-top: 4vw;
 }
-
 #servicos .container .cards :nth-child(3) :hover img {
   margin-top: 1vw;
 }
-
 #servicos .container .cards :nth-child(3) :hover h3 {
   margin-top: 6vw;
 }
@@ -822,7 +628,6 @@ img, svg {
     margin-top: 5%;
   }
 }
-
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   #servicos {
@@ -842,8 +647,7 @@ img, svg {
   #servicos .container .cards {
     width: 100%;
     margin-top: 2vw;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   #servicos .container .cards a {
     width: 60%;
@@ -859,47 +663,28 @@ img, svg {
     padding: 0 1vw;
   }
 }
-
 #sobre {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 2vw;
 }
-
 #sobre .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 #sobre .container .sobre_block {
   width: 58%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 #sobre .container .sobre_block::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 90%;
   height: 4.5vw;
   background: #DDB8B1;
@@ -907,59 +692,48 @@ img, svg {
   left: -20vw;
   border-radius: 3vw;
 }
-
 #sobre .container .sobre_block h2 {
-  font-family: 'Alex_Letter';
+  font-family: "Alex_Letter";
   font-size: 4vw;
   z-index: 2;
   color: #51403F;
   -webkit-text-stroke: 0.5px #51403F;
   padding-top: 1.3vw;
 }
-
 #sobre .container .sobre_block .Sobre_txt {
   width: 75%;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 400;
   font-size: 1.2vw;
   margin: 3vw 0 0 4vw;
 }
-
 #sobre .container .sobre_block .Sobre_txt p {
   position: relative;
 }
-
 #sobre .container .sobre_block .Sobre_txt p::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 0.7vw;
   height: 0.7vw;
   background-color: #DDB8B1;
   top: 0.4vw;
   left: -1.5vw;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
 #sobre .container .sobre_block .sobreBT {
   margin: 4vw 7vw 1vw auto;
 }
-
 #sobre .container img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin: 2.5vw 0;
   width: 23%;
   border-radius: 2vw;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-
 #sobre .container::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 23%;
   height: 26.5vw;
   top: 1.6vw;
@@ -987,23 +761,19 @@ img, svg {
     left: -2vw;
   }
   #sobre .container img {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: relative;
     margin: 2.5vw 0;
     height: 28vw;
     width: 23%;
     border-radius: 2vw;
-    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
   #sobre .container::before {
     height: 27.5vw;
     right: 8vw;
   }
 }
-
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   #sobre {
@@ -1013,13 +783,8 @@ img, svg {
   }
   #sobre .container .sobre_block {
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   #sobre .container .sobre_block::before {
     width: 120%;
@@ -1047,9 +812,7 @@ img, svg {
     display: none;
   }
   #sobre .container .sobre_block .sobreBT {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     width: 100%;
     margin: 4vw 0 0 0;
   }
@@ -1060,14 +823,11 @@ img, svg {
     font-size: 3.7vw;
     border-radius: 2vw;
     padding: 1vw 3vw;
-    -webkit-transition: none;
     transition: none;
-    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   }
   #sobre .container .sobre_block .sobreBT a button:hover, #sobre .container .sobre_block .sobreBT a input:hover {
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
   #sobre .container img {
     top: 16%;
@@ -1085,104 +845,64 @@ img, svg {
     border: 1vw solid #DDB8B1;
   }
 }
-
 #blog {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 15vw;
   padding: 3vw 0;
 }
-
 #blog .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 #blog .container .Tt_Blog svg {
-  -webkit-transform: scaleY(-1);
-          transform: scaleY(-1);
+  transform: scaleY(-1);
 }
-
 #blog .container .Tt_Blog svg g path {
-  fill: #b8ccc1;
+  fill: rgb(184, 204, 193);
 }
-
 #blog .container .Tt_Blog h2 {
   font-size: 6vw;
 }
-
 #blog .container .blog_Block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 1vw;
   height: 39vw;
 }
-
 #blog .container .blog_Block .Simp_cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
   width: 43%;
   height: 100%;
 }
-
 #blog .container .blog_Block .Simp_cards a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   text-decoration: none;
   color: #51403F;
   height: 50%;
 }
-
 #blog .container .blog_Block .Simp_cards a .card_blog {
   background-color: #D0D8CE;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   border-radius: 2vw;
   margin: 1vw 0;
   padding: 1vw;
-  -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
   font-weight: 200;
 }
-
 #blog .container .blog_Block .Simp_cards a .card_blog:hover {
-  -webkit-transform: translateY(-0.5vw);
-          transform: translateY(-0.5vw);
+  transform: translateY(-0.5vw);
 }
-
 #blog .container .blog_Block .Simp_cards a .card_blog img {
   border-radius: 2.3vw;
   border-bottom-right-radius: 10vw;
@@ -1191,38 +911,22 @@ img, svg {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 #blog .container .blog_Block .Simp_cards a .card_blog .blog_infos {
   width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Raleway';
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway";
 }
-
 #blog .container .blog_Block .Simp_cards a .card_blog .blog_infos .titulo_blog {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 65%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #blog .container .blog_Block .Simp_cards a .card_blog .blog_infos .titulo_blog h3 {
   font-size: 1.5vw;
   font-weight: 700;
@@ -1230,80 +934,58 @@ img, svg {
   text-align: center;
   margin: 0 1vw 0 2VW;
 }
-
 #blog .container .blog_Block .Simp_cards a .card_blog .blog_infos i {
   color: #94A89D;
   font-size: 1.2vw;
   margin-left: 0.5vw;
 }
-
 #blog .container .blog_Block .Simp_cards a .card_blog .blog_infos h4 {
   font-size: 1.1vw;
   position: relative;
   font-weight: 600;
   margin: 0.3vw 1.5vw 0 2vw;
 }
-
 #blog .container .blog_Block .Simp_cards a .card_blog .blog_infos h4::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 0.65vw;
   height: 0.65vw;
   background-color: #DDB8B1;
   top: 0.2vw;
   left: -1.3vw;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
 #blog .container .blog_Block .Big_card {
   width: 55%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   background-color: #D0D8CE;
   margin: 1vw 0;
   padding: 1vw;
   border-radius: 2vw;
-  -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
-
 #blog .container .blog_Block .Big_card:hover {
-  -webkit-transform: translateY(-0.5vw);
-          transform: translateY(-0.5vw);
+  transform: translateY(-0.5vw);
 }
-
 #blog .container .blog_Block .Big_card a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   text-decoration: none;
   color: #171A18;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   color: #51403F;
 }
-
 #blog .container .blog_Block .Big_card a h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-size: 1.5vw;
   font-weight: 700;
   max-width: 10vw;
 }
-
 #blog .container .blog_Block .Big_card a img {
   width: 75%;
   height: 65%;
@@ -1312,72 +994,53 @@ img, svg {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 #blog .container .blog_Block .Big_card a .icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin: 0;
   margin-top: 2vw;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
   font-weight: 500;
   padding: 0 1vw;
 }
-
 #blog .container .blog_Block .Big_card a .icons i {
   color: #94A89D;
   font-size: 1.3vw;
 }
-
 #blog .container .blog_Block .Big_card a .icons h4 {
   position: relative;
   font-size: 1vw;
   margin-left: 0.4vw;
 }
-
 #blog .container .blog_Block .Big_card a .icons h4::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 0.7vw;
   height: 0.7vw;
   background-color: #DDB8B1;
   top: 0.25vw;
   left: -1.5vw;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
 #blog .container .blog_Block .Big_card a .icons p {
   position: relative;
   font-size: 0.9vw;
 }
-
 #blog .container .blog_Block .Big_card a .icons p::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 0.6vw;
   height: 0.6vw;
   background-color: #DDB8B1;
   top: 0.4vw;
   left: -1.3vw;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
 #blog .container .blog_Block .Big_card a .resume_txt {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: left;
   width: 100%;
   height: 20%;
@@ -1388,11 +1051,9 @@ img, svg {
   border-radius: 1.5vw;
   margin: 0;
 }
-
 #blog .container .blogBT {
   margin: 1.5vw 2vw 0 auto;
 }
-
 #blog .container .blogBT button {
   font-size: 1.3vw;
   color: #F9F3F2;
@@ -1416,8 +1077,7 @@ img, svg {
   }
   #blog .container .blog_Block {
     height: auto;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   #blog .container .blog_Block .Simp_cards {
     width: 100%;
@@ -1505,81 +1165,55 @@ img, svg {
     padding: 0.8vw 1.5vw;
   }
 }
-
 #contato {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   background-color: #51403F;
   padding: 5vw 0;
 }
-
 #contato #vetorBrown {
   top: -22%;
   position: absolute;
 }
-
 #contato .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 #contato .container .Tl_cont {
   position: absolute;
   top: -40%;
 }
-
 #contato .container .Tl_cont svg {
-  -webkit-transform: scale(-1, -1);
-          transform: scale(-1, -1);
+  transform: scale(-1, -1);
 }
-
 #contato .container .Tl_cont svg g path {
-  fill: #51403f;
+  fill: rgb(81, 64, 63);
   mix-blend-mode: multiply;
   opacity: 0.4;
 }
-
 #contato .container .Tl_cont h2 {
   font-size: 6vw;
 }
-
 #contato .container h3 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   color: #D0D8CE;
   font-size: 2.2vw;
   margin-right: 11vw;
   margin-bottom: 1.5vw;
 }
-
 #contato .container form {
   width: 55%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 1vw 0;
 }
-
 #contato .container form .BlockBox {
   width: 65%;
   position: relative;
@@ -1587,7 +1221,6 @@ img, svg {
   margin: 0 0 2.2vw 0;
   border-radius: 0.8vw;
 }
-
 #contato .container form .BlockBox input, #contato .container form .BlockBox textarea {
   width: 95% !important;
   resize: none;
@@ -1599,37 +1232,30 @@ img, svg {
   background: none;
   outline: none;
 }
-
 #contato .container form .BlockBox textarea {
   min-height: 9vw;
 }
-
 #contato .container form .BlockBox span {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   position: absolute;
   font-style: italic;
   left: 1vw;
   top: 0.75vw;
   font-size: 1.2vw;
   color: #D0D8CE;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   pointer-events: none;
 }
-
 #contato .container form .BlockBox input:focus ~ span, #contato .container form textarea:focus ~ span, #contato .container form input:valid ~ span, #contato .container form textarea:valid ~ span {
-  -webkit-transform: translate(-0.7vw, -2.3vw);
-          transform: translate(-0.7vw, -2.3vw);
+  transform: translate(-0.7vw, -2.3vw);
   font-size: 1.1vw;
   color: #94A89D;
 }
-
 #contato .container .Bt_cont {
   position: absolute;
   left: 40%;
   bottom: 0;
 }
-
 #contato .container .Bt_cont #btn-enviar-contato {
   font-size: 1.5vw;
   font-family: "Raleway";
@@ -1649,9 +1275,7 @@ img, svg {
     top: -10%;
   }
   #contato .container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   #contato .container .Tl_cont {
     top: -30%;
@@ -1688,8 +1312,7 @@ img, svg {
     font-size: 3.2vw;
   }
   #contato .container form .BlockBox input:focus ~ span, #contato .container form textarea:focus ~ span, #contato .container form input:valid ~ span, #contato .container form textarea:valid ~ span {
-    -webkit-transform: translate(-1vw, -5.9vw);
-            transform: translate(-1vw, -5.9vw);
+    transform: translate(-1vw, -5.9vw);
     font-size: 2.9vw;
   }
   #contato .container .Bt_cont {
@@ -1703,44 +1326,30 @@ img, svg {
     border-radius: 2vw;
   }
 }
-
 #newsletter {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   background-color: #D0D8CE;
   padding: 4vw 0;
 }
-
 #newsletter .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 #newsletter .container p {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 600;
   font-size: 1.3vw;
   margin-left: 6vw;
 }
-
 #newsletter .container form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   padding: 1vw 0;
   margin: -1vw 0 0 8vw;
 }
-
 #newsletter .container form .Box_News {
   width: 35%;
   position: relative;
@@ -1748,7 +1357,6 @@ img, svg {
   margin: 1vw 1.5vw;
   border-radius: 1vw;
 }
-
 #newsletter .container form .Box_News input {
   width: 95% !important;
   resize: none;
@@ -1760,34 +1368,28 @@ img, svg {
   background: none;
   outline: none;
 }
-
 #newsletter .container form .Box_News span {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   position: absolute;
   font-style: italic;
   left: 1vw;
   top: 0.8vw;
   font-size: 1.2vw;
   color: #171A18;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   pointer-events: none;
 }
-
 #newsletter .container form .Box_News input:focus ~ span, #newsletter .container form input:valid ~ span {
-  -webkit-transform: translate(-0.5vw, -2.4vw);
-          transform: translate(-0.5vw, -2.4vw);
+  transform: translate(-0.5vw, -2.4vw);
   font-size: 1.1vw;
   color: #51403F;
   font-weight: 600;
 }
-
 #newsletter .container .Bt_news {
   position: absolute;
   right: 8vw;
   top: 2.1vw;
 }
-
 #newsletter .container .Bt_news #btn-enviar-EmailNews {
   font-size: 1.5vw;
   font-family: "Raleway";
@@ -1803,9 +1405,7 @@ img, svg {
     padding: 8vw 0 16vw 0;
   }
   #newsletter .container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   #newsletter .container p {
     margin: 0 0 3vw 0;
@@ -1815,11 +1415,8 @@ img, svg {
   #newsletter .container form {
     padding: 0;
     margin: 0;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   #newsletter .container form .Box_News {
     width: 70%;
@@ -1837,8 +1434,7 @@ img, svg {
     font-size: 3.2vw;
   }
   #newsletter .container form .Box_News input:focus ~ span, #newsletter .container form input:valid ~ span {
-    -webkit-transform: translate(-1vw, -5.9vw);
-            transform: translate(-1vw, -5.9vw);
+    transform: translate(-1vw, -5.9vw);
     font-size: 2.9vw;
   }
   #newsletter .container .Bt_news {
@@ -1851,57 +1447,38 @@ img, svg {
     border-radius: 2vw;
   }
 }
-
 footer {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #51403F;
 }
-
 footer .rodapeBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
   padding: 1vw 0;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   color: #F9F3F2;
 }
-
 footer .rodapeBox h5 {
   font-size: 1vw;
   font-weight: 300;
 }
-
 footer .rodapeBox p {
   width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 1vw;
   margin-top: 0.8vw;
 }
-
 footer .rodapeBox p a {
   width: 55%;
   margin-left: 0.3vw;
 }
-
 footer .rodapeBox p a svg {
   fill: #F9F3F2;
 }
@@ -1915,9 +1492,7 @@ footer .rodapeBox p a svg {
   footer .rodapeBox p {
     width: 30%;
     margin-right: 2vw;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     font-size: 1.5vw;
   }
   footer .rodapeBox p a {
@@ -1925,7 +1500,6 @@ footer .rodapeBox p a svg {
     margin: 0;
   }
 }
-
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   footer .rodapeBox {
@@ -1939,77 +1513,54 @@ footer .rodapeBox p a svg {
   }
   footer .rodapeBox p {
     width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
     font-size: 2.8vw;
     margin: 0;
     margin-top: 5vw;
   }
   footer .rodapeBox p a {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
     margin: 0;
     padding: 1vw 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   footer .rodapeBox p a svg {
     width: 30%;
   }
 }
-
 #banner_Blog {
   width: 100%;
   height: 17vw;
   background-color: #DDB8B1;
   margin-top: 9vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   overflow: hidden;
 }
-
 #banner_Blog img {
   position: absolute;
   width: 11%;
   opacity: 0.15;
 }
-
 #banner_Blog #vecto01 {
-  -webkit-transform: rotate(35deg);
-          transform: rotate(35deg);
+  transform: rotate(35deg);
   bottom: -1.5vw;
   left: -1vw;
 }
-
 #banner_Blog #vecto02 {
-  -webkit-transform: rotate(215deg);
-          transform: rotate(215deg);
+  transform: rotate(215deg);
   right: -1vw;
   top: -1vw;
 }
-
 #banner_Blog .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 #banner_Blog .container h2 {
   width: 50%;
   font-size: 1.5vw;
@@ -2018,47 +1569,33 @@ footer .rodapeBox p a svg {
   line-height: 2.2vw;
   margin-top: 1vw;
 }
-
 #banner_Blog .container h2 span {
   font-weight: 700;
 }
 
 #cards_blog {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   padding: 5vw 0;
 }
-
 #cards_blog .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 1vw 1.5vw;
 }
-
 #cards_blog .container .Itens_blog {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
-
 #cards_blog .container .Itens_blog ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 1.1vw;
 }
-
 #cards_blog .container .Itens_blog ul li {
   display: inline-block;
   position: relative;
@@ -2068,7 +1605,6 @@ footer .rodapeBox p a svg {
   color: #51403F;
   margin: 0 1.5vw 0 0;
 }
-
 #cards_blog .container .Itens_blog ul li::after {
   position: absolute;
   left: 0;
@@ -2080,27 +1616,20 @@ footer .rodapeBox p a svg {
   opacity: 0;
   border-radius: 2vw;
 }
-
 #cards_blog .container .Itens_blog ul li:last-child {
   margin-right: 0;
 }
-
 #cards_blog .container .Itens_blog ul li.active {
   color: #94A89D;
 }
-
 #cards_blog .container .Itens_blog ul li.active:after {
   opacity: 1;
 }
-
 #cards_blog .container .Itens_blog form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin-left: auto;
 }
-
 #cards_blog .container .Itens_blog form button {
   position: absolute;
   background: none;
@@ -2110,18 +1639,16 @@ footer .rodapeBox p a svg {
   left: -0.3vw;
   top: 0.5vw;
 }
-
 #cards_blog .container .Itens_blog form #close {
   font-size: 1.4vw;
   margin-left: 11.5vw;
   top: 0.3vw;
 }
-
 #cards_blog .container .Itens_blog form input {
   padding: 0.5vw 0;
   margin-left: 1.5vw;
   font-size: 1vw;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   color: #51403F;
   font-weight: 600;
   border: none;
@@ -2129,21 +1656,14 @@ footer .rodapeBox p a svg {
   background: none;
   border-bottom: 0.25vw solid #51403F;
 }
-
 #cards_blog .container .Cards_Blog_Page {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 1vw 0;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
-
 #cards_blog .container .Cards_Blog_Page a {
   width: 30%;
   height: 30vw;
@@ -2151,34 +1671,25 @@ footer .rodapeBox p a svg {
   text-decoration: none;
   margin: 2vw 1.3vw;
 }
-
 #cards_blog .container .Cards_Blog_Page a .card_blog {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   background-color: #D0D8CE;
   padding: 1vw;
   border-radius: 1vw;
-  font-family: 'Raleway';
-  -webkit-transition: 0.3s ease-in-out;
+  font-family: "Raleway";
   transition: 0.3s ease-in-out;
 }
-
 #cards_blog .container .Cards_Blog_Page a .card_blog:hover {
-  -webkit-transform: translateY(-0.6vw);
-          transform: translateY(-0.6vw);
+  transform: translateY(-0.6vw);
 }
-
 #cards_blog .container .Cards_Blog_Page a .card_blog #img {
   width: 100%;
   height: 53%;
 }
-
 #cards_blog .container .Cards_Blog_Page a .card_blog #img img {
   border-radius: 1vw;
   width: 100%;
@@ -2186,49 +1697,33 @@ footer .rodapeBox p a svg {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 #cards_blog .container .Cards_Blog_Page a .card_blog .icons_blog_page {
   width: 100%;
   height: 7%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   margin-top: 0.5vw;
 }
-
 #cards_blog .container .Cards_Blog_Page a .card_blog .icons_blog_page i {
   font-size: 1vw;
   color: #94A89D;
   margin: 0;
 }
-
 #cards_blog .container .Cards_Blog_Page a .card_blog .icons_blog_page p, #cards_blog .container .Cards_Blog_Page a .card_blog .icons_blog_page h3 {
   font-size: 0.8vw;
   font-weight: 600;
   margin: 0;
 }
-
 #cards_blog .container .Cards_Blog_Page a .card_blog .tag {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 30%;
   height: 13%;
 }
-
 #cards_blog .container .Cards_Blog_Page a .card_blog .tag p {
   margin: 0;
   font-size: 0.75vw;
@@ -2238,67 +1733,44 @@ footer .rodapeBox p a svg {
   border-radius: 1vw;
   color: #51403F;
 }
-
 #cards_blog .container .Cards_Blog_Page a .card_blog .title_blog_70 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 70%;
   height: 13%;
   padding: 0.5vw;
   text-align: center;
 }
-
 #cards_blog .container .Cards_Blog_Page a .card_blog .title_blog_70 h4 {
   font-weight: 700;
   text-align: center;
   margin: 0;
   font-size: 1vw;
 }
-
 #cards_blog .container .Cards_Blog_Page a .card_blog .title_blog_100 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 13%;
   padding: 0.5vw;
   text-align: center;
 }
-
 #cards_blog .container .Cards_Blog_Page a .card_blog .title_blog_100 h4 {
   font-weight: 700;
   text-align: center;
   margin: 0;
   font-size: 1vw;
 }
-
 #cards_blog .container .Cards_Blog_Page a .card_blog .prev {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 25%;
   background-color: #F9F3F2;
   margin: 0;
@@ -2322,14 +1794,12 @@ footer .rodapeBox p a svg {
     opacity: 0.2;
   }
   #banner_Blog #vecto01 {
-    -webkit-transform: rotate(35deg);
-            transform: rotate(35deg);
+    transform: rotate(35deg);
     bottom: -2vw;
     left: -2vw;
   }
   #banner_Blog #vecto02 {
-    -webkit-transform: rotate(215deg);
-            transform: rotate(215deg);
+    transform: rotate(215deg);
     right: -2vw;
     top: -2vw;
   }
@@ -2346,8 +1816,7 @@ footer .rodapeBox p a svg {
     padding: 2vw 1vw;
   }
   #cards_blog .container .Itens_blog {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   #cards_blog .container .Itens_blog ul {
     width: 100%;
@@ -2386,9 +1855,7 @@ footer .rodapeBox p a svg {
   #cards_blog .container .Cards_Blog_Page {
     margin: 2vw 0;
     padding: 2vw 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   #cards_blog .container .Cards_Blog_Page a {
     width: 85%;
@@ -2398,12 +1865,10 @@ footer .rodapeBox p a svg {
   #cards_blog .container .Cards_Blog_Page a .card_blog {
     padding: 2.5vw;
     border-radius: 4vw;
-    -webkit-transition: none;
     transition: none;
   }
   #cards_blog .container .Cards_Blog_Page a .card_blog:hover {
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
   #cards_blog .container .Cards_Blog_Page a .card_blog #img img {
     border-radius: 2.5vw;
@@ -2437,47 +1902,32 @@ footer .rodapeBox p a svg {
     font-size: 2.8vw;
   }
 }
-
 #Eulenir_Page {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin-top: 9vw;
 }
-
 #Eulenir_Page .container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 5vw 1vw;
 }
-
 #Eulenir_Page .container .text_Eule {
   width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 #Eulenir_Page .container .text_Eule h2 {
   font-family: "Alex_Letter";
   font-size: 4.7vw;
   -webkit-text-stroke: 0.02vw #51403F;
 }
-
 #Eulenir_Page .container .text_Eule h2::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 75%;
   height: 4.5vw;
@@ -2487,38 +1937,27 @@ footer .rodapeBox p a svg {
   z-index: -1;
   border-radius: 2.5vw;
 }
-
 #Eulenir_Page .container .text_Eule p {
   margin: 2vw 0;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 1.2vw;
   padding: 0 7.5vw 0 3vw;
 }
-
 #Eulenir_Page .container #img_Eule {
   width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #Eulenir_Page .container #img_Eule img {
   position: relative;
   width: 75%;
   border-radius: 2.5vw;
-  -webkit-transform: translateY(-3vw);
-          transform: translateY(-3vw);
+  transform: translateY(-3vw);
 }
-
 #Eulenir_Page .container #img_Eule::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 75.1%;
   height: 63.4%;
@@ -2531,84 +1970,56 @@ footer .rodapeBox p a svg {
 
 #skill {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin-bottom: 8vw;
   background-color: #D0D8CE;
   padding: 2.5vw 0;
 }
-
 #skill .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 #skill .container .Eulenir_title svg {
   z-index: 1;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  transform: scaleX(-1);
 }
-
 #skill .container .Eulenir_title svg g path {
-  fill: #f0ece6;
+  fill: rgb(240, 236, 230);
 }
-
 #skill .container .Eulenir_title h2 {
   font-size: 4.5vw;
   z-index: 2;
 }
-
 #skill .container .Itens_skills {
   width: 85%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 1.5vw 0;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
-
 #skill .container .Itens_skills p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   width: 43.5%;
   margin: 1.5vw 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-weight: 600;
   font-size: 1.2vw;
 }
-
 #skill .container .Itens_skills p::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 1vw;
   height: 1vw;
   background-color: #94A89D;
   left: -2vw;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /* Wide Mobile = 480px */
@@ -2617,9 +2028,7 @@ footer .rodapeBox p a svg {
     padding: 28vw 0 12vw 0;
   }
   #Eulenir_Page .container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding: 0;
   }
   #Eulenir_Page .container .text_Eule {
@@ -2648,8 +2057,7 @@ footer .rodapeBox p a svg {
   }
   #Eulenir_Page .container #img_Eule img {
     border-radius: 6vw;
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
     margin: 0;
   }
   #Eulenir_Page .container #img_Eule::before {
@@ -2687,40 +2095,25 @@ footer .rodapeBox p a svg {
     left: -6vw;
   }
 }
-
 #txt_um {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin-top: 10vw;
   padding: 2vw 0;
 }
-
 #txt_um .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Raleway';
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway";
 }
-
 #txt_um .container .Tl_Ebook h2 {
   font-size: 4.5vw;
   margin-top: 0.5vw;
 }
-
 #txt_um .container p {
   width: 55.5%;
   font-size: 1.2vw;
@@ -2729,76 +2122,50 @@ footer .rodapeBox p a svg {
 
 #ebook_img {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   background-color: #D0D8CE;
 }
-
 #ebook_img #V1 {
   width: 25%;
   position: absolute;
   top: -13.6vw;
   left: 0;
 }
-
 #ebook_img #V2 {
   width: 25%;
   position: absolute;
   bottom: -13.6vw;
   right: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
-
 #ebook_img .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Raleway';
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway";
   padding: 3vw 0;
 }
-
 #ebook_img .container a {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 #ebook_img .container a img {
   width: 35%;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 #ebook_img .container a img:hover {
-  -webkit-transform: translateY(-0.6vw);
-          transform: translateY(-0.6vw);
+  transform: translateY(-0.6vw);
 }
-
 #ebook_img .container h2 {
   font-weight: 800;
   font-size: 1.8vw;
   margin: 0;
   margin-top: 1vw;
 }
-
 #ebook_img .container p {
   margin: 0;
   font-size: 1.6vw;
@@ -2808,31 +2175,18 @@ footer .rodapeBox p a svg {
 
 #txt_dois {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin-bottom: 5vw;
 }
-
 #txt_dois .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Raleway';
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway";
 }
-
 #txt_dois .container p {
   width: 61%;
   font-size: 1.2vw;
@@ -2845,25 +2199,14 @@ footer .rodapeBox p a svg {
   margin-bottom: 10vw;
   padding: 3vw 0;
 }
-
 #ebookCall .CalltoEbook {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Raleway';
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway";
   padding: 2vw 5vw;
 }
-
 #ebookCall .CalltoEbook h3 {
   color: #F9F3F2;
   font-size: 2.5vw;
@@ -2873,7 +2216,6 @@ footer .rodapeBox p a svg {
   line-height: 2.7vw;
   margin-bottom: 4vw;
 }
-
 #ebookCall .CalltoEbook p {
   color: #F9F3F2;
   font-size: 1.9vw;
@@ -2883,13 +2225,11 @@ footer .rodapeBox p a svg {
   line-height: 2.1vw;
   margin-bottom: 3vw;
 }
-
 #ebookCall .CalltoEbook .EbookBT button {
   font-size: 1.3vw;
   color: #F9F3F2;
   background-color: #BF8C82;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0.5vw;
   padding: 0.5vw 1.3vw;
   border: none;
@@ -2915,12 +2255,8 @@ footer .rodapeBox p a svg {
     padding: 2.5vw 3vw;
   }
   #ebook_img {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     margin: -3vw 0 5vw 0;
   }
   #ebook_img #V1 {
@@ -2981,16 +2317,11 @@ footer .rodapeBox p a svg {
     margin-bottom: 0;
   }
 }
-
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   #txt_um {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     margin-top: 30vw;
     padding: 5vw;
   }
@@ -3010,12 +2341,8 @@ footer .rodapeBox p a svg {
     padding: 3vw;
   }
   #ebook_img {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #ebook_img #V1 {
     width: 30%;
@@ -3056,15 +2383,9 @@ footer .rodapeBox p a svg {
     padding: 7vw 0;
   }
   #ebookCall .MockupEbook {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #ebookCall .MockupEbook img {
     width: 80%;
@@ -3092,7 +2413,6 @@ footer .rodapeBox p a svg {
     margin: 0;
   }
 }
-
 #line_up {
   width: 100%;
   height: 5vw;
@@ -3100,113 +2420,70 @@ footer .rodapeBox p a svg {
   position: relative;
   background-color: #D0D8CE;
 }
-
 #line_up img {
   width: 15%;
   position: absolute;
   bottom: -10vw;
 }
-
 #line_up #VL2 {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  transform: scaleX(-1);
   right: 0;
 }
 
 #oque {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin: 3vw 0;
 }
-
 #oque .container {
-  font-family: 'Raleway';
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-family: "Raleway";
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 2vw 0 1vw 0;
 }
-
 #oque .container .Tl_oq {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
-
 #oque .container .Tl_oq svg {
   z-index: -1;
 }
-
 #oque .container .Tl_oq svg g path {
-  fill: #ddb8b1;
+  fill: rgb(221, 184, 177);
   opacity: 0.5;
 }
-
 #oque .container .Tl_oq h2 {
   font-size: 4vw;
   margin-left: 0vw;
 }
-
 #oque .container .icon_OQ {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-weight: 900;
   color: #51403F;
   margin: 3vw 0;
 }
-
 #oque .container .icon_OQ .icons_OQ {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-weight: 600;
   font-size: 1.1vw;
   margin: 0 5vw;
 }
-
 #oque .container .icon_OQ .icons_OQ img {
   padding: 1vw;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 #oque .container .icon_OQ .icons_OQ img:hover {
-  -webkit-transform: translateY(-0.3vw);
-          transform: translateY(-0.3vw);
+  transform: translateY(-0.3vw);
 }
-
 #oque .container p {
   width: 57%;
   font-size: 1.25vw;
@@ -3216,52 +2493,35 @@ footer .rodapeBox p a svg {
 
 #quem {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin: 2vw 0;
 }
-
 #quem .container {
-  font-family: 'Raleway';
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-family: "Raleway";
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 2vw 0;
 }
-
 #quem .container .tl_who {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
-
 #quem .container .tl_who svg {
   z-index: -1;
 }
-
 #quem .container .tl_who svg g path {
-  fill: #51403f;
+  fill: rgb(81, 64, 63);
   opacity: 0.25;
 }
-
 #quem .container .tl_who h2 {
   font-size: 4vw;
   margin-left: 0vw;
   margin-top: 0.5vw;
 }
-
 #quem .container p {
   width: 38%;
   font-size: 1.25vw;
@@ -3270,72 +2530,46 @@ footer .rodapeBox p a svg {
   margin: 2vw 0;
   padding: 2vw 0;
 }
-
 #quem .container .Img_areaWho {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 37%;
   margin-right: -12vw;
 }
 
 #beneficios {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin: 0 0 2vw 0;
 }
-
 #beneficios .container {
-  font-family: 'Raleway';
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-family: "Raleway";
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 1vw 0;
 }
-
 #beneficios .container .tl_ben {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
-
 #beneficios .container .tl_ben svg {
   z-index: -1;
 }
-
 #beneficios .container .tl_ben svg g path {
-  fill: #94a89d;
+  fill: rgb(148, 168, 157);
   opacity: 0.5;
 }
-
 #beneficios .container .tl_ben h2 {
   font-size: 4vw;
   margin-left: 0vw;
   margin-top: 0.5vw;
 }
-
 #beneficios .container p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 47%;
   font-size: 1.25vw;
@@ -3344,76 +2578,49 @@ footer .rodapeBox p a svg {
   margin-top: 3vw;
   padding-top: 4vw;
 }
-
 #beneficios .container .Img_areaBen {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 30%;
   margin: 4vw 0 0 -5vw;
 }
-
 #beneficios .container .Img_areaBen img {
   width: 80%;
 }
 
 #funciona {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin: 4vw 0;
 }
-
 #funciona .container {
-  font-family: 'Raleway';
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-family: "Raleway";
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 1vw 0;
 }
-
 #funciona .container .tl_fun {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
-
 #funciona .container .tl_fun svg {
   z-index: -1;
 }
-
 #funciona .container .tl_fun svg g path {
-  fill: #b8ccc1;
+  fill: rgb(184, 204, 193);
   opacity: 0.45;
 }
-
 #funciona .container .tl_fun h2 {
   font-size: 4vw;
   margin-left: 0vw;
   margin-top: 0.5vw;
 }
-
 #funciona .container p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 45%;
   font-size: 1.25vw;
@@ -3422,21 +2629,13 @@ footer .rodapeBox p a svg {
   margin: 3vw 0;
   padding: 3vw 1vw;
 }
-
 #funciona .container .Img_areafun {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 30%;
   margin: 3vw -7vw 0 0;
 }
-
 #funciona .container .Img_areafun img {
   width: 80%;
 }
@@ -3444,67 +2643,47 @@ footer .rodapeBox p a svg {
 #agenda {
   width: 100%;
   background-color: #7B6D6C;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 10vw 0 5vw 0;
 }
-
 #agenda img {
   position: absolute;
   top: -7.85vw;
   z-index: -1;
 }
-
 #agenda #VA1 {
   width: 25%;
   top: 23vw;
   left: 0;
 }
-
 #agenda #VA2 {
   position: absolute;
   width: 25%;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  transform: scaleX(-1);
   right: 0;
   top: 23vw;
 }
-
 #agenda .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   color: #F9F3F2;
   padding: 3vw 0;
 }
-
 #agenda .container h2 {
   font-weight: 800;
   font-size: 2vw;
   margin-top: -3vw;
 }
-
 #agenda .container p {
   padding: 2.5vw 0;
   font-size: 1.2vw;
 }
-
 #agenda .container .Bt_Agenda button, #agenda .container .Bt_Agenda input {
   font-size: 1.3vw;
   font-weight: 800;
@@ -3516,55 +2695,36 @@ footer .rodapeBox p a svg {
 
 #palestra {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin: 5vw 0;
 }
-
 #palestra .container {
-  font-family: 'Raleway';
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-family: "Raleway";
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 1vw 0;
 }
-
 #palestra .container .tl_pas {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
-
 #palestra .container .tl_pas svg {
   z-index: -1;
 }
-
 #palestra .container .tl_pas svg g path {
-  fill: #ddb8b1;
+  fill: rgb(221, 184, 177);
   opacity: 0.45;
 }
-
 #palestra .container .tl_pas h2 {
   font-size: 4vw;
   margin-left: 0vw;
   margin-top: 0.5vw;
 }
-
 #palestra .container p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
   font-size: 1.25vw;
@@ -3589,8 +2749,7 @@ footer .rodapeBox p a svg {
     bottom: -17vw;
   }
   #line_up #VL2 {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
+    transform: scaleX(-1);
     right: 0;
   }
   #oque {
@@ -3615,12 +2774,10 @@ footer .rodapeBox p a svg {
   #oque .container .icon_OQ .icons_OQ img {
     width: 75%;
     padding: 2vw;
-    -webkit-transition: none;
     transition: none;
   }
   #oque .container .icon_OQ .icons_OQ img:hover {
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
   #oque .container p {
     width: 80%;
@@ -3757,40 +2914,27 @@ footer .rodapeBox p a svg {
     padding: 7vw 0;
   }
 }
-
 #header_text {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 8vw;
   padding: 6.5vw 0 0 0;
   border-bottom: 0.5vw solid #51403F;
 }
-
 #header_text .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  font-family: 'Raleway';
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-family: "Raleway";
+  flex-wrap: wrap;
+  align-items: center;
   padding: 0;
 }
-
 #header_text .container p, #header_text .container i, #header_text .container span, #header_text .container h3 {
   margin: 0;
   padding: 0;
   color: #332322;
 }
-
 #header_text .container h1 {
   width: 100%;
   font-weight: 700;
@@ -3798,30 +2942,24 @@ footer .rodapeBox p a svg {
   padding: 1vw 0 1.5vw 0;
   color: #51403F;
 }
-
 #header_text .container i {
   font-size: 1.2vw;
   color: #94A89D;
   padding: 0.5vw 0.8vw 0.5vw 2.5vw;
 }
-
 #header_text .container :nth-child(3) {
   margin-left: -1.5vw;
 }
-
 #header_text .container :nth-child(8) {
   margin-left: auto;
 }
-
 #header_text .container p {
   font-size: 1vw;
 }
-
 #header_text .container h3 {
   font-size: 1vw;
   font-weight: 700;
 }
-
 #header_text .container span {
   font-weight: 700;
 }
@@ -3829,46 +2967,27 @@ footer .rodapeBox p a svg {
 #article_Post {
   width: 100%;
 }
-
 #article_Post .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0;
   margin-bottom: 7vw;
 }
-
 #article_Post .container .Text_Prin {
   width: 70%;
   color: #171A18;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: 'Raleway';
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  font-family: "Raleway";
+  align-items: center;
 }
-
 #article_Post .container .Text_Prin #img_post {
   width: 100%;
   height: 42vw !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 #article_Post .container .Text_Prin #img_post img {
   width: 100%;
   height: 100%;
@@ -3877,27 +2996,22 @@ footer .rodapeBox p a svg {
   border-bottom-right-radius: 3vw;
   border-bottom-left-radius: 3vw;
 }
-
 #article_Post .container .Text_Prin article {
   margin: 0;
   padding: 4vw 5vw 6vw 5vw;
   color: #51403F;
   font-weight: 600;
 }
-
 #article_Post .container .Text_Prin article img, #article_Post .container .Text_Prin article svg {
   width: auto;
 }
-
 #article_Post .container .Text_Prin .fontes {
   width: 100%;
 }
-
 #article_Post .container .Text_Prin .fontes h2 {
   font-size: 2.5vw;
   font-weight: 800;
 }
-
 #article_Post .container .Text_Prin .fontes p {
   font-size: 1.1vw;
   font-style: italic;
@@ -3905,7 +3019,6 @@ footer .rodapeBox p a svg {
   margin: 1vw 0;
   border-radius: 0;
 }
-
 #article_Post .container .Pages_links {
   width: 30%;
   height: 45vw;
@@ -3913,28 +3026,20 @@ footer .rodapeBox p a svg {
   padding: 3vw;
   border-bottom-left-radius: 2.5vw;
   border-bottom-right-radius: 2.5vw;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   color: #51403F;
   position: relative;
 }
-
 #article_Post .container .Pages_links h3 {
   font-size: 1.7vw;
   font-weight: 900;
 }
-
 #article_Post .container .Pages_links ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0.6vw 0 4vw 0;
 }
-
 #article_Post .container .Pages_links ul a {
   position: relative;
   margin: 0.1vw 1vw 0.1vw 2.5vw;
@@ -3942,15 +3047,13 @@ footer .rodapeBox p a svg {
   color: #51403F;
   text-decoration: none;
 }
-
 #article_Post .container .Pages_links ul a li {
   list-style: none;
   font-size: 1vw;
   font-weight: 500;
 }
-
 #article_Post .container .Pages_links ul a ::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   background-color: #DDB8B1;
@@ -3959,33 +3062,24 @@ footer .rodapeBox p a svg {
   border-radius: 0.5vw;
   top: 45%;
   left: -13%;
-  -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
-
 #article_Post .container .Pages_links ul a:hover ::after {
   top: 40%;
   border-radius: 0;
   width: 4.5%;
   height: 24%;
   left: -10%;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
 #article_Post .container .Pages_links h4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: absolute;
   font-size: 1vw;
   font-weight: 700;
   bottom: -2.5vw;
 }
-
 #article_Post .container .Pages_links h4 i {
   margin-right: 1vw;
   font-size: 1.5vw;
@@ -3994,22 +3088,15 @@ footer .rodapeBox p a svg {
 #likes {
   width: 100%;
 }
-
 #likes .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #likes .container h3 {
   color: #51403F;
   font-size: 1.1vw;
   font-weight: 600;
 }
-
 #likes .container form .LikeBtn {
   border: none;
   outline: none;
@@ -4017,23 +3104,19 @@ footer .rodapeBox p a svg {
   margin-top: -0.3vw;
   padding: 0.5vw;
 }
-
 #likes .container form .LikeBtn i {
   color: #94A89D;
   font-size: 1.2vw;
 }
-
 #likes .container form .LikeBtn span {
   font-weight: 600;
   color: #51403F;
   font-size: 1.2vw;
   margin-left: 0.5vw;
 }
-
 #likes .container form .LikeBtn.active {
   outline: none;
 }
-
 #likes .container form .LikeBtn.active i {
   color: #DDB8B1;
   font-size: 1.2vw;
@@ -4041,69 +3124,49 @@ footer .rodapeBox p a svg {
 
 #comments {
   width: 100%;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   margin: 2vw 0 5vw 0;
 }
-
 #comments .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 0;
 }
-
 #comments .container .chama_coment {
   padding: 0.5vw;
 }
-
 #comments .container .chama_coment p {
   font-size: 1.1vw;
   font-weight: 600;
   color: #51403F;
 }
-
 #comments .container .chama_coment p a {
   color: #678775;
   font-weight: 700;
 }
-
 #comments .container .comments_cont {
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
-
 #comments .container .comments_cont h3 {
   padding: 1vw;
   font-size: 1.5vw;
   color: #51403F;
   font-weight: 800;
 }
-
 #comments .container .comments_cont .commentsBk {
   position: relative;
   padding: 0.5vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-left: 1vw;
 }
-
 #comments .container .comments_cont .commentsBk .comentario {
   position: relative;
   margin: 0.5vw 0;
 }
-
 #comments .container .comments_cont .commentsBk .comentario a {
   text-decoration: none;
 }
-
 #comments .container .comments_cont .commentsBk .comentario a .imgUser {
   position: absolute;
   width: 3.5vw;
@@ -4111,7 +3174,6 @@ footer .rodapeBox p a svg {
   left: 0.5vw;
   top: 0.5vw;
 }
-
 #comments .container .comments_cont .commentsBk .comentario a .imgUser img {
   height: 100%;
   width: 100%;
@@ -4119,47 +3181,39 @@ footer .rodapeBox p a svg {
      object-fit: cover;
   border-radius: 50%;
 }
-
 #comments .container .comments_cont .commentsBk .comentario a .NomeUser {
   color: #51403F;
   font-size: 1.2vw;
   margin: 1.3vw 0 0 5vw;
   font-weight: 700;
 }
-
 #comments .container .comments_cont .commentsBk .comentario a .NomeUser span {
   font-size: 0.9vw;
   font-weight: 500;
   margin: -1vw 0 0 0.5vw;
 }
-
 #comments .container .comments_cont .commentsBk .comentario .textUser {
   font-size: 1vw;
   font-weight: 500;
   color: #51403F;
   margin-left: 5.5vw;
 }
-
 #comments .container .comments_cont .commentsBk .comentario .delet_Comment {
   position: absolute;
   left: -1vw;
   top: 0.5vw;
 }
-
 #comments .container .comments_msg {
   padding: 0.5vw;
   position: relative;
 }
-
 #comments .container .comments_msg .form-group {
   color: #51403F;
 }
-
 #comments .container .comments_msg .form-group label {
   font-size: 1.1vw;
   font-weight: 500;
 }
-
 #comments .container .comments_msg .form-group textarea {
   border: none;
   background: #D0D8CE;
@@ -4168,7 +3222,6 @@ footer .rodapeBox p a svg {
   max-height: 100vh;
   margin: 1vw;
 }
-
 #comments .container .comments_msg button {
   position: absolute;
   right: 26vw;
@@ -4182,106 +3235,73 @@ footer .rodapeBox p a svg {
 
 #recomend {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 2vw 0;
   margin-bottom: 5vw;
 }
-
 #recomend::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 7.8vw;
   background-color: #DDB8B1;
   opacity: 0.6;
 }
-
 #recomend .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 1vw 0;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
-
 #recomend .container h3 {
   color: #51403F;
   font-weight: 800;
   width: 30%;
   font-size: 2.8vw;
   padding: 0 5vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
-
 #recomend .container h3 span {
   font-size: 1.6vw;
 }
-
 #recomend .container .Cards_Post {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 5vw 0 1vw 0;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-
 #recomend .container .Cards_Post a {
   width: 30%;
   height: 22vw;
   color: #171A18;
   text-decoration: none;
 }
-
 #recomend .container .Cards_Post a .card_blog {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   background-color: #D0D8CE;
   padding: 1vw;
   border-radius: 1vw;
-  font-family: 'Raleway';
-  -webkit-transition: 0.3s ease-in-out;
+  font-family: "Raleway";
   transition: 0.3s ease-in-out;
 }
-
 #recomend .container .Cards_Post a .card_blog:hover {
-  -webkit-transform: translateY(-0.6vw);
-          transform: translateY(-0.6vw);
+  transform: translateY(-0.6vw);
 }
-
 #recomend .container .Cards_Post a .card_blog #img {
   width: 100%;
   height: 72%;
 }
-
 #recomend .container .Cards_Post a .card_blog #img img {
   border-radius: 1vw;
   width: 100%;
@@ -4289,23 +3309,15 @@ footer .rodapeBox p a svg {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 #recomend .container .Cards_Post a .card_blog .tag {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 10%;
   margin-top: 0.5vw;
 }
-
 #recomend .container .Cards_Post a .card_blog .tag p {
   margin: 0;
   font-size: 0.9vw;
@@ -4315,24 +3327,16 @@ footer .rodapeBox p a svg {
   border-radius: 1vw;
   color: #51403F;
 }
-
 #recomend .container .Cards_Post a .card_blog .title_blog {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 15%;
   padding: 0.5vw;
   margin-top: 0.5vw;
 }
-
 #recomend .container .Cards_Post a .card_blog .title_blog h4 {
   font-weight: 700;
   text-align: center;
@@ -4369,13 +3373,10 @@ footer .rodapeBox p a svg {
     overflow: hidden;
   }
   #article_Post .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding-bottom: 70vw;
     margin-bottom: 0;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   #article_Post .container .Text_Prin {
     width: 100%;
@@ -4409,11 +3410,8 @@ footer .rodapeBox p a svg {
     height: 60vw;
     padding: 4vw;
     border-radius: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   #article_Post .container .Pages_links h3 {
     font-size: 5vw;
@@ -4515,7 +3513,7 @@ footer .rodapeBox p a svg {
   }
   #recomend::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 100%;
     height: 15vw;
   }
@@ -4539,7 +3537,6 @@ footer .rodapeBox p a svg {
   #recomend .container .Cards_Post a .card_blog {
     padding: 2.5vw;
     border-radius: 3vw;
-    -webkit-transition: none;
     transition: none;
   }
   #recomend .container .Cards_Post a .card_blog #img img {
@@ -4553,16 +3550,10 @@ footer .rodapeBox p a svg {
     padding: 0.3vw 1.5vw;
   }
   #recomend .container .Cards_Post a .card_blog .title_blog {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: relative;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 15%;
     padding: 0.5vw;
@@ -4573,75 +3564,53 @@ footer .rodapeBox p a svg {
     padding: 0 10vw;
   }
 }
-
 .login_sreen {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background: #678775;
-  font-family: 'Raleway';
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-family: "Raleway";
+  justify-content: center;
+  align-items: center;
   padding: 1vw;
   height: 100vh;
   width: 100%;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .login_sreen #div-mensagem {
   margin-top: 1vw;
   font-size: 1.3vw;
   font-weight: 900;
 }
-
 .login_sreen #div-mensagem.green {
   color: #735D5C;
 }
-
 .login_sreen #div-mensagem.pink {
   color: #DDB8B1;
 }
-
 .login_sreen .container {
   position: relative;
   width: 70%;
   height: 75%;
   background: white;
-  -webkit-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
   border-radius: 3vw;
   overflow: hidden;
 }
-
 .login_sreen .container .user {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .login_sreen .container .user .imgBx {
   position: relative;
   width: 50%;
   height: 100%;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .login_sreen .container .user .imgBx img {
   position: absolute;
   top: 0;
@@ -4653,26 +3622,17 @@ footer .rodapeBox p a svg {
   border-bottom-left-radius: 3vw;
   border-top-left-radius: 3vw;
 }
-
 .login_sreen .container .user .formBx {
   position: relative;
   width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 0.5s;
+  justify-content: center;
+  align-items: center;
   transition: 0.5s;
   background: #fff;
   border-radius: 3vw;
 }
-
 .login_sreen .container .user .formBx h2 {
   font-size: 2vw;
   font-weight: 900;
@@ -4683,23 +3643,20 @@ footer .rodapeBox p a svg {
   margin-bottom: 1.5vw;
   color: #51403F;
 }
-
 .login_sreen .container .user .formBx input {
   width: 140%;
   padding: 0.5vw 1vw;
-  background: #e9e9e9;
+  background: rgb(233, 233, 233);
   color: #51403F;
   border: none;
   outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   font-size: 1.2vw;
   margin: 0.5vw 0 0.5vw -2vw;
   letter-spacing: 0.1vw;
   font-weight: 600;
   border-radius: 1vw;
 }
-
 .login_sreen .container .user .formBx #loginBt, .login_sreen .container .user .formBx #btn-cadastrar {
   max-width: 50%;
   background-color: #51403F;
@@ -4707,11 +3664,9 @@ footer .rodapeBox p a svg {
   cursor: pointer;
   font-size: 1vw;
   font-weight: 600;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-top: 1.5vw;
 }
-
 .login_sreen .container .user .formBx p {
   position: relative;
   margin-top: 1.5vw;
@@ -4721,37 +3676,26 @@ footer .rodapeBox p a svg {
   text-transform: uppercase;
   font-weight: 700;
 }
-
 .login_sreen .container .user .formBx p a {
   margin-left: 0.5vw;
   text-decoration: none;
   color: #678775;
 }
-
 .login_sreen .container .user .formBx p a:hover {
   color: #94A89D;
 }
-
 .login_sreen .container .signInBx .formBx {
   top: 0;
 }
-
 .login_sreen .container .signInBx .formBx .senhaBx {
   width: 127%;
   position: relative;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .login_sreen .container .signInBx .formBx .senhaBx #mostraSenha {
   position: absolute;
   right: 1vw;
@@ -4759,39 +3703,30 @@ footer .rodapeBox p a svg {
   background-color: none;
   background: none;
 }
-
 .login_sreen .container .signInBx .formBx .senhaBx #mostraSenha i {
   color: #51403F;
   font-size: 1.2vw;
 }
-
 .login_sreen .container .signInBx .imgBx {
   top: 0;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .login_sreen .container .signUpBx {
   pointer-events: none;
 }
-
 .login_sreen .container .signUpBx .imgBx {
   top: -100%;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .login_sreen .container .signUpBx .imgBx img {
   border-radius: 0;
   border-bottom-right-radius: 3vw;
   border-top-right-radius: 3vw;
 }
-
 .login_sreen .container .signUpBx .formBx {
   top: 100%;
   padding: 2vw;
 }
-
 .login_sreen .container .signUpBx .formBx h2 {
   width: 100%;
   color: #678775;
@@ -4799,13 +3734,11 @@ footer .rodapeBox p a svg {
   letter-spacing: 0.3vw;
   margin-bottom: 2.5vw;
 }
-
 .login_sreen .container .signUpBx .formBx input {
   width: 110%;
   font-size: 1.1vw;
-  margin: 0.5vw 0  0.5vw -1vw;
+  margin: 0.5vw 0 0.5vw -1vw;
 }
-
 .login_sreen .container .signUpBx .formBx #btn-cadastrar {
   border: none;
   background-color: #94A89D;
@@ -4815,23 +3748,18 @@ footer .rodapeBox p a svg {
   margin: 1vw 0 1.5vw 0;
   letter-spacing: 0.1vw;
 }
-
 .login_sreen .container.active .signInBx .formBx {
   top: 100%;
 }
-
 .login_sreen .container.active .signInBx .imgBx {
   top: -100%;
 }
-
 .login_sreen .container.active .signUpBx {
   pointer-events: initial;
 }
-
 .login_sreen .container.active .signUpBx .imgBx {
   top: 0;
 }
-
 .login_sreen .container.active .signUpBx .formBx {
   top: 0;
 }
@@ -4908,7 +3836,6 @@ footer .rodapeBox p a svg {
     letter-spacing: auto;
   }
 }
-
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   .login_sreen #div-mensagem {
@@ -4976,7 +3903,6 @@ footer .rodapeBox p a svg {
     letter-spacing: auto;
   }
 }
-
 #descadastrar {
   width: 100%;
   height: 71vh;
@@ -4985,55 +3911,40 @@ footer .rodapeBox p a svg {
   background-color: #94A89D;
   color: #51403F;
 }
-
 #descadastrar .container {
   text-align: center;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
-
 #descadastrar .container p {
   padding: 1.5vw 0;
   margin: 0;
   font-weight: 600;
   font-size: 1.25vw;
 }
-
 #descadastrar .container .form_desc {
   padding: 1vw;
 }
-
 #descadastrar .container .form_desc .Title_desc h2 {
   font-size: 2.5vw;
   font-weight: 700;
   padding: 0 0 1vw 0;
 }
-
 #descadastrar .container .form_desc .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #descadastrar .container .form_desc .row .form-group {
   text-align: left !important;
   margin: 0 2vw 1vw 2vw;
 }
-
 #descadastrar .container .form_desc .row .form-group label {
   font-size: 1.2vw;
   margin-left: 0.3vw;
 }
-
 #descadastrar .container .form_desc .row .form-group input {
   font-size: 1.2vw;
 }
-
 #descadastrar .container .form_desc .row #btn-descadastrar {
   font-size: 1.5vw;
   font-family: "Raleway";
@@ -5075,7 +3986,6 @@ footer .rodapeBox p a svg {
     margin-top: 4vw;
   }
 }
-
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   #descadastrar {
@@ -5113,22 +4023,16 @@ footer .rodapeBox p a svg {
     margin-top: 5vw;
   }
 }
-
 #PerfilPage {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  font-family: 'Raleway';
+  flex-wrap: wrap;
+  font-family: "Raleway";
 }
-
 #PerfilPage .container {
   max-width: 70%;
 }
-
 #PerfilPage .infosUser {
   margin-top: 9vw;
   background-color: #d8ddd8;
@@ -5137,25 +4041,16 @@ footer .rodapeBox p a svg {
   border-bottom-left-radius: 3vw;
   border-bottom-right-radius: 3vw;
   padding-bottom: 1vw;
-  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
 }
-
 #PerfilPage .infosUser .banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 18vw;
 }
-
 #PerfilPage .infosUser .banner img {
   position: absolute;
   top: 0;
@@ -5165,26 +4060,18 @@ footer .rodapeBox p a svg {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 #PerfilPage .infosUser .imgPerfil {
   position: relative;
   width: 13vw;
   height: 13vw;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #F9F3F2;
   margin-left: 2vw;
   margin-top: -8vw;
 }
-
 #PerfilPage .infosUser .imgPerfil img {
   position: absolute;
   top: 0;
@@ -5196,81 +4083,67 @@ footer .rodapeBox p a svg {
   border-radius: 50%;
   padding: 0.5vw;
 }
-
 #PerfilPage .infosUser .infoUser {
   position: relative;
   margin: -5vw 0 0 14vw;
   padding: 1.5vw 2vw;
 }
-
 #PerfilPage .infosUser .infoUser h3 {
   color: #51403F;
   font-size: 1.7vw;
   font-weight: 800;
 }
-
 #PerfilPage .infosUser .infoUser h4 {
   color: #735D5C;
   font-size: 1.1vw;
   font-weight: 600;
   margin-left: 1vw;
 }
-
 #PerfilPage .infosUser .infoUser h4 span {
   margin-left: 0.5vw;
 }
-
 #PerfilPage .sobre {
   position: relative;
   background-color: #d8ddd8;
   padding: 1.5vw 2vw 2.5vw 2vw;
   border-radius: 2.5vw;
-  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
   margin-top: 2.5vw;
 }
-
 #PerfilPage .sobre h3 {
   color: #51403F;
   font-size: 2vw;
   font-weight: 800;
 }
-
 #PerfilPage .sobre .sobretxt {
   color: #51403F;
   font-size: 1vw;
   font-weight: 400;
   margin: 1vw 0 0 1vw;
 }
-
 #PerfilPage .coments {
   position: relative;
   background-color: #d8ddd8;
   padding: 2vw;
   border-radius: 2.5vw;
-  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
   margin-top: 2.5vw;
   margin-bottom: 5vw;
 }
-
 #PerfilPage .coments h3 {
   color: #51403F;
   font-size: 2vw;
   font-weight: 800;
 }
-
 #PerfilPage .coments .comentario {
   position: relative;
   margin: 2vw 1vw;
   padding: 0.5vw 2vw;
   height: 12vw;
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   border-radius: 2vw;
   overflow: hidden;
 }
-
 #PerfilPage .coments .comentario .imgUser {
   position: absolute;
   width: 3.5vw;
@@ -5278,7 +4151,6 @@ footer .rodapeBox p a svg {
   left: 1vw;
   top: 1vw;
 }
-
 #PerfilPage .coments .comentario .imgUser img {
   height: 100%;
   width: 100%;
@@ -5286,20 +4158,17 @@ footer .rodapeBox p a svg {
      object-fit: cover;
   border-radius: 50%;
 }
-
 #PerfilPage .coments .comentario .NomeUser {
   color: #51403F;
   font-size: 1.2vw;
   margin: 1.5vw 0 0 3.5vw;
   font-weight: 700;
 }
-
 #PerfilPage .coments .comentario .NomeUser span {
   font-size: 0.9vw;
   font-weight: 500;
   margin: -1vw 0 0 0.5vw;
 }
-
 #PerfilPage .coments .comentario .textUser {
   font-size: 1vw;
   font-weight: 500;
@@ -5308,31 +4177,24 @@ footer .rodapeBox p a svg {
   margin-right: 15vw;
   padding: 0.5vw;
 }
-
 #PerfilPage .coments .comentario .postInfo {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 12vw;
   top: 0.5vw;
   right: 1vw;
   padding: 0.5vw;
 }
-
 #PerfilPage .coments .comentario .postInfo .imgPost {
   width: 100%;
   height: 7vw;
 }
-
 #PerfilPage .coments .comentario .postInfo .imgPost img {
   width: 100%;
   height: 100%;
   border-radius: 1vw;
 }
-
 #PerfilPage .coments .comentario .postInfo h4 {
   height: 2.5vw;
   width: 100%;
@@ -5349,7 +4211,6 @@ footer .rodapeBox p a svg {
     max-width: 80%;
   }
 }
-
 /* Medium Device = 1200px */
 /* Tablet Device = 768px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5370,7 +4231,6 @@ footer .rodapeBox p a svg {
     padding: 1.5vw;
   }
 }
-
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   .container {
@@ -5405,5 +4265,4 @@ footer .rodapeBox p a svg {
     padding: 2.5vw;
     padding-left: 3vw;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
