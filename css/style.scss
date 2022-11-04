@@ -244,7 +244,7 @@ body{
                         left: 0;
                         right: 0;
                         bottom: 0;
-                        background: red;
+                        background: $Red;
                         transform: scale(0);
                         transition-property: transform;
                         transition-duration: 0.4s;
