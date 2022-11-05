@@ -77,6 +77,10 @@ body {
   /* Tablet Device = 768px */
   /* Wide Mobile = 480px */
   /* Small Device = 320px */
+  /* Medium Device = 1200px */
+  /* Tablet Device = 768px */
+  /* Wide Mobile = 480px */
+  /* Small Device = 320px */
 }
 body .loader {
   z-index: 999;
@@ -272,13 +276,12 @@ body header ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 1.5vw;
   transition: 0.3s ease-in-out;
 }
 body header ul li a {
   font-family: "Next-Heavy";
   font-size: 1.25vw;
-  padding: 0.7vw;
+  padding: 0.6vh 0.6vw;
   color: #EEEEEE;
   transition: 0.3s ease-in-out;
 }
@@ -298,12 +301,12 @@ body header ul li .BTmenu::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: red;
+  background: #BC2D2D;
   transform: scale(0);
   transition-property: transform;
   transition-duration: 0.4s;
   transition-timing-function: ease-out;
-  border-radius: 1vw;
+  border-radius: 2vw;
 }
 body header ul li .BTmenu:hover {
   color: #EEEEEE;
@@ -359,6 +362,8 @@ body #Banner {
   background-image: url("../img/Banner.webp");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   color: #EEEEEE;
@@ -369,8 +374,8 @@ body #Banner .ContBanner {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 65vh;
-  padding: 3vw;
+  height: 68vh;
+  padding: 5vw;
 }
 body #Banner .ContBanner .blinking {
   -webkit-user-select: none;
@@ -395,10 +400,11 @@ body #Banner .ContBanner p {
   font-size: 2.2vw;
   font-weight: 700;
   text-shadow: 2px 5px 5px #000000;
+  margin-top: -5vh;
 }
 body #Banner .ContBanner h1 {
   font-family: "Next-Heavy";
-  padding: 5vh 0;
+  padding: 8vh 0;
   font-size: 3.5vw;
   text-shadow: 2px 5px 5px #000000;
 }
@@ -636,6 +642,7 @@ body footer p {
   color: #696969;
   margin-top: 2vh;
   font-size: 1vw;
+  margin-bottom: 0 !important;
 }
 body .projetos {
   width: 100%;
@@ -665,7 +672,14 @@ body .projetos .carousel .carousel-inner .carousel-item img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+body .projetos .carousel button {
+  background-color: none;
+  background: none;
+  border: none;
+}
 body .projetos .carousel button .icon {
+  width: 5vw;
+  height: 4vh;
   margin-top: -5vh;
 }
 body .projetos .carousel h2 {
@@ -697,7 +711,72 @@ body .projetos .carousel h2 {
     padding: 1vh 4vw;
   }
 }
-
+body .portfolio {
+  width: 100%;
+  margin-top: 13vh;
+  color: #EEEEEE;
+  padding: 5vh 4vw;
+  display: flex;
+  flex-direction: column;
+}
+body .portfolio h1 {
+  font-family: "Next-Heavy";
+  color: #BC2D2D;
+  font-size: 2vw;
+  text-shadow: 2px 5px rgb(12, 12, 12);
+  margin: 0 auto;
+}
+body .portfolio p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 600;
+  padding: 5vh 0;
+  font-size: 1.2vw;
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+}
+body .portfolio h2 {
+  font-family: "Next-Bold";
+  text-align: left;
+  font-size: 1.5vw;
+  padding: 7vh 0 2vh 11vw;
+  position: relative;
+}
+body .portfolio h2::before {
+  content: "";
+  width: 108.7%;
+  height: 1px;
+  background: #EEEEEE;
+  position: absolute;
+  top: 0;
+  margin-left: -15vw;
+}
+body .portfolio a {
+  width: 75%;
+  margin: 0 auto 3vh;
+}
+body .portfolio a img {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #EEEEEE;
+  box-shadow: 0 10px 50px -20px black;
+}
+body .portfolio button {
+  background: none;
+  margin: 0 auto;
+  color: #EEEEEE;
+  font-family: "Next-Light";
+  font-size: 1.2vw;
+  padding: 1vh 2vw;
+  border: 2px solid #EEEEEE;
+  border-radius: 2vw;
+  margin-bottom: 5vh;
+  transition: 0.3s ease-in-out;
+}
+body .portfolio button:hover {
+  transform: translateY(-10px);
+  font-size: 1.3vw;
+}
 /*pulse glow*/
 ::-webkit-scrollbar {
   width: 10px;

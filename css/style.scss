@@ -220,12 +220,11 @@ body{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border-radius: 1.5vw;
                 transition: 0.3s ease-in-out;
                 a{
                     font-family: "Next-Heavy";
                     font-size: 1.25vw;
-                    padding: 0.7vw;
+                    padding: 0.6vh 0.6vw;
                     color: $White;
                     transition: 0.3s ease-in-out;
                 }
@@ -249,7 +248,7 @@ body{
                         transition-property: transform;
                         transition-duration: 0.4s;
                         transition-timing-function: ease-out;
-                        border-radius: 1vw;
+                        border-radius: 2vw;
                     }
                     &:hover{
                         color: $White;
@@ -305,18 +304,19 @@ body{
         background-image: url('../img/Banner.webp');
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         display: flex;
         flex-direction: column;
         color: $White;
-        
         .ContBanner{
             margin: 23vh 0 0 8vw;
             border-left: 3px solid $LightGray;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 65vh;
-            padding: 3vw;
+            height: 68vh;
+            padding: 5vw;
         
             .blinking {
                 user-select: none;
@@ -328,10 +328,11 @@ body{
                 font-size: 2.2vw;
                 font-weight: 700;
                 text-shadow: 2px 5px 5px #000000;
+                margin-top: -5vh;
             }
             h1{
                 font-family: "Next-Heavy";
-                padding: 5vh 0;
+                padding: 8vh 0;
                 font-size: 3.5vw;
                 text-shadow: 2px 5px 5px #000000;
             }
@@ -554,10 +555,13 @@ body{
             color: #696969;
             margin-top: 2vh;
             font-size: 1vw;
+            margin-bottom: 0 !important;
         }
     }
 
     @import 'compiler/projetos';
+    @import 'compiler/portfolio';
+
 
 }
 

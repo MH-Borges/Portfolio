@@ -154,7 +154,7 @@ setTimeout(() => {
 				frase2.appendChild(blinkH);
 
 				setTimeout(() => {
-					const blockfrase3 = document.createElement('p');
+					const blockfrase3 = document.createElement('span');
 					blockfrase3.classList.add('SubTitle');
 					banner.appendChild(blockfrase3);
 

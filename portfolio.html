@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matheus Henrique || https://mhborges.com.br">
+    <meta name="description" content="Matheus Henrique Programador, sempre trabalhando para construir os melhores projetos com a melhor qualidade">
+    <meta name="keywords" content="mhborges, programador, Curitiba, html, css, bootstrap, programador de sites, loja online, matheus henrique">
+    
+    <title>Portfólio</title>
+    <link rel="icon" href="img/icon.webp"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="js/svg-inject.min.js"></script>
+    <script src="js/infiniteslidev2.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+    <!-- Botão de rolagem-->
+    <a id="btn_UP"><img src="img/Up.webp"></a>
+
+    <div class="loader">
+        <div class="ArcoFora">
+            <div class="ArcoMedio">
+            <span class="ArcoInter"></span>
+            </div>
+        </div>
+        <div id="ParticulasInside"></div>
+        <div id="ParticulasExter"></div>
+    
+        <div class="palavra"> CARREGANDO </div>
+        <div class="overlay"></div>
+    </div>
+
+    <header>
+        <a href="index.html" class="logo"><img src="img/MH_logo_flat1.svg" onload="SVGInject(this)" /></a>
+        <a href="index.html" class="logo2 hide"><img src="img/MH_logo_flat2.svg" onload="SVGInject(this)" /></a>
+        <ul class="links">
+            <li><a class="BTmenu" href="Lista_projetos.html">Projetos</a></li>
+            <li><a class="BTmenu" href="index.html#SobreMim">Sobre Mim</a></li>
+            <li><a class="BTmenu" href="index.html#Contato">Contato</a></li>
+        </ul>
+        <button class="mobileMenu" onclick="Mobile()"><i class="fa-solid fa-bars"></i></button>
+    </header>
+   
+    <div class="portfolio">
+        <h1>meu portfólio ao longo dos anos</h1>
+
+        <p>Ao longo dos anos criei diversas versões desse mesmo portfólio, 
+            e aos poucos fui me aprimorando nas linguagens utilizadas e nas técnicas de design</p>
+
+        <h2>Atual • 2022</h2>
+        <a href="./index.html"><img src="img/projetos/portfolio/Full2022.webp" alt="Imagem Portfólio 2022"></a>
+
+        <h2>Portfólio • 2021</h2>
+        <a href="Projetos/portfolios/2021/index.html"><img src="img/projetos/portfolio/Full2021.webp" alt="Imagem Portfólio 2021"></a>
+        <p>Como pode notar tiveram algumas mudanças na criação do design para a versão final do projeto. 
+            Ao longo do tempo fui me aprimorando cada vez mais para desenvolver sites "Pixel Perfect" sendo 
+            o modelo final o mais próximo possível da versão desenvolvida no processo de design.</p>
+        <button onclick="port2021()">Visitar Site</button>
+
+        <h2>Portfólio • 2020</h2>
+        <a href="Projetos/portfolios/2020/index.html"><img src="img/projetos/portfolio/Full2020.webp" alt="Imagem Portfólio 20210"></a>
+        <p>Uma das versões mais antigas do meu site com um design peculiar (para não chamar de feio hahaha), 
+            estava entrando no mundo da programação e aprendendo lidar com todas as ferramentas.</p>
+        <button onclick="port2020()">Visitar Site</button>
+    </div>
+    
+    <footer>
+        <img src="img/MH_logo_flat2.svg" class="logoFooter" onload="SVGInject(this)" />
+        <p>MHBORGES &copy; 2022</p>
+    </footer>
+
+    <script>
+        const port2020 = () => { window.location = './Projetos/portfolios/2020/index.html'; }
+        const port2021 = () => { window.location = './Projetos/portfolios/2021/index.html'; }
+
+    </script>
+</body>
+</html>

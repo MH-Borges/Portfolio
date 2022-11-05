@@ -14,9 +14,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
     <script src="js/svg-inject.min.js"></script>
     <script src="js/infiniteslidev2.min.js"></script>
 
@@ -27,6 +27,8 @@
     <script defer src="js/script.js"></script>
 </head>
 <body>
+    <!-- Botão de rolagem-->
+    <a id="btn_UP"><img src="img/Up.webp"></a>
 
     <div class="loader">
         <div class="ArcoFora">
@@ -54,8 +56,8 @@
    
 
     <div class="projetos">
-        
-        <a href="https://v1town.com.br" target="_blank" id="V1town" class="carousel slide" data-bs-ride="carousel">
+
+        <a href="https://v1town.com.br" target="_blank" id="V1town" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/projetos/v1town/vtw01.webp">
@@ -76,16 +78,16 @@
                     <img src="img/projetos/v1town/vtw06.webp">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#V1town" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-target="#V1town" data-slide="prev">
                 <span class="carousel-control-prev-icon icon" aria-hidden="true"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#V1town" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-target="#V1town" data-slide="next">
                 <span class="carousel-control-next-icon icon" aria-hidden="true"></span>
             </button>
             <h2>V1town • 2022</h2>
         </a>
 
-        <a href="" id="Portfolio" class="carousel slide" data-bs-ride="carousel">
+        <a href="portfolio.html" id="Portfolio" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/projetos/portfolio/port01.webp">
@@ -106,16 +108,16 @@
                     <img src="img/projetos/portfolio/port06.webp">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#Portfolio" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-target="#Portfolio" data-slide="prev">
                 <span class="carousel-control-prev-icon icon" aria-hidden="true"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#Portfolio" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-target="#Portfolio" data-slide="next">
                 <span class="carousel-control-next-icon icon" aria-hidden="true"></span>
             </button>
             <h2>Meu Portfólio • 2022</h2>
         </a>
 
-        <a href="" id="Games" class="carousel slide" data-bs-ride="carousel"> 
+        <a href="" id="Games" class="carousel slide" data-ride="carousel"> 
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/projetos/games/htyd.webp">
@@ -124,16 +126,16 @@
                     <img src="img/projetos/games/sonic.webp">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#Games" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-target="#Games" data-slide="prev">
                 <span class="carousel-control-prev-icon icon" aria-hidden="true"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#Games" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-target="#Games" data-slide="next">
                 <span class="carousel-control-next-icon icon" aria-hidden="true"></span>
             </button>
             <h2>Games • 2022</h2>
         </a>
 
-        <a href="Projetos/Eulenir_Eberle_Psicologa/index.html" id="Eulenir" class="carousel slide" data-bs-ride="carousel">
+        <a href="Projetos/Eulenir_Eberle_Psicologa/index.html" id="Eulenir" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/projetos/eulenir/eule01.webp">
@@ -151,17 +153,17 @@
                     <img src="img/projetos/eulenir/eule05.webp">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#Eulenir" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-target="#Eulenir" data-slide="prev">
                 <span class="carousel-control-prev-icon icon" aria-hidden="true"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#Eulenir" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-target="#Eulenir" data-slide="next">
                 <span class="carousel-control-next-icon icon" aria-hidden="true"></span>
             </button>
             <h2>Eulenir Eberle • 2021</h2>
 
         </a>
 
-        <a href="Projetos/Web-Vantagens/index.html" id="Vantagens" class="carousel slide" data-bs-ride="carousel">
+        <a href="Projetos/Web-Vantagens/index.html" id="Vantagens" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/projetos/web/web01.webp">
@@ -173,17 +175,17 @@
                     <img src="img/projetos/web/web03.webp">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#Vantagens" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-target="#Vantagens" data-slide="prev">
                 <span class="carousel-control-prev-icon icon" aria-hidden="true"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#Vantagens" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-target="#Vantagens" data-slide="next">
                 <span class="carousel-control-next-icon icon" aria-hidden="true"></span>
             </button>
             <h2>Web Vantagens • 2021</h2>
 
         </a>
 
-        <a href="Projetos/Univida/index.html" id="Univida" class="carousel slide" data-bs-ride="carousel"> 
+        <a href="Projetos/Univida/index.html" id="Univida" class="carousel slide" data-ride="carousel"> 
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/projetos/univida/uni01.webp">
@@ -192,10 +194,10 @@
                     <img src="img/projetos/univida/uni02.webp">
                 </div> 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#Univida" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-target="#Univida" data-slide="prev">
                 <span class="carousel-control-prev-icon icon" aria-hidden="true"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#Univida" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-target="#Univida" data-slide="next">
                 <span class="carousel-control-next-icon icon" aria-hidden="true"></span>
             </button>
             <h2>Univida • 2021</h2>

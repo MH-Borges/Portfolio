@@ -1,0 +1,87 @@
+.portfolio{
+    width: 100%;
+    margin-top: 13vh;
+    color: $White;
+    padding: 5vh 4vw;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        font-family: "Next-Heavy";
+        color: $Red;
+        font-size: 2vw;
+        text-shadow: 2px 5px rgb(12, 12, 12);
+        margin: 0 auto;
+    }
+    p{
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 600;
+        padding: 5vh 0;
+        font-size: 1.2vw;
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+    h2{
+        font-family: "Next-Bold";
+        text-align: left;
+        font-size: 1.5vw;
+        padding: 7vh 0 2vh 11vw;
+        position: relative;
+        &::before{
+            content: '';
+            width: 108.7%;
+            height: 1px;
+            background: $White;
+            position: absolute;
+            top: 0;
+            margin-left: -15vw;
+        }
+    }
+    a{
+        width: 75%;
+        margin: 0 auto 3vh;
+        img{
+            width: 100%;
+            margin: 0 auto;
+            border: 1px solid $White;
+            box-shadow: 0 10px 50px -20px black;
+        }
+    }
+    
+    button{
+        background: none;
+        margin: 0 auto;
+        color: $White;
+        font-family: "Next-Light";
+        font-size: 1.2vw;
+        padding: 1vh 2vw;
+        border: 2px solid $White;
+        border-radius: 2vw;
+        margin-bottom: 5vh;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            transform: translateY(-10px);
+            font-size: 1.3vw;
+
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 1200px){
+}
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Wide Mobile = 480px */
+@media only screen and (min-width: 480px)  and (max-width: 767px){	
+}
+/* Small Device = 320px */
+@media only screen and (max-width: 479px){
+
+}
