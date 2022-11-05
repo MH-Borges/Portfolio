@@ -176,7 +176,7 @@ setTimeout(() => {
 
 	typeWriter();
 
-}, 2500);
+}, 1500);
 /* Tela de loading e animação banner */
 
 /* Tela de loading*/
