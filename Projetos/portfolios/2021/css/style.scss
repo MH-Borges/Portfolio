@@ -1,0 +1,142 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+}
+@import 'compiler/colors-fonts';
+
+::-webkit-scrollbar {
+    width: 15px;
+    background: $White;
+}
+::-webkit-scrollbar-thumb {
+    background: $Black-light;
+}
+body{
+    width: 100%;
+    background-color: $Black;
+}
+img,svg{
+    display: block;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: $White;
+}
+.title{
+    padding-bottom: 30px;
+    text-align: center;
+    h2{
+        color: $White;
+        font-family: "Next-Heavy";
+        font-size: 2.8vw;
+    }
+}
+#color{
+    h2{
+    color: $Black;
+    }
+}
+.botão{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: "Next-Heavy";
+    button{
+        font-size: 1.6vw;
+        color: $White;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        background-color: $Black-light;
+        padding: 0.8vw 1.8vw;
+        border-radius: 1.2vw;
+        border: none;
+        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.26), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.186902), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.154988), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.13), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.105012), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0730979);
+        transition: 0.2s ease-in;
+        &:hover{
+            background-color: $Red-light;
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 70px rgba(255, 61, 61, 0.3), 0px 38.0104px 69.7686px rgba(255, 61, 61, 0.204932), 0px 25.4156px 37.3016px rgba(255, 61, 61, 0.167579), 0px 17.6705px 20.911px rgba(255, 61, 61, 0.136384), 0px 11.6704px 11.1057px rgba(255, 61, 61, 0.101283), 0px 6.05533px 4.62132px rgba(255, 61, 61, 0.0571425);
+        }
+    }
+}
+#btn_UP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+    text-decoration: none;
+    z-index:998;
+    img{width: 4vw;}
+}
+
+.mestre{
+    position: fixed; 
+    z-index: 999; 
+    text-decoration: none; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    bottom: 2vh; 
+    left: 0.5vw; 
+    font-size: 1vw; 
+    font-weight: 700;
+    width: 11vw; 
+    height: 5vh; 
+    background: #323232; 
+    border-radius: 1vw; 
+    box-shadow: 0 10px 25px #000; 
+    color: #fff;
+}
+@import 'compiler/menu';
+@import 'compiler/banner';
+@import 'compiler/sobreMim';
+@import 'compiler/projetos';
+@import 'compiler/blog';
+@import 'compiler/design';
+@import 'compiler/contato';
+@import 'compiler/rodape';
+@import 'compiler/projetos_PAGE';
+@import 'compiler/portfolio_PAGE';
+
+
+@media only screen and (min-width: 1200px){
+    .container{position:relative; max-width: 85%;}
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {     
+    .container{max-width: 90%;}
+    .title{h2{font-size: 4vw;}}
+    .botão{button{font-size: 2.5vw;padding: 1vw 2.5vw;}}
+    #btn_UP{img{width: 6vw;}} 
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container{max-width: 90%;}
+    .title{padding-bottom: 3vw;h2{font-size: 4.5vw;}}
+    .botão{button{font-size: 2.8vw; padding: 1.5vw 3.5vw; border-radius: 2vw;}}
+    #btn_UP{img{width: 7vw;}}
+}
+@media only screen and (max-width: 767px){
+    .container{max-width: 100%;}
+    .title{padding-bottom: 1.5vw;h2{font-size: 8vw;}}
+    .botão{button{font-size: 4.5vw; padding: 2vw 4vw; border-radius: 3vw;}}
+    #btn_UP{img{width: 11vw;}}
+}
+    
+
+/*--------------------------------- Responsive Media Quaries -----------------------------*/
+@media only screen and (min-width: 1200px){
+}
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){	
+}
+/* Small Device = 320px */
+@media only screen and (max-width: 479px){
+}

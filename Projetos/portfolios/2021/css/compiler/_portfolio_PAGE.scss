@@ -1,0 +1,811 @@
+#portfolio_page{
+    display: flex;
+    position: relative;
+    width: 100%;
+    .container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 110px auto;
+        margin-bottom: 5vw;
+        text-align: center;
+
+        /*TEXTOS*/
+        .text_format{
+            width: 100%;
+            padding-top: 3vw;
+            padding-bottom: 0.5vw;
+            text-shadow: 0px 8px 10px rgba(0, 0, 0, 0.8);
+        }
+        .text_port{
+            color: $White;
+            font-family: "Lexend Deca";
+            padding: 1vw 12vw;
+            font-size: 1.3vw;
+        }
+        /*CORES*/
+        .text_cor{
+            span{
+                color: $Red-light;
+                &:nth-child(2){color: $Blue;}
+                &:nth-child(3){color: $Green;}
+            }
+        }
+        .cores{
+            display: flex;
+            position: relative;
+            justify-content: space-around;
+            width: 100%;
+            margin: 1vw 0 3vw 0;
+            padding: 0;
+        }
+        .gradient{
+            display: flex;
+            position: relative;
+            margin: 3vw 0;
+            height: 3vw;
+            border: 1px solid #0F0F0F;
+            box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.14), 0px 46.6935px 33.4221px rgba(0, 0, 0, 0.101791), 0px 28.3294px 17.869px rgba(0, 0, 0, 0.0861407), 0px 18.1212px 10.0172px rgba(0, 0, 0, 0.0738892), 0px 11.024px 5.32008px rgba(0, 0, 0, 0.0609514), 0px 5.25046px 2.21381px rgba(0, 0, 0, 0.0429632);
+            border-radius: 2vw;
+            h4{
+                position: absolute;
+                top: -4vh;
+                font-size: 1.4vw;
+                color: $White;
+                font-family: "Lexend Deca";
+                -webkit-text-stroke-width: 0.04vw;
+                -webkit-text-stroke-color: #000;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    background: $Black-dark;
+                    width: 0.17vw;
+                    height: 2.3vw;
+                    top: 0.7vw;
+                }
+                &:nth-child(1){
+                    left: 1.5vw;
+                    &::before{
+                        left:-0.3vw;
+                    }
+                }
+                &:nth-child(2){
+                    left: 45%;
+                    &::before{
+                        left:-0.3vw;
+                    }
+                }
+                &:nth-child(3){
+                    right: 1.5vw;
+                    &::before{
+                        right:-0.3vw;
+                    }
+                }
+            }
+        }
+        .red{width: 75%; background: linear-gradient(270deg, #C90202 0%, #EA1A1A 49.48%, #FF3D3D 100%);}
+        .blue{width: 45%; background: linear-gradient(270deg, #00C9AA 0%, #0EEBC9 49.48%, #30FFDF 100%);h4{font-size: 1.2vw !important; top: -3.5vh !important; &::before{height: 4vh !important;} &:nth-child(2){left: 45% !important;}}}
+        .green{width: 45%; background: linear-gradient(270deg, #4BC908 0%, #6AEB26 49.48%, #88FF4A 100%);h4{font-size: 1.2vw !important; top: -3.5vh !important; &::before{height: 4vh !important;} &:nth-child(2){left: 45% !important;}}}
+        .black{width: 45%; background: linear-gradient(270deg, #0F0F0F 0%, #323232 49.48%, #4D4D4D 100%);h4{font-size: 1.2vw !important; top: -3.5vh !important; &::before{height: 4vh !important;} &:nth-child(2){left: 45% !important;}}}
+        .white{width: 45%; background: linear-gradient(270deg, #CCC6C6 0%, #F7F0F0 49.48%, #FFF7F7 100%);h4{font-size: 1.2vw !important; top: -3.5vh !important; &::before{height: 4vh !important;} &:nth-child(2){left: 45% !important;}}}
+        
+
+        /*BOTOES E TIPOGRAFIA*/
+        .infos_BTtype{
+            display: flex;
+            position: relative;
+            justify-content: space-around;
+            width: 100%;
+            .Molde{
+                width: 40%;
+                display: flex;
+                position: relative;
+                margin: 1.5vw 0 3vw 0;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 2vw;
+                    height: 2vw;
+                    top: -0.5vw;
+                    left: -0.5vw;
+                    border-top:0.3vw solid $White;
+                    border-left:0.3vw solid $White;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 2vw;
+                    height: 2vw;
+                    bottom: -0.5vw;
+                    right: -0.5vw;
+                    border-bottom:0.3vw solid $White;
+                    border-right:0.3vw solid $White;
+                }
+                .inside_Molde{
+                    width: 95%;
+                    display: flex;
+                    position: relative;
+                    margin: 1vw auto;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 3.5vw;
+                        height: 3.5vw;
+                        top: -0.5vw;
+                        left: -0.5vw;
+                        border-top:0.45vw solid $White;
+                        border-left:0.45vw solid $White;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 3.5vw;
+                        height: 3.5vw;
+                        bottom: -0.5vw;
+                        right: -0.5vw;
+                        border-bottom:0.45vw solid $White;
+                        border-right:0.45vw solid $White;
+                    }
+                    .blocks_Molde{
+                        width: 45%;
+                        margin: 1vw auto;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 1vw;
+                    }
+                    .NextArt{
+                        h2{
+                            color: $White;
+                            font-family: "Next-Heavy";
+                            font-size: 2vw;
+                        }
+                        p{
+                            font-size: 1.5vw;
+                            color: $White;
+                            &:nth-child(2){
+                                margin-top: 4vh;
+                                font-family: "Next-Light";
+                            }
+                            &:nth-child(3){
+                                font-family: "Next-Regular";
+                            } 
+                            &:nth-child(4){
+                                font-family: "Next-Bold";
+                            } 
+                            &:nth-child(5){
+                                font-family: "Next-Heavy";
+                            }    
+                        }
+                       
+                    }
+                    .LexendDeca{
+                        h2{
+                            font-family: "Lexend Deca";
+                            color: $White;
+                            font-size: 1.8vw;
+                        }
+                        p{
+                            font-size: 1.5vw;
+                            color: $White;
+                            &:nth-child(2){
+                                margin-top: 11vh;
+                                font-family: "Lexend Deca";
+                            }
+                            &:nth-child(3){
+                                font-weight: bolder;
+                                font-family: "Lexend Deca";
+                            }   
+                        }
+                    }
+                    .BT_port{
+                        button{
+                            margin: 1.5vw;
+                            font-size: 1.2vw;
+                            &:nth-child(1){
+                                background-color:$Black-light;
+                                transform: translateY(0px);
+                                box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.26), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.186902), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.154988), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.13), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.105012), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0730979);
+                            }
+                            &:nth-child(2){
+                                background-color:$Black;
+                                transform: translateY(0px);
+                                box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.26), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.186902), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.154988), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.13), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.105012), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0730979);
+    
+                            }
+                            &:nth-child(3){
+                                background-color:$Black-dark;
+                                transform: translateY(0px);
+                                box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.26), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.186902), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.154988), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.13), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.105012), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0730979);
+                            }
+                        }
+                    }
+                    .BT_port_hover{
+                        button{
+                            margin: 1.5vw;
+                            font-size: 1.2vw;
+                            background-color: $Red-light;
+                            transform: translateY(0px);
+                            box-shadow: 0px 72px 167px rgba(255, 61, 61, 0.3), 0px 38.0104px 69.7686px rgba(255, 61, 61, 0.204932), 0px 25.4156px 37.3016px rgba(255, 61, 61, 0.167579), 0px 17.6705px 20.911px rgba(255, 61, 61, 0.136384), 0px 11.6704px 11.1057px rgba(255, 61, 61, 0.101283), 0px 6.05533px 4.62132px rgba(255, 61, 61, 0.0571425);
+                        }
+                        h5{
+                            font-size: 1.2vw;
+                            position: absolute;
+                            color: $White;
+                            top: 14vh;
+                            left: -3vw;
+                        }
+                        .fa-arrow-right{
+                            padding: 0.5vw;
+                            position: absolute;
+                            left: -2.5vw;
+                            font-size: 2vw;
+                            color: $White;
+                            border: 0.3vw solid $White;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        
+        /* GRID */
+        .grid_port{
+            display: flex;
+            position: relative;
+            width: 100%;
+            justify-content: space-around;
+            
+            &::after{
+                content: '';
+                position: absolute;
+                top: 23vh;
+                left: 1vw;
+                width: 15vw;
+                height: 15vw;
+                border-radius: 50%;
+                background: radial-gradient( $Blue-light 0%, $Black 100%);
+                opacity: 0.5;
+                box-shadow: 0px 0px 150px $Blue;
+                z-index: -99;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: 6vw;
+                right: 3vw;
+                width: 15vw;
+                height: 15vw;
+                border-radius: 50%;
+                background: radial-gradient( $Green-light 0%, $Black 100%);
+                opacity: 0.5;
+                box-shadow: 0px 0px 150px $Green;
+                z-index: -99;
+            }
+            .column_port{
+                width: 5vw;
+                height: 75vh;
+                background: linear-gradient(180deg, #EA1A1A 0%, #323232 98.99%);
+                box-shadow: inset 0px 0px 50px #323232;
+                border: 1px solid transparent;
+                border-image: linear-gradient(to bottom, #EA1A1A, #323232);
+                border-image-slice: 1;
+                margin: 4.2vw 0 3vw 0;
+            }
+            h3, h4, h5{
+                position: absolute;
+                color: $White;
+                font-family: "Next-Bold";
+            }
+            h3{
+                top: 20vh;
+                left: 22.5vw;
+                font-size: 1.1vw;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 3.5vw;
+                    height: 0.7vh;
+                    top: 40%;
+                    right: -3.8vw;
+                    background: rgba(255, 247, 247, 1);
+                }
+            }
+            h4{
+                top: 32.6vh;
+                left: 28.9vw;
+                font-size: 1.7vw;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 0.4vw;
+                    height: 11.5vh;
+                    top: -11.5vh;
+                    left: 45%;
+                    background: linear-gradient(to bottom,rgba(255, 247, 247, 1) 0%, rgba(255, 247, 247, 0) 100%);
+                }
+                &:nth-child(16){
+                    top: 87vh;
+                    left: 33.1vw;
+                    font-size: 2.2vw;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 0.4vw;
+                        height: 3.5vw;
+                        top: 3vw;
+                        left: 45%;
+                        background: linear-gradient(to top,rgba(255, 247, 247, 1) 0%, rgba(255, 247, 247, 0) 100%);
+                    }
+                }
+            }
+            h5{
+                bottom: 1vw;
+                font-size: 1.1vw;
+                left: 37.45vw;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 2.8vw;
+                    height: 0.8vh;
+                    top: 35%;
+                    left: -3.1vw;
+                    background: rgba(255, 247, 247, 1);
+                }
+            }
+        }
+
+        /* IMAGENS */
+        .imgs_port{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            .borderP{
+                width: 75%;
+                margin: 3vw 0;
+                border: 1px solid $Black-dark;
+                box-shadow: 0 0 50px $Black-dark;
+            }
+        }
+
+        /* Agradecimento */
+        .Agrade{
+            a{
+                text-decoration: none;
+                color: $White;
+            }
+            &:nth-child(2){
+                a{
+                    color: $Blue;
+                    &:hover{
+                        color: $Blue-dark;
+                    }
+                }
+            }
+            &:nth-child(3){
+                a{
+                    color: orangered;
+                    &:hover{
+                        color: rgb(212, 57, 0);
+                    }
+                }
+            }
+        }
+
+        /* botões finais */
+        .botao_Port_Final{
+            margin-top: 3vw;
+        }
+    }
+}
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #portfolio_page{
+        display: flex;
+        position: relative;
+        width: 100%;
+        .container{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 110px auto;
+            margin-bottom: 5vw;
+            text-align: center;
+    
+            /*TEXTOS*/
+            .text_format{
+                width: 100%;
+                padding-top: 3vw;
+                padding-bottom: 0.5vw;
+                text-shadow: 0px 8px 10px rgba(0, 0, 0, 0.8);
+            }
+            .text_port{
+                color: $White;
+                font-family: "Lexend Deca";
+                padding: 1vw 12vw;
+                font-size: 1.3vw;
+            }
+            /*CORES*/
+            .text_cor{
+                span{
+                    color: $Red-light;
+                    &:nth-child(2){color: $Blue;}
+                    &:nth-child(3){color: $Green;}
+                }
+            }
+            .cores{
+                display: flex;
+                position: relative;
+                justify-content: space-around;
+                width: 100%;
+                margin: 1vw 0 3vw 0;
+                padding: 0;
+            }
+            .gradient{
+                display: flex;
+                position: relative;
+                margin: 3vw 0;
+                height: 3vw;
+                border: 1px solid #0F0F0F;
+                box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.14), 0px 46.6935px 33.4221px rgba(0, 0, 0, 0.101791), 0px 28.3294px 17.869px rgba(0, 0, 0, 0.0861407), 0px 18.1212px 10.0172px rgba(0, 0, 0, 0.0738892), 0px 11.024px 5.32008px rgba(0, 0, 0, 0.0609514), 0px 5.25046px 2.21381px rgba(0, 0, 0, 0.0429632);
+                border-radius: 2vw;
+                h4{
+                    position: absolute;
+                    top: -4vh;
+                    font-size: 1.4vw;
+                    color: $White;
+                    font-family: "Lexend Deca";
+                    -webkit-text-stroke-width: 0.04vw;
+                    -webkit-text-stroke-color: #000;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        background: $Black-dark;
+                        width: 0.17vw;
+                        height: 2.3vw;
+                        top: 0.7vw;
+                    }
+                    &:nth-child(1){
+                        left: 1.5vw;
+                        &::before{
+                            left:-0.3vw;
+                        }
+                    }
+                    &:nth-child(2){
+                        left: 45%;
+                        &::before{
+                            left:-0.3vw;
+                        }
+                    }
+                    &:nth-child(3){
+                        right: 1.5vw;
+                        &::before{
+                            right:-0.3vw;
+                        }
+                    }
+                }
+            }
+            .red{width: 75%; background: linear-gradient(270deg, #C90202 0%, #EA1A1A 49.48%, #FF3D3D 100%);}
+            .blue{width: 45%; background: linear-gradient(270deg, #00C9AA 0%, #0EEBC9 49.48%, #30FFDF 100%);h4{font-size: 1.2vw !important; top: -3.5vh !important; &::before{height: 4vh !important;} &:nth-child(2){left: 45% !important;}}}
+            .green{width: 45%; background: linear-gradient(270deg, #4BC908 0%, #6AEB26 49.48%, #88FF4A 100%);h4{font-size: 1.2vw !important; top: -3.5vh !important; &::before{height: 4vh !important;} &:nth-child(2){left: 45% !important;}}}
+            .black{width: 45%; background: linear-gradient(270deg, #0F0F0F 0%, #323232 49.48%, #4D4D4D 100%);h4{font-size: 1.2vw !important; top: -3.5vh !important; &::before{height: 4vh !important;} &:nth-child(2){left: 45% !important;}}}
+            .white{width: 45%; background: linear-gradient(270deg, #CCC6C6 0%, #F7F0F0 49.48%, #FFF7F7 100%);h4{font-size: 1.2vw !important; top: -3.5vh !important; &::before{height: 4vh !important;} &:nth-child(2){left: 45% !important;}}}
+            
+    
+            /*BOTOES E TIPOGRAFIA*/
+            .infos_BTtype{
+                display: flex;
+                position: relative;
+                justify-content: space-around;
+                width: 100%;
+                .Molde{
+                    width: 40%;
+                    display: flex;
+                    position: relative;
+                    margin: 1.5vw 0 3vw 0;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 2vw;
+                        height: 2vw;
+                        top: -0.5vw;
+                        left: -0.5vw;
+                        border-top:0.3vw solid $White;
+                        border-left:0.3vw solid $White;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 2vw;
+                        height: 2vw;
+                        bottom: -0.5vw;
+                        right: -0.5vw;
+                        border-bottom:0.3vw solid $White;
+                        border-right:0.3vw solid $White;
+                    }
+                    .inside_Molde{
+                        width: 95%;
+                        display: flex;
+                        position: relative;
+                        margin: 1vw auto;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 3.5vw;
+                            height: 3.5vw;
+                            top: -0.5vw;
+                            left: -0.5vw;
+                            border-top:0.45vw solid $White;
+                            border-left:0.45vw solid $White;
+                        }
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            width: 3.5vw;
+                            height: 3.5vw;
+                            bottom: -0.5vw;
+                            right: -0.5vw;
+                            border-bottom:0.45vw solid $White;
+                            border-right:0.45vw solid $White;
+                        }
+                        .blocks_Molde{
+                            width: 45%;
+                            margin: 1vw auto;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 1vw;
+                        }
+                        .NextArt{
+                            h2{
+                                color: $White;
+                                font-family: "Next-Heavy";
+                                font-size: 2vw;
+                            }
+                            p{
+                                font-size: 1.5vw;
+                                color: $White;
+                                &:nth-child(2){
+                                    margin-top: 4vh;
+                                    font-family: "Next-Light";
+                                }
+                                &:nth-child(3){
+                                    font-family: "Next-Regular";
+                                } 
+                                &:nth-child(4){
+                                    font-family: "Next-Bold";
+                                } 
+                                &:nth-child(5){
+                                    font-family: "Next-Heavy";
+                                }    
+                            }
+                           
+                        }
+                        .LexendDeca{
+                            h2{
+                                font-family: "Lexend Deca";
+                                color: $White;
+                                font-size: 1.8vw;
+                            }
+                            p{
+                                font-size: 1.5vw;
+                                color: $White;
+                                &:nth-child(2){
+                                    margin-top: 11vh;
+                                    font-family: "Lexend Deca";
+                                }
+                                &:nth-child(3){
+                                    font-weight: bolder;
+                                    font-family: "Lexend Deca";
+                                }   
+                            }
+                        }
+                        .BT_port{
+                            button{
+                                margin: 1.5vw 2vw;
+                                font-size: 1.2vw;
+                                &:nth-child(1){
+                                    background-color:$Black-light;
+                                    transform: translateY(0px);
+                                    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.26), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.186902), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.154988), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.13), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.105012), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0730979);
+                                }
+                                &:nth-child(2){
+                                    background-color:$Black;
+                                    transform: translateY(0px);
+                                    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.26), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.186902), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.154988), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.13), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.105012), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0730979);
+        
+                                }
+                                &:nth-child(3){
+                                    background-color:$Black-dark;
+                                    transform: translateY(0px);
+                                    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.26), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.186902), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.154988), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.13), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.105012), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0730979);
+                                }
+                            }
+                        }
+                        .BT_port_hover{
+                            button{
+                                margin: 0 1vw;
+                                font-size: 1.2vw;
+                                background-color: $Red-light;
+                                transform: translateY(0px);
+                                box-shadow: 0px 72px 167px rgba(255, 61, 61, 0.3), 0px 38.0104px 69.7686px rgba(255, 61, 61, 0.204932), 0px 25.4156px 37.3016px rgba(255, 61, 61, 0.167579), 0px 17.6705px 20.911px rgba(255, 61, 61, 0.136384), 0px 11.6704px 11.1057px rgba(255, 61, 61, 0.101283), 0px 6.05533px 4.62132px rgba(255, 61, 61, 0.0571425);
+                            }
+                            h5{
+                                font-size: 1.2vw;
+                                position: absolute;
+                                color: $White;
+                                top: 14vh;
+                                left: -3vw;
+                            }
+                            .fa-arrow-right{
+                                padding: 0.5vw;
+                                position: absolute;
+                                left: -2.5vw;
+                                font-size: 2vw;
+                                color: $White;
+                                border: 0.3vw solid $White;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            /* GRID */
+            .grid_port{
+                display: flex;
+                position: relative;
+                width: 100%;
+                justify-content: space-around;
+                
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 23vh;
+                    left: 1vw;
+                    width: 15vw;
+                    height: 15vw;
+                    border-radius: 50%;
+                    background: radial-gradient( $Blue-light 0%, $Black 100%);
+                    opacity: 0.5;
+                    box-shadow: 0px 0px 150px $Blue;
+                    z-index: -99;
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    bottom: 6vw;
+                    right: 3vw;
+                    width: 15vw;
+                    height: 15vw;
+                    border-radius: 50%;
+                    background: radial-gradient( $Green-light 0%, $Black 100%);
+                    opacity: 0.5;
+                    box-shadow: 0px 0px 150px $Green;
+                    z-index: -99;
+                }
+                .column_port{
+                    width: 5vw;
+                    height: 75vh;
+                    background: linear-gradient(180deg, #EA1A1A 0%, #323232 98.99%);
+                    box-shadow: inset 0px 0px 50px #323232;
+                    border: 1px solid transparent;
+                    border-image: linear-gradient(to bottom, #EA1A1A, #323232);
+                    border-image-slice: 1;
+                    margin: 4.2vw 0 3vw 0;
+                }
+                h3, h4, h5{
+                    position: absolute;
+                    color: $White;
+                    font-family: "Next-Bold";
+                }
+                h3{
+                    top: 20vh;
+                    left: 22.5vw;
+                    font-size: 1.1vw;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 3.5vw;
+                        height: 0.7vh;
+                        top: 40%;
+                        right: -3.8vw;
+                        background: rgba(255, 247, 247, 1);
+                    }
+                }
+                h4{
+                    top: 32.6vh;
+                    left: 28.9vw;
+                    font-size: 1.7vw;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 0.4vw;
+                        height: 11.5vh;
+                        top: -11.5vh;
+                        left: 45%;
+                        background: linear-gradient(to bottom,rgba(255, 247, 247, 1) 0%, rgba(255, 247, 247, 0) 100%);
+                    }
+                    &:nth-child(16){
+                        top: 87vh;
+                        left: 33.1vw;
+                        font-size: 2.2vw;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 0.4vw;
+                            height: 3.5vw;
+                            top: 3vw;
+                            left: 45%;
+                            background: linear-gradient(to top,rgba(255, 247, 247, 1) 0%, rgba(255, 247, 247, 0) 100%);
+                        }
+                    }
+                }
+                h5{
+                    bottom: 1vw;
+                    font-size: 1.1vw;
+                    left: 37.45vw;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 2.8vw;
+                        height: 0.8vh;
+                        top: 35%;
+                        left: -3.1vw;
+                        background: rgba(255, 247, 247, 1);
+                    }
+                }
+            }
+    
+            /* IMAGENS */
+            .imgs_port{
+                display: flex;
+                position: relative;
+                justify-content: center;
+                .borderP{
+                    width: 75%;
+                    margin: 3vw 0;
+                    border: 1px solid $Black-dark;
+                    box-shadow: 0 0 50px $Black-dark;
+                }
+            }
+    
+            /* Agradecimento */
+            .Agrade{
+                a{
+                    text-decoration: none;
+                    color: $White;
+                }
+                &:nth-child(2){
+                    a{
+                        color: $Blue;
+                        &:hover{
+                            color: $Blue-dark;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    a{
+                        color: orangered;
+                        &:hover{
+                            color: rgb(212, 57, 0);
+                        }
+                    }
+                }
+            }
+    
+            /* botões finais */
+            .botao_Port_Final{
+                margin-top: 3vw;
+            }
+        }
+    }
+}
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){	
+}

@@ -1,0 +1,174 @@
+#projetos_page{
+    width: 100%;
+    display: flex;
+    position: relative;
+    .container{
+        padding: 2vw;
+        margin-top: 110px;
+        .blockBase{
+            display: flex;
+            position: relative;
+            align-items:center;
+            justify-content: center;
+            .cardPr{
+                width: 30vw;
+                height: 25vw;
+                margin: 3vw 4vw;
+                background-color: $White;
+                box-shadow: 0px 50px 100px $Black-dark;
+                border-radius: 1.5vw;
+                text-decoration: none;
+                color: $Black;
+                .CardBack{
+                    background-color: $White-dark;
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 2vh;
+                    height: 65%;
+                    img{
+                        width: 11vw;
+                        position: absolute;
+                        transition: .2s ease-in-out;
+                        &:nth-child(1){
+                          left: 8%;
+                          top: 28%;
+                          z-index: 10;
+                        }
+                        &:nth-child(2){
+                            z-index: 9;
+                            top: 17%;
+                        }
+                        &:nth-child(3){
+                            right: 8%;
+                            top: 8%; 
+                        }
+                        &:hover{
+                            transform: translateY(-10px);
+                        }
+                    }
+                }
+                .titlePG{
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    font-family: "Next-Bold";
+                    font-size: 1.7vw;
+                    margin:0 2vw;
+                    height: 20%;
+                }
+            }
+        }          
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #projetos_page{
+        .container{
+            .blockBase{
+                .cardPr{
+                    width: 35vw;
+                    margin: 4vw;
+                    .CardBack{
+                        margin: 1.5vw 1.5vw 0.5vw 1.5vw;
+                        height: 65%;
+                        img{width: 11vw;&:hover{transform: translateY(0px);}}
+                    }
+                    .titlePG{font-size: 2vw;height: 25%;}
+                }
+            }          
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #projetos_page{
+        .container{
+            margin-top: 100px;
+            .blockBase{
+                .cardPr{
+                    width: 40vw;
+                    height: 35vw;
+                    margin:4vw 2vw;
+                    box-shadow: 0px 20px 30px $Black-dark;
+                    border-radius: 2vw;
+                    .CardBack{
+                        margin: 1.5vw;
+                        img{
+                            width: 16vw;
+                            &:nth-child(1){
+                              left: 5%;
+                              top: 30%;
+                              z-index: 10;
+                            }
+                            &:nth-child(2){
+                                z-index: 9;
+                                top: 17%;
+                            }
+                            &:nth-child(3){
+                                right: 5%;
+                                top: 5%; 
+                            }
+                            &:hover{
+                                transform: translateY(0px);
+                            }
+                        }
+                    }
+                    .titlePG{
+                        font-size: 2.5vw;
+                        margin:0 2vw;
+                        height: 20%;
+                    }
+                }
+            }          
+        }
+    }
+}
+@media only screen and (max-width: 767px){	
+    #projetos_page{
+        .container{
+            padding: 2vw;
+            margin-top: 100px;
+            .blockBase{
+                margin: 0;
+                .cardPr{
+                    width: 90vw;
+                    height: 80vw;
+                    margin: 6vw;
+                    box-shadow: 0px 30px 50px $Black-dark;
+                    border-radius: 3vw;
+                    .CardBack{
+                        height: 60%;
+                        margin: 2.5vw;
+                        img{
+                            width: 33vw;
+                            &:nth-child(1){
+                              left: 5%;
+                              top: 25%;
+                              z-index: 10;
+                            }
+                            &:nth-child(2){
+                                z-index: 9;
+                                top: 17%;
+                            }
+                            &:nth-child(3){
+                                right: 5%;
+                                top: 10%; 
+                            }
+                            &:hover{
+                                transform: translateY(0px);
+                            }
+                        }
+                    }
+                    .titlePG{
+                        height: 30%;
+                        font-size: 6vw;
+                        margin:0 3vw;
+                    }
+                }
+            }          
+        }
+    }
+}
